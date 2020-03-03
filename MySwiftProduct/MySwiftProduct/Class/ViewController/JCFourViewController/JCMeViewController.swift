@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JCFourViewController: UIViewController {
+class JCMeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322AE795240E410E007820B1 /* appLaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 322AE794240E410E007820B1 /* appLaunchScreen.png */; };
 		329F6BAE240D352F008E0721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BAC240D352F008E0721 /* Main.storyboard */; };
 		329F6BB0240D3531008E0721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BAF240D3531008E0721 /* Assets.xcassets */; };
-		329F6BB3240D3531008E0721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BB1240D3531008E0721 /* LaunchScreen.storyboard */; };
+		329F6BB3240D3531008E0721 /* TestLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BB1240D3531008E0721 /* TestLaunchScreen.storyboard */; };
 		329F6BBE240D3531008E0721 /* MySwiftProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BBD240D3531008E0721 /* MySwiftProductTests.swift */; };
 		329F6BC9240D3531008E0721 /* MySwiftProductUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BC8240D3531008E0721 /* MySwiftProductUITests.swift */; };
 		329F6BF6240D354D008E0721 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BD8240D354D008E0721 /* UIButton+Extension.swift */; };
@@ -19,7 +20,7 @@
 		329F6BFA240D354D008E0721 /* JCFakeTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BDF240D354D008E0721 /* JCFakeTestData.swift */; };
 		329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE1240D354D008E0721 /* AppDelegate.swift */; };
 		329F6BFC240D354D008E0721 /* JCSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE4240D354D008E0721 /* JCSecondViewController.swift */; };
-		329F6BFD240D354D008E0721 /* JCFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE6240D354D008E0721 /* JCFourViewController.swift */; };
+		329F6BFD240D354D008E0721 /* JCMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE6240D354D008E0721 /* JCMeViewController.swift */; };
 		329F6BFE240D354D008E0721 /* JCBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE8240D354D008E0721 /* JCBaseController.swift */; };
 		329F6BFF240D354D008E0721 /* JCFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BEA240D354D008E0721 /* JCFirstViewController.swift */; };
 		329F6C00240D354D008E0721 /* JCSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BEC240D354D008E0721 /* JCSwiftUIViewController.swift */; };
@@ -49,10 +50,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		322AE794240E410E007820B1 /* appLaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appLaunchScreen.png; sourceTree = "<group>"; };
 		329F6BA3240D352F008E0721 /* MySwiftProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		329F6BAD240D352F008E0721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		329F6BAF240D3531008E0721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		329F6BB2240D3531008E0721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		329F6BB2240D3531008E0721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TestLaunchScreen.storyboard; sourceTree = "<group>"; };
 		329F6BB4240D3531008E0721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		329F6BB9240D3531008E0721 /* MySwiftProductTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftProductTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		329F6BBD240D3531008E0721 /* MySwiftProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftProductTests.swift; sourceTree = "<group>"; };
@@ -67,7 +69,7 @@
 		329F6BDF240D354D008E0721 /* JCFakeTestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCFakeTestData.swift; sourceTree = "<group>"; };
 		329F6BE1240D354D008E0721 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		329F6BE4240D354D008E0721 /* JCSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCSecondViewController.swift; sourceTree = "<group>"; };
-		329F6BE6240D354D008E0721 /* JCFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCFourViewController.swift; sourceTree = "<group>"; };
+		329F6BE6240D354D008E0721 /* JCMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCMeViewController.swift; sourceTree = "<group>"; };
 		329F6BE8240D354D008E0721 /* JCBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCBaseController.swift; sourceTree = "<group>"; };
 		329F6BEA240D354D008E0721 /* JCFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCFirstViewController.swift; sourceTree = "<group>"; };
 		329F6BEC240D354D008E0721 /* JCSwiftUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCSwiftUIViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		322AE792240E4103007820B1 /* Scource */ = {
+			isa = PBXGroup;
+			children = (
+				322AE793240E410E007820B1 /* appLaunchScreen */,
+			);
+			path = Scource;
+			sourceTree = "<group>";
+		};
+		322AE793240E410E007820B1 /* appLaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				322AE794240E410E007820B1 /* appLaunchScreen.png */,
+			);
+			path = appLaunchScreen;
+			sourceTree = "<group>";
+		};
 		329F6B9A240D352F008E0721 = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +154,7 @@
 				329F6BAC240D352F008E0721 /* Main.storyboard */,
 				329F6C05240D357B008E0721 /* imageResource.xcassets */,
 				329F6BAF240D3531008E0721 /* Assets.xcassets */,
-				329F6BB1240D3531008E0721 /* LaunchScreen.storyboard */,
+				329F6BB1240D3531008E0721 /* TestLaunchScreen.storyboard */,
 				329F6BB4240D3531008E0721 /* Info.plist */,
 			);
 			path = MySwiftProduct;
@@ -164,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				329F6BE1240D354D008E0721 /* AppDelegate.swift */,
+				322AE792240E4103007820B1 /* Scource */,
 				329F6BD7240D354D008E0721 /* Extension */,
 				329F6BDA240D354D008E0721 /* Common */,
 				329F6BDE240D354D008E0721 /* Model */,
@@ -238,7 +257,7 @@
 		329F6BE5240D354D008E0721 /* JCFourViewController */ = {
 			isa = PBXGroup;
 			children = (
-				329F6BE6240D354D008E0721 /* JCFourViewController.swift */,
+				329F6BE6240D354D008E0721 /* JCMeViewController.swift */,
 			);
 			path = JCFourViewController;
 			sourceTree = "<group>";
@@ -433,7 +452,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				329F6BB3240D3531008E0721 /* LaunchScreen.storyboard in Resources */,
+				329F6BB3240D3531008E0721 /* TestLaunchScreen.storyboard in Resources */,
+				322AE795240E410E007820B1 /* appLaunchScreen.png in Resources */,
 				329F6C06240D357C008E0721 /* imageResource.xcassets in Resources */,
 				329F6BB0240D3531008E0721 /* Assets.xcassets in Resources */,
 				329F6BAE240D352F008E0721 /* Main.storyboard in Resources */,
@@ -521,7 +541,7 @@
 				329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */,
 				329F6BF8240D354D008E0721 /* JCBannerView.swift in Sources */,
 				329F6BFF240D354D008E0721 /* JCFirstViewController.swift in Sources */,
-				329F6BFD240D354D008E0721 /* JCFourViewController.swift in Sources */,
+				329F6BFD240D354D008E0721 /* JCMeViewController.swift in Sources */,
 				329F6BF6240D354D008E0721 /* UIButton+Extension.swift in Sources */,
 				329F6C01240D354D008E0721 /* JCThreeViewController.swift in Sources */,
 				329F6BF7240D354D008E0721 /* UIImage+Extension.swift in Sources */,
@@ -568,12 +588,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		329F6BB1240D3531008E0721 /* LaunchScreen.storyboard */ = {
+		329F6BB1240D3531008E0721 /* TestLaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				329F6BB2240D3531008E0721 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = TestLaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

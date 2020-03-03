@@ -8,33 +8,47 @@
 
 import UIKit
 
+
+extension AppDelegate {
+       /// 动态启动图
+       fileprivate func setupLaunchImage() {
+           let launchVC = UIStoryboard(name: "TestLaunchScreen", bundle: nil).instantiateViewController(withIdentifier: "LaunchScreenID")
+           let launchView = launchVC.view
+           window?.addSubview(launchView!)
+
+           // 动画效果
+           UIView.animate(withDuration: 1.5, animations: {
+               launchView?.alpha = 0.0
+               launchView?.layer.transform = CATransform3DScale(CATransform3DIdentity, 1.5, 1.5, 1.0)
+
+           }) { (success) in
+               launchView?.removeFromSuperview()
+           }
+       }
+   }
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//        // Override point for customization after application launch.
-//        self.window = UIWindow.init(frame: UIScreen.main.bounds)
-//        let vc = UINavigationController.init(rootViewController: JCBaseController())
-//        self.window?.rootViewController = vc
-//        self.window?.makeKeyAndVisible()
 
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        
-    
-        //初始化tabbar
+        setupLaunchImage()
         let tabbarVC = JCCustomTabbarVC()
         self.window!.rootViewController = tabbarVC
         self.window!.makeKeyAndVisible()
-
-        
         
         return true
     }
 
+    
+    
+   
+    
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
