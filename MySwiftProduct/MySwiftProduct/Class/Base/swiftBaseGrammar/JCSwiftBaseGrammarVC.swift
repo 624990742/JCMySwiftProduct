@@ -17,16 +17,8 @@ class JCSwiftBaseGrammarVC: UIViewController{
         // Do any additional setup after loading the view.
         
         self.edgesForExtendedLayout = []//不让导航遮住
-        self.title = "基础语法练习"
         self.view.backgroundColor = UIColor.white
-        
-
-        
-
     }
-
-
-    
     
 }
 

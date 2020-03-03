@@ -11,8 +11,8 @@ import UIKit
 import SnapKit
 
 protocol JCBannerViewDataSource: AnyObject {
-    func numberOfBanners(_ bannerView: JCBannerView) -> Int
-    func viewForBanner(_ bannerView: JCBannerView,index: Int, convertView: UIView?) ->UIView
+    func numberOfBanners(_ bannerView: JCBannerView?) -> Int
+    func viewForBanner(_ bannerView: JCBannerView?,index: Int, convertView: UIView?) ->UIView
     }
 
 protocol JCBannerViewDelegate: AnyObject {
@@ -30,6 +30,7 @@ class JCBannerView: UIView , UICollectionViewDataSource, UICollectionViewDelegat
    weak var dataSource: JCBannerViewDataSource! {
         didSet {
             pageControl.numberOfPages = self.dataSource.numberOfBanners(self)
+            print("pageControl.numberOfPages==>%ld",pageControl.numberOfPages)
             collectionView.reloadData()
             self.collectionView.setContentOffset(CGPoint(x: self.collectionView.frame.width, y: 0), animated: false)
         }
@@ -38,10 +39,11 @@ class JCBannerView: UIView , UICollectionViewDataSource, UICollectionViewDelegat
     weak var delegate: JCBannerViewDelegate?
     var autoScrollInterval: Float = 0 {
          didSet {
+              stopAutoScroll()
              if self.autoScrollInterval > 0 {
-                 self.startAutoScroll()
+                startAutoScroll()
              } else {
-                 self.stopAutoScroll()
+               stopAutoScroll()
              }
          }
      }
@@ -68,8 +70,10 @@ class JCBannerView: UIView , UICollectionViewDataSource, UICollectionViewDelegat
     
     func setupViews() {
         collectionView.backgroundColor = .white
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        
+        weak var weakSelf = self
+        collectionView.delegate = weakSelf
+        collectionView.dataSource = weakSelf
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.contentInsetAdjustmentBehavior = .never
@@ -83,8 +87,6 @@ class JCBannerView: UIView , UICollectionViewDataSource, UICollectionViewDelegat
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview().offset(-15)
         }
-        
-        
         
     }
     
@@ -143,14 +145,18 @@ class JCBannerView: UIView , UICollectionViewDataSource, UICollectionViewDelegat
     }
     
     func stopAutoScroll() {
+        print("stopAutoScroll")
            if let t = timer {
                t.invalidate()
                timer = nil
            }
        }
     
-    
-    
+    deinit {
+        print("deinit")
+        self.stopAutoScroll()
+    }
+
     @objc func flipNext() {
         guard let _ = superview, let _ = window else {
             return
@@ -196,8 +202,11 @@ class JCBannerView: UIView , UICollectionViewDataSource, UICollectionViewDelegat
     }
     
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        
+     
+        print(self)
         let total = dataSource.numberOfBanners(self)
-        let current = Int(round(collectionView.contentOffset.x / collectionView.frame.width))
+              let current = Int(round(collectionView.contentOffset.x / collectionView.frame.width))
         if current >= total + 1 {
             collectionView.setContentOffset(CGPoint(x: collectionView.frame.width, y: 0), animated: false)
         }

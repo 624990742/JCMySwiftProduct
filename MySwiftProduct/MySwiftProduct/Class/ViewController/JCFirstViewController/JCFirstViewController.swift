@@ -11,7 +11,7 @@ import UIKit
 class JCFirstViewController: UIViewController ,UITableViewDataSource, UITableViewDelegate {
     
     
-    private let  dataScource = ["demo1","demo2","demo3"]
+    private let  dataScource = ["轮播图","UITableView","demo3"]
     
     let baseTableView = UITableView(frame: CGRect.init(x: 0, y: 0, width:UIScreen.main.bounds.width, height: UIScreen.main.bounds.height), style: UITableView.Style.plain)
     
@@ -48,6 +48,7 @@ class JCFirstViewController: UIViewController ,UITableViewDataSource, UITableVie
         
         if rowIndex == 0 {
             let  baseVC = JCSwiftUIViewController.init()
+            baseVC.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(baseVC, animated: true)
         }
 
