@@ -10,8 +10,29 @@ import UIKit
 
 class JCFirstViewController: UIViewController ,UITableViewDataSource, UITableViewDelegate {
     
-    
+
     private let  dataScource = ["轮播图","UITableView","demo3"]
+    
+    
+       override func viewDidLoad() {
+           super.viewDidLoad()
+           self .setupUI()
+       }
+       
+    
+    func setupUI() {
+           self.title = "首页"
+           baseTableView.delegate = self
+           baseTableView.dataSource = self
+           baseTableView.backgroundColor = UIColor.white
+           self.view .addSubview(baseTableView)
+       }
+       
+    
+    
+    
+    
+    
     
     let baseTableView = UITableView(frame: CGRect.init(x: 0, y: 0, width:UIScreen.main.bounds.width, height: UIScreen.main.bounds.height), style: UITableView.Style.plain)
     
@@ -55,25 +76,26 @@ class JCFirstViewController: UIViewController ,UITableViewDataSource, UITableVie
     }
     
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        self .setupUI()
+    //头部视图
+    class TableHeaderView: UIView {
+        
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+            setupView()
+        }
+        
+        required init?(coder aDecoder: NSCoder) {
+              super.init(coder: aDecoder)
+              setupView()
+          }
+        func setupView() {
+            
+            
+        }
+        
+        
     }
     
-    
-    func setupUI() {
-        self.title = "首页"
-        baseTableView.delegate = self
-        baseTableView.dataSource = self
-        baseTableView.backgroundColor = UIColor.white
-        self.view .addSubview(baseTableView)
-        
-        
-        
-    
-    }
     
 
     /*

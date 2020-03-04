@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		322AE795240E410E007820B1 /* appLaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 322AE794240E410E007820B1 /* appLaunchScreen.png */; };
+		323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B24E9240F58C5006E24DC /* JCBootPageView.swift */; };
 		329F6BAE240D352F008E0721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BAC240D352F008E0721 /* Main.storyboard */; };
 		329F6BB0240D3531008E0721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BAF240D3531008E0721 /* Assets.xcassets */; };
 		329F6BB3240D3531008E0721 /* TestLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BB1240D3531008E0721 /* TestLaunchScreen.storyboard */; };
@@ -29,6 +30,7 @@
 		329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */; };
 		329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */; };
 		329F6C06240D357C008E0721 /* imageResource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329F6C05240D357B008E0721 /* imageResource.xcassets */; };
+		32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */; };
 		4E08EA10E6913170D0EF9D7E /* Pods_MySwiftProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		322AE794240E410E007820B1 /* appLaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appLaunchScreen.png; sourceTree = "<group>"; };
+		323B24E9240F58C5006E24DC /* JCBootPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCBootPageView.swift; sourceTree = "<group>"; };
 		329F6BA3240D352F008E0721 /* MySwiftProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		329F6BAD240D352F008E0721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		329F6BAF240D3531008E0721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 		329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCCustomTabbarVC.swift; sourceTree = "<group>"; };
 		329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCSwiftBaseGrammarVC.swift; sourceTree = "<group>"; };
 		329F6C05240D357B008E0721 /* imageResource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = imageResource.xcassets; sourceTree = "<group>"; };
+		32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCGuidePageViewController.swift; sourceTree = "<group>"; };
 		82088A0283672079CF405AB9 /* Pods-MySwiftProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CB50E74750A1E063ED273BA6 /* Pods-MySwiftProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.release.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.release.xcconfig"; sourceTree = "<group>"; };
 		E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwiftProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +127,14 @@
 				322AE794240E410E007820B1 /* appLaunchScreen.png */,
 			);
 			path = appLaunchScreen;
+			sourceTree = "<group>";
+		};
+		323B24E8240F586E006E24DC /* BootPageView */ = {
+			isa = PBXGroup;
+			children = (
+				323B24E9240F58C5006E24DC /* JCBootPageView.swift */,
+			);
+			path = BootPageView;
 			sourceTree = "<group>";
 		};
 		329F6B9A240D352F008E0721 = {
@@ -237,6 +249,7 @@
 		329F6BE2240D354D008E0721 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				32F18623240FF09C002E7BF5 /* GuidePageViewController */,
 				329F6BE3240D354D008E0721 /* JCSecondViewController */,
 				329F6BE5240D354D008E0721 /* JCFourViewController */,
 				329F6BE7240D354D008E0721 /* BaseController */,
@@ -298,6 +311,7 @@
 		329F6BEF240D354D008E0721 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				323B24E8240F586E006E24DC /* BootPageView */,
 				329F6BF0240D354D008E0721 /* JCCustomNavgationController */,
 				329F6BF2240D354D008E0721 /* JCCustomTabbarVC */,
 				329F6BF4240D354D008E0721 /* swiftBaseGrammar */,
@@ -327,6 +341,14 @@
 				329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */,
 			);
 			path = swiftBaseGrammar;
+			sourceTree = "<group>";
+		};
+		32F18623240FF09C002E7BF5 /* GuidePageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */,
+			);
+			path = GuidePageViewController;
 			sourceTree = "<group>";
 		};
 		AA2746383241419C0BAE202A /* Frameworks */ = {
@@ -536,8 +558,10 @@
 				329F6C02240D354D008E0721 /* JCCustomNavgationController.swift in Sources */,
 				329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */,
 				329F6BFE240D354D008E0721 /* JCBaseController.swift in Sources */,
+				32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */,
 				329F6BFA240D354D008E0721 /* JCFakeTestData.swift in Sources */,
 				329F6BF9240D354D008E0721 /* JCCommonHederFile.swift in Sources */,
+				323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */,
 				329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */,
 				329F6BF8240D354D008E0721 /* JCBannerView.swift in Sources */,
 				329F6BFF240D354D008E0721 /* JCFirstViewController.swift in Sources */,

@@ -43,7 +43,6 @@ class JCCustomTabbarVC: UITabBarController {
     func setUpOneChildViewController(viewController: UIViewController, image: UIImage, selectedImage: UIImage, title: NSString) {
         
         let navVC = UINavigationController.init(rootViewController: viewController)
-        
         // 让图片显示图片原始颜色  “UIImage” 后+ “.imageWithRenderingMode(.AlwaysOriginal)”
         navVC.tabBarItem = UITabBarItem.init(title: title as String, image: image, selectedImage: selectedImage.withRenderingMode(.alwaysOriginal))
         

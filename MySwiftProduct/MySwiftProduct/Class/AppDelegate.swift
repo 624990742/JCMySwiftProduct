@@ -8,7 +8,13 @@
 
 import UIKit
 
-
+/*
+ fileprivate
+ 1.范围是同一源文件。
+ 2.修饰的类在同一源文件中可以被继承。
+ 3.修饰的方法在同一源文件中可以被访问，可以被子类override。
+ 4.修饰的变量在同一源文件中可以被访问。
+ */
 extension AppDelegate {
        /// 动态启动图
        fileprivate func setupLaunchImage() {
@@ -17,12 +23,23 @@ extension AppDelegate {
            window?.addSubview(launchView!)
 
            // 动画效果
-           UIView.animate(withDuration: 1.5, animations: {
+           UIView.animate(withDuration: 1.0, animations: {
                launchView?.alpha = 0.0
                launchView?.layer.transform = CATransform3DScale(CATransform3DIdentity, 1.5, 1.5, 1.0)
 
            }) { (success) in
                launchView?.removeFromSuperview()
+             
+            
+            let vc = JCGuidePageViewController.init()
+             vc.skipClickBlock  = { () -> () in
+             print("点击了启动图")
+             let tabbarVC = JCCustomTabbarVC()
+             self.window?.rootViewController = tabbarVC
+            }
+               let nav = UINavigationController.init(rootViewController: vc)
+               nav.isNavigationBarHidden = true
+               self.window?.rootViewController = nav
            }
        }
    }
@@ -36,15 +53,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         setupLaunchImage()
-        let tabbarVC = JCCustomTabbarVC()
-        self.window!.rootViewController = tabbarVC
-        self.window!.makeKeyAndVisible()
+        let defalutVC = UIViewController.init()
+        self.window!.rootViewController = defalutVC
+        self.window?.makeKeyAndVisible()
         
         return true
     }
 
-    
-    
+
    
     
     
