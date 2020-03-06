@@ -25,13 +25,17 @@ class JCFirstViewController: UIViewController ,UITableViewDataSource, UITableVie
            baseTableView.delegate = self
            baseTableView.dataSource = self
            baseTableView.backgroundColor = UIColor.white
+        
+        
+        
            self.view .addSubview(baseTableView)
+        
+           
+        
+        
+        
        }
        
-    
-    
-    
-    
     
     
     let baseTableView = UITableView(frame: CGRect.init(x: 0, y: 0, width:UIScreen.main.bounds.width, height: UIScreen.main.bounds.height), style: UITableView.Style.plain)
@@ -84,16 +88,17 @@ class JCFirstViewController: UIViewController ,UITableViewDataSource, UITableVie
             setupView()
         }
         
-        required init?(coder aDecoder: NSCoder) {
-              super.init(coder: aDecoder)
-              setupView()
-          }
+        
         func setupView() {
             
             
         }
         
         
+        required init?(coder aDecoder: NSCoder) {
+            super.init(coder: aDecoder)
+            setupView()
+        }
     }
     
     

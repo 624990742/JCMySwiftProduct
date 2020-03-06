@@ -30,6 +30,19 @@
 		329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */; };
 		329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */; };
 		329F6C06240D357C008E0721 /* imageResource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329F6C05240D357B008E0721 /* imageResource.xcassets */; };
+		32A1507724128F9E005932CB /* JCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A1507624128F9E005932CB /* JCHomeViewController.swift */; };
+		32A15079241292D5005932CB /* JCHomeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A15078241292D5005932CB /* JCHomeContentViewController.swift */; };
+		32B436AF24129A3C00845682 /* LTAdvancedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436A424129A3B00845682 /* LTAdvancedManager.swift */; };
+		32B436B024129A3C00845682 /* LTDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436A524129A3B00845682 /* LTDispatchQueue.swift */; };
+		32B436B124129A3C00845682 /* LTPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436A624129A3B00845682 /* LTPageView.swift */; };
+		32B436B224129A3C00845682 /* LTCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436A724129A3B00845682 /* LTCollectionFlowLayout.swift */; };
+		32B436B324129A3C00845682 /* LTTableViewProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436A824129A3B00845682 /* LTTableViewProtocal.swift */; };
+		32B436B424129A3C00845682 /* LTPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436A924129A3C00845682 /* LTPageTitleView.swift */; };
+		32B436B524129A3C00845682 /* LTLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436AA24129A3C00845682 /* LTLayout.swift */; };
+		32B436B624129A3C00845682 /* LTScrollExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436AB24129A3C00845682 /* LTScrollExtension.swift */; };
+		32B436B724129A3C00845682 /* LTTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436AC24129A3C00845682 /* LTTableView.swift */; };
+		32B436B824129A3C00845682 /* LTVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436AD24129A3C00845682 /* LTVCExtension.swift */; };
+		32B436B924129A3C00845682 /* LTSimpleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436AE24129A3C00845682 /* LTSimpleManager.swift */; };
 		32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */; };
 		4E08EA10E6913170D0EF9D7E /* Pods_MySwiftProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +94,19 @@
 		329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCCustomTabbarVC.swift; sourceTree = "<group>"; };
 		329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCSwiftBaseGrammarVC.swift; sourceTree = "<group>"; };
 		329F6C05240D357B008E0721 /* imageResource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = imageResource.xcassets; sourceTree = "<group>"; };
+		32A1507624128F9E005932CB /* JCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeViewController.swift; sourceTree = "<group>"; };
+		32A15078241292D5005932CB /* JCHomeContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeContentViewController.swift; sourceTree = "<group>"; };
+		32B436A424129A3B00845682 /* LTAdvancedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTAdvancedManager.swift; sourceTree = "<group>"; };
+		32B436A524129A3B00845682 /* LTDispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTDispatchQueue.swift; sourceTree = "<group>"; };
+		32B436A624129A3B00845682 /* LTPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPageView.swift; sourceTree = "<group>"; };
+		32B436A724129A3B00845682 /* LTCollectionFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTCollectionFlowLayout.swift; sourceTree = "<group>"; };
+		32B436A824129A3B00845682 /* LTTableViewProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTTableViewProtocal.swift; sourceTree = "<group>"; };
+		32B436A924129A3C00845682 /* LTPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPageTitleView.swift; sourceTree = "<group>"; };
+		32B436AA24129A3C00845682 /* LTLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTLayout.swift; sourceTree = "<group>"; };
+		32B436AB24129A3C00845682 /* LTScrollExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTScrollExtension.swift; sourceTree = "<group>"; };
+		32B436AC24129A3C00845682 /* LTTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTTableView.swift; sourceTree = "<group>"; };
+		32B436AD24129A3C00845682 /* LTVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVCExtension.swift; sourceTree = "<group>"; };
+		32B436AE24129A3C00845682 /* LTSimpleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTSimpleManager.swift; sourceTree = "<group>"; };
 		32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCGuidePageViewController.swift; sourceTree = "<group>"; };
 		82088A0283672079CF405AB9 /* Pods-MySwiftProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CB50E74750A1E063ED273BA6 /* Pods-MySwiftProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.release.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.release.xcconfig"; sourceTree = "<group>"; };
@@ -196,9 +222,10 @@
 				329F6BE1240D354D008E0721 /* AppDelegate.swift */,
 				322AE792240E4103007820B1 /* Scource */,
 				329F6BD7240D354D008E0721 /* Extension */,
+				329F6BE0240D354D008E0721 /* lib */,
 				329F6BDA240D354D008E0721 /* Common */,
 				329F6BDE240D354D008E0721 /* Model */,
-				329F6BE0240D354D008E0721 /* lib */,
+				32CB1FB12410F0E2008B0F33 /* View */,
 				329F6BE2240D354D008E0721 /* ViewController */,
 				329F6BEF240D354D008E0721 /* Base */,
 			);
@@ -242,6 +269,7 @@
 		329F6BE0240D354D008E0721 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				32B436A324129A2F00845682 /* LTScrollView */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -249,6 +277,7 @@
 		329F6BE2240D354D008E0721 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				32A1507524128F81005932CB /* Home */,
 				32F18623240FF09C002E7BF5 /* GuidePageViewController */,
 				329F6BE3240D354D008E0721 /* JCSecondViewController */,
 				329F6BE5240D354D008E0721 /* JCFourViewController */,
@@ -341,6 +370,40 @@
 				329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */,
 			);
 			path = swiftBaseGrammar;
+			sourceTree = "<group>";
+		};
+		32A1507524128F81005932CB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				32A1507624128F9E005932CB /* JCHomeViewController.swift */,
+				32A15078241292D5005932CB /* JCHomeContentViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		32B436A324129A2F00845682 /* LTScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				32B436A424129A3B00845682 /* LTAdvancedManager.swift */,
+				32B436A724129A3B00845682 /* LTCollectionFlowLayout.swift */,
+				32B436A524129A3B00845682 /* LTDispatchQueue.swift */,
+				32B436AA24129A3C00845682 /* LTLayout.swift */,
+				32B436A924129A3C00845682 /* LTPageTitleView.swift */,
+				32B436A624129A3B00845682 /* LTPageView.swift */,
+				32B436AB24129A3C00845682 /* LTScrollExtension.swift */,
+				32B436AE24129A3C00845682 /* LTSimpleManager.swift */,
+				32B436AC24129A3C00845682 /* LTTableView.swift */,
+				32B436A824129A3B00845682 /* LTTableViewProtocal.swift */,
+				32B436AD24129A3C00845682 /* LTVCExtension.swift */,
+			);
+			path = LTScrollView;
+			sourceTree = "<group>";
+		};
+		32CB1FB12410F0E2008B0F33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		32F18623240FF09C002E7BF5 /* GuidePageViewController */ = {
@@ -531,6 +594,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -538,6 +602,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,21 +619,34 @@
 			files = (
 				329F6BFC240D354D008E0721 /* JCSecondViewController.swift in Sources */,
 				329F6C00240D354D008E0721 /* JCSwiftUIViewController.swift in Sources */,
+				32B436B124129A3C00845682 /* LTPageView.swift in Sources */,
+				32B436B624129A3C00845682 /* LTScrollExtension.swift in Sources */,
 				329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */,
 				329F6C02240D354D008E0721 /* JCCustomNavgationController.swift in Sources */,
+				32B436B324129A3C00845682 /* LTTableViewProtocal.swift in Sources */,
+				32B436B724129A3C00845682 /* LTTableView.swift in Sources */,
 				329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */,
 				329F6BFE240D354D008E0721 /* JCBaseController.swift in Sources */,
+				32A15079241292D5005932CB /* JCHomeContentViewController.swift in Sources */,
+				32A1507724128F9E005932CB /* JCHomeViewController.swift in Sources */,
 				32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */,
+				32B436B224129A3C00845682 /* LTCollectionFlowLayout.swift in Sources */,
 				329F6BFA240D354D008E0721 /* JCFakeTestData.swift in Sources */,
 				329F6BF9240D354D008E0721 /* JCCommonHederFile.swift in Sources */,
+				32B436B424129A3C00845682 /* LTPageTitleView.swift in Sources */,
+				32B436B024129A3C00845682 /* LTDispatchQueue.swift in Sources */,
 				323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */,
 				329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */,
+				32B436AF24129A3C00845682 /* LTAdvancedManager.swift in Sources */,
+				32B436B524129A3C00845682 /* LTLayout.swift in Sources */,
+				32B436B824129A3C00845682 /* LTVCExtension.swift in Sources */,
 				329F6BF8240D354D008E0721 /* JCBannerView.swift in Sources */,
 				329F6BFF240D354D008E0721 /* JCFirstViewController.swift in Sources */,
 				329F6BFD240D354D008E0721 /* JCMeViewController.swift in Sources */,
 				329F6BF6240D354D008E0721 /* UIButton+Extension.swift in Sources */,
 				329F6C01240D354D008E0721 /* JCThreeViewController.swift in Sources */,
 				329F6BF7240D354D008E0721 /* UIImage+Extension.swift in Sources */,
+				32B436B924129A3C00845682 /* LTSimpleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

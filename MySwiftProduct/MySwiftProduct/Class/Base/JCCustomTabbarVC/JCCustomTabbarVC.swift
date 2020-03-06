@@ -29,7 +29,7 @@ class JCCustomTabbarVC: UITabBarController {
  
     func setUpAllChildViewController() {
         
-        self.setUpOneChildViewController(viewController: JCFirstViewController(), image: UIImage.init(named: "tabBar_essence_icon")!, selectedImage: UIImage.init(named: "tabBar_essence_click_icon")!, title: "首页")
+        self.setUpOneChildViewController(viewController: JCHomeViewController(), image: UIImage.init(named: "tabBar_essence_icon")!, selectedImage: UIImage.init(named: "tabBar_essence_click_icon")!, title: "首页")
         
         self.setUpOneChildViewController(viewController: JCSecondViewController(), image: UIImage.init(named: "tabBar_new_icon")!, selectedImage: UIImage.init(named: "tabBar_new_click_icon")!, title: "分区一")
         

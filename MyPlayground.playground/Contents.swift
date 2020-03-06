@@ -1998,13 +1998,62 @@ struct InStack: Container {
 //    func suffix(_ size: Int) -> Suffix
 //}
 
+/*
+  1.if let 用法
+  普通if 与  if let的比较
+ 如果常量是可选项（Optional），if判断后仍然需要解包（!）
+ let productName: String? = "西贝先生"
+ let productNumber: Int? = 15
+
+ if productName != nil && productNumber != nil {
+     print(productName! + String(productNumber!))
+ }
+ */
+
+/*
+ 2.如果常量是可选项（Optional），if let判断后不需要解包（!），{ }内一定有值
+*/
+//let productName: String? = "西贝先生"
+//let productNumber: Int? = 15
+//
+////if let 连用,判断对象的值是否为'nil'
+//if let productNameNew = productName ,
+//    let productNumberNew = productNumber {
+//    // 进入分支后,nameNew 和 ageNew 一定有值
+//    print(productNameNew + String(productNumberNew)) // 输出:西贝先生15
+//}
+//
+//if var namenNew = productName,
+//    let angeNew = productNumber {
+//    namenNew = "小小"
+//    print(namenNew + String(angeNew))
+//}
+//
+//
+//func testeDemo (){
+//    let productName: String? = "西贝先生"
+//    let productNumber: Int? = 15
+//    guard let _ = productName,
+//        let _ = productNumber else { return  }
+//}
+
+var titesArr:[String] = ["I","AM","IS","WITH","L", "O", "V", "E", "I", "O", "S"]
+ 
+//for tempObj in titesArr {
+//   print("测试:\(tempObj)")
+//    print("<==========>")
+//}
+
+//for (index, text) in titesArr.enumerated() {
+//    print("<------------------>")
+//   print("index:\(index) <=> text:\(text)")
+//}
 
 
-
-
-
-
-
+for (index, text) in titesArr.enumerated().reversed() {
+    print("<------------------>")
+   print("index:\(index) <=> text:\(text)")
+}
 
 
 

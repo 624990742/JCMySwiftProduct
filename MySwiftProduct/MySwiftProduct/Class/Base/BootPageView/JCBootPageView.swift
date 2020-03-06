@@ -4,7 +4,7 @@
 //
 //  Created by jiachen on 2020/3/4.
 //  Copyright © 2020 jiachen. All rights reserved.
-//
+// 引导页  参考 HHGuidePageHUD-master
 
 import UIKit
 let JCScreeW = UIScreen.main.bounds.size.width

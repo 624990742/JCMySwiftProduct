@@ -9,6 +9,6 @@ target 'MySwiftProduct' do
 
   pod 'SnapKit'
   pod 'Kingfisher'
-
+  pod 'MJRefresh', '~> 3.1.14.1'
 
 end
