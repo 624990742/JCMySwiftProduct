@@ -8,6 +8,7 @@
 
 import UIKit
 import MJRefresh
+
 private let glt_iphoneX = (UIScreen.main.bounds.height >= 812.0)
 
 class JCHomeContentViewController: UIViewController, LTTableViewProtocal {
@@ -24,6 +25,8 @@ class JCHomeContentViewController: UIViewController, LTTableViewProtocal {
         return tableView
     }()
     
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
@@ -35,10 +38,13 @@ class JCHomeContentViewController: UIViewController, LTTableViewProtocal {
         } else {
             self.automaticallyAdjustsScrollViewInsets = false
         }
+        
+       
     }
 }
 
 extension JCHomeContentViewController {
+
     fileprivate func reftreshData()  {
         self.tableView.mj_footer = MJRefreshBackNormalFooter {[weak self] in
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
@@ -47,7 +53,14 @@ extension JCHomeContentViewController {
             })
         }
     }
+    
 }
+
+
+
+
+
+
 
 
 extension JCHomeContentViewController: UITableViewDelegate, UITableViewDataSource {
@@ -68,5 +81,7 @@ extension JCHomeContentViewController: UITableViewDelegate, UITableViewDataSourc
         return 100.0
     }
 }
+
+
 
 

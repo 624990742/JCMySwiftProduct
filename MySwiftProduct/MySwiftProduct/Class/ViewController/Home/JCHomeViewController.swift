@@ -10,6 +10,9 @@ private let glt_iphoneX = (UIScreen.main.bounds.height >= 812.0)
 import UIKit
 import MJRefresh
 
+let JCScreenWidth = UIScreen.main.bounds.size.width
+let JCScreenHeight = UIScreen.main.bounds.size.height
+
 class JCHomeViewController: UIViewController {
     
     private lazy var titles: [String] = {
@@ -89,7 +92,7 @@ extension JCHomeViewController {
         //MARK: headerView设置
         simpleManager.configHeaderView {[weak self] in
             guard let strongSelf = self else { return nil }
-            let headerView = strongSelf.testLabel()
+            let headerView = strongSelf.loopView()
             return headerView
         }
         
@@ -124,17 +127,89 @@ extension JCHomeViewController: LTSimpleScrollViewDelegate {
     }
 }
 
+
+
+
+
 extension JCHomeViewController {
-    private func testLabel() -> UILabel {
-        let headerView = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 180))
-        headerView.backgroundColor = UIColor.red
-        headerView.text = "点击响应事件"
-        headerView.textColor = UIColor.white
-        headerView.textAlignment = .center
-        headerView.isUserInteractionEnabled = true
-        headerView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tapLabel(_:))))
+    
+    private func loopView() -> ZCycleView {
+        let headerView  = ZCycleView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 180))
+                  
+        let titles = ["正在直播·2017维密直播大秀\n天使惊艳合体性感开撩",
+                                 "猎场-会员抢先看\n胡歌陈龙联手戳穿袁总阴谋",
+                                 "我的！体育老师\n好样的！前妻献媚讨好 张嘉译一口回绝",
+                                 "小宝带你模拟断案！\n开局平民，晋升全靠运筹帷幄"]
+        headerView.delegate = self
+            as ZCycleViewProtocol
+        headerView.isInfinite = true
+        headerView.isAutomatic = true
+        headerView.timeInterval = 3
+        headerView.setImagesGroup([#imageLiteral(resourceName: "p700-300-1"),
+                                              #imageLiteral(resourceName: "p700-300-2"),
+                                              #imageLiteral(resourceName: "p700-300-3"),
+                                              #imageLiteral(resourceName: "p700-300-4"),
+                                              #imageLiteral(resourceName: "p700-300-5")],titlesGroup: titles)
+        headerView.itemSize = CGSize(width: JCScreenWidth - CGFloat(40), height: (JCScreenWidth - CGFloat(40)) * 30/70)
+        headerView.itemSpacing = 5
         return headerView
     }
 }
+
+//MARK:
+
+extension JCHomeViewController: ZCycleViewProtocol {
+    func cycleViewConfigureDefaultCellImage(_ cycleView: ZCycleView, imageView: UIImageView, image: UIImage?, index: Int) {
+
+        if cycleView == cycleView {
+            imageView.image = image
+        }
+    }
+  
+    
+    func cycleViewConfigureDefaultCellText(_ cycleView: ZCycleView, titleLabel: UILabel, index: Int) {
+
+        if cycleView == cycleView {
+            let title = titleLabel.text ?? ""
+            let arr = title.components(separatedBy: "\n")
+            let attriStr = NSMutableAttributedString(string: title)
+            attriStr.addAttributes([.foregroundColor: UIColor.green, .font: UIFont.systemFont(ofSize: 13)], range: NSMakeRange(0, arr[0].count))
+            if arr.count > 1 {
+                attriStr.addAttributes([.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 11)], range: NSMakeRange(arr[0].count+1, arr[1].count))
+            }
+            titleLabel.attributedText = attriStr
+            
+            titleLabel.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
+            titleLabel.numberOfLines = 0
+            var frame = titleLabel.frame
+            frame.origin.y = frame.size.height+frame.origin.y-40
+            frame.size.height = 40
+            titleLabel.frame = frame
+        }
+    }
+    func cycleViewConfigurePageControl(_ cycleView: ZCycleView, pageControl: ZPageControl) {
+
+        if cycleView == cycleView {
+            pageControl.alignment = .right
+            pageControl.spacing = 10
+            pageControl.dotSize = CGSize(width: 20, height: 10)
+        }
+    }
+}
+
+
+
+//extension JCHomeViewController {
+//    private func testLabel() -> UILabel {
+//        let headerView = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 180))
+//        headerView.backgroundColor = UIColor.red
+//        headerView.text = "点击响应事件"
+//        headerView.textColor = UIColor.white
+//        headerView.textAlignment = .center
+//        headerView.isUserInteractionEnabled = true
+//        headerView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tapLabel(_:))))
+//        return headerView
+//    }
+//}
 
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3202934F2413E1B900F45B27 /* ZCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934B2413E1B900F45B27 /* ZCycleView.swift */; };
+		320293502413E1B900F45B27 /* ZCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934C2413E1B900F45B27 /* ZCycleViewCell.swift */; };
+		320293512413E1B900F45B27 /* ZCycleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934D2413E1B900F45B27 /* ZCycleLayout.swift */; };
+		320293522413E1B900F45B27 /* ZPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934E2413E1B900F45B27 /* ZPageControl.swift */; };
 		322AE795240E410E007820B1 /* appLaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 322AE794240E410E007820B1 /* appLaunchScreen.png */; };
 		323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B24E9240F58C5006E24DC /* JCBootPageView.swift */; };
 		329F6BAE240D352F008E0721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BAC240D352F008E0721 /* Main.storyboard */; };
@@ -65,6 +69,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3202934B2413E1B900F45B27 /* ZCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleView.swift; sourceTree = "<group>"; };
+		3202934C2413E1B900F45B27 /* ZCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleViewCell.swift; sourceTree = "<group>"; };
+		3202934D2413E1B900F45B27 /* ZCycleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleLayout.swift; sourceTree = "<group>"; };
+		3202934E2413E1B900F45B27 /* ZPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPageControl.swift; sourceTree = "<group>"; };
 		322AE794240E410E007820B1 /* appLaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appLaunchScreen.png; sourceTree = "<group>"; };
 		323B24E9240F58C5006E24DC /* JCBootPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCBootPageView.swift; sourceTree = "<group>"; };
 		329F6BA3240D352F008E0721 /* MySwiftProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +147,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3202934A2413E1B900F45B27 /* ZCycleView */ = {
+			isa = PBXGroup;
+			children = (
+				3202934B2413E1B900F45B27 /* ZCycleView.swift */,
+				3202934C2413E1B900F45B27 /* ZCycleViewCell.swift */,
+				3202934D2413E1B900F45B27 /* ZCycleLayout.swift */,
+				3202934E2413E1B900F45B27 /* ZPageControl.swift */,
+			);
+			path = ZCycleView;
+			sourceTree = "<group>";
+		};
 		322AE792240E4103007820B1 /* Scource */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +288,7 @@
 		329F6BE0240D354D008E0721 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				3202934A2413E1B900F45B27 /* ZCycleView */,
 				32B436A324129A2F00845682 /* LTScrollView */,
 			);
 			path = lib;
@@ -495,6 +515,7 @@
 		329F6B9B240D352F008E0721 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JC;
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = jiachen;
@@ -633,12 +654,16 @@
 				32B436B224129A3C00845682 /* LTCollectionFlowLayout.swift in Sources */,
 				329F6BFA240D354D008E0721 /* JCFakeTestData.swift in Sources */,
 				329F6BF9240D354D008E0721 /* JCCommonHederFile.swift in Sources */,
+				320293512413E1B900F45B27 /* ZCycleLayout.swift in Sources */,
 				32B436B424129A3C00845682 /* LTPageTitleView.swift in Sources */,
 				32B436B024129A3C00845682 /* LTDispatchQueue.swift in Sources */,
 				323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */,
 				329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */,
+				320293522413E1B900F45B27 /* ZPageControl.swift in Sources */,
+				320293502413E1B900F45B27 /* ZCycleViewCell.swift in Sources */,
 				32B436AF24129A3C00845682 /* LTAdvancedManager.swift in Sources */,
 				32B436B524129A3C00845682 /* LTLayout.swift in Sources */,
+				3202934F2413E1B900F45B27 /* ZCycleView.swift in Sources */,
 				32B436B824129A3C00845682 /* LTVCExtension.swift in Sources */,
 				329F6BF8240D354D008E0721 /* JCBannerView.swift in Sources */,
 				329F6BFF240D354D008E0721 /* JCFirstViewController.swift in Sources */,
