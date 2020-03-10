@@ -13,6 +13,7 @@
 		320293522413E1B900F45B27 /* ZPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934E2413E1B900F45B27 /* ZPageControl.swift */; };
 		322AE795240E410E007820B1 /* appLaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 322AE794240E410E007820B1 /* appLaunchScreen.png */; };
 		323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B24E9240F58C5006E24DC /* JCBootPageView.swift */; };
+		3294EC63241635B7005CCFE4 /* JCMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294EC62241635B7005CCFE4 /* JCMeViewController.swift */; };
 		329F6BAE240D352F008E0721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BAC240D352F008E0721 /* Main.storyboard */; };
 		329F6BB0240D3531008E0721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BAF240D3531008E0721 /* Assets.xcassets */; };
 		329F6BB3240D3531008E0721 /* TestLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BB1240D3531008E0721 /* TestLaunchScreen.storyboard */; };
@@ -25,28 +26,14 @@
 		329F6BFA240D354D008E0721 /* JCFakeTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BDF240D354D008E0721 /* JCFakeTestData.swift */; };
 		329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE1240D354D008E0721 /* AppDelegate.swift */; };
 		329F6BFC240D354D008E0721 /* JCSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE4240D354D008E0721 /* JCSecondViewController.swift */; };
-		329F6BFD240D354D008E0721 /* JCMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE6240D354D008E0721 /* JCMeViewController.swift */; };
 		329F6BFE240D354D008E0721 /* JCBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE8240D354D008E0721 /* JCBaseController.swift */; };
-		329F6BFF240D354D008E0721 /* JCFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BEA240D354D008E0721 /* JCFirstViewController.swift */; };
-		329F6C00240D354D008E0721 /* JCSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BEC240D354D008E0721 /* JCSwiftUIViewController.swift */; };
 		329F6C01240D354D008E0721 /* JCThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BEE240D354D008E0721 /* JCThreeViewController.swift */; };
 		329F6C02240D354D008E0721 /* JCCustomNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF1240D354D008E0721 /* JCCustomNavgationController.swift */; };
 		329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */; };
 		329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */; };
 		329F6C06240D357C008E0721 /* imageResource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329F6C05240D357B008E0721 /* imageResource.xcassets */; };
-		32A1507724128F9E005932CB /* JCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A1507624128F9E005932CB /* JCHomeViewController.swift */; };
-		32A15079241292D5005932CB /* JCHomeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A15078241292D5005932CB /* JCHomeContentViewController.swift */; };
-		32B436AF24129A3C00845682 /* LTAdvancedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436A424129A3B00845682 /* LTAdvancedManager.swift */; };
-		32B436B024129A3C00845682 /* LTDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436A524129A3B00845682 /* LTDispatchQueue.swift */; };
-		32B436B124129A3C00845682 /* LTPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436A624129A3B00845682 /* LTPageView.swift */; };
-		32B436B224129A3C00845682 /* LTCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436A724129A3B00845682 /* LTCollectionFlowLayout.swift */; };
-		32B436B324129A3C00845682 /* LTTableViewProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436A824129A3B00845682 /* LTTableViewProtocal.swift */; };
-		32B436B424129A3C00845682 /* LTPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436A924129A3C00845682 /* LTPageTitleView.swift */; };
-		32B436B524129A3C00845682 /* LTLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436AA24129A3C00845682 /* LTLayout.swift */; };
-		32B436B624129A3C00845682 /* LTScrollExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436AB24129A3C00845682 /* LTScrollExtension.swift */; };
-		32B436B724129A3C00845682 /* LTTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436AC24129A3C00845682 /* LTTableView.swift */; };
-		32B436B824129A3C00845682 /* LTVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436AD24129A3C00845682 /* LTVCExtension.swift */; };
-		32B436B924129A3C00845682 /* LTSimpleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B436AE24129A3C00845682 /* LTSimpleManager.swift */; };
+		32A2C71F2415F43B00A49CB6 /* constFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2C71E2415F43B00A49CB6 /* constFile.swift */; };
+		32A2C7242416197B00A49CB6 /* JCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */; };
 		32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */; };
 		4E08EA10E6913170D0EF9D7E /* Pods_MySwiftProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +62,7 @@
 		3202934E2413E1B900F45B27 /* ZPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPageControl.swift; sourceTree = "<group>"; };
 		322AE794240E410E007820B1 /* appLaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appLaunchScreen.png; sourceTree = "<group>"; };
 		323B24E9240F58C5006E24DC /* JCBootPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCBootPageView.swift; sourceTree = "<group>"; };
+		3294EC62241635B7005CCFE4 /* JCMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMeViewController.swift; sourceTree = "<group>"; };
 		329F6BA3240D352F008E0721 /* MySwiftProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		329F6BAD240D352F008E0721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		329F6BAF240D3531008E0721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,28 +81,14 @@
 		329F6BDF240D354D008E0721 /* JCFakeTestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCFakeTestData.swift; sourceTree = "<group>"; };
 		329F6BE1240D354D008E0721 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		329F6BE4240D354D008E0721 /* JCSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCSecondViewController.swift; sourceTree = "<group>"; };
-		329F6BE6240D354D008E0721 /* JCMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCMeViewController.swift; sourceTree = "<group>"; };
 		329F6BE8240D354D008E0721 /* JCBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCBaseController.swift; sourceTree = "<group>"; };
-		329F6BEA240D354D008E0721 /* JCFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCFirstViewController.swift; sourceTree = "<group>"; };
-		329F6BEC240D354D008E0721 /* JCSwiftUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCSwiftUIViewController.swift; sourceTree = "<group>"; };
 		329F6BEE240D354D008E0721 /* JCThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCThreeViewController.swift; sourceTree = "<group>"; };
 		329F6BF1240D354D008E0721 /* JCCustomNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCCustomNavgationController.swift; sourceTree = "<group>"; };
 		329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCCustomTabbarVC.swift; sourceTree = "<group>"; };
 		329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCSwiftBaseGrammarVC.swift; sourceTree = "<group>"; };
 		329F6C05240D357B008E0721 /* imageResource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = imageResource.xcassets; sourceTree = "<group>"; };
-		32A1507624128F9E005932CB /* JCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeViewController.swift; sourceTree = "<group>"; };
-		32A15078241292D5005932CB /* JCHomeContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeContentViewController.swift; sourceTree = "<group>"; };
-		32B436A424129A3B00845682 /* LTAdvancedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTAdvancedManager.swift; sourceTree = "<group>"; };
-		32B436A524129A3B00845682 /* LTDispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTDispatchQueue.swift; sourceTree = "<group>"; };
-		32B436A624129A3B00845682 /* LTPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPageView.swift; sourceTree = "<group>"; };
-		32B436A724129A3B00845682 /* LTCollectionFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTCollectionFlowLayout.swift; sourceTree = "<group>"; };
-		32B436A824129A3B00845682 /* LTTableViewProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTTableViewProtocal.swift; sourceTree = "<group>"; };
-		32B436A924129A3C00845682 /* LTPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPageTitleView.swift; sourceTree = "<group>"; };
-		32B436AA24129A3C00845682 /* LTLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTLayout.swift; sourceTree = "<group>"; };
-		32B436AB24129A3C00845682 /* LTScrollExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTScrollExtension.swift; sourceTree = "<group>"; };
-		32B436AC24129A3C00845682 /* LTTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTTableView.swift; sourceTree = "<group>"; };
-		32B436AD24129A3C00845682 /* LTVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVCExtension.swift; sourceTree = "<group>"; };
-		32B436AE24129A3C00845682 /* LTSimpleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTSimpleManager.swift; sourceTree = "<group>"; };
+		32A2C71E2415F43B00A49CB6 /* constFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constFile.swift; sourceTree = "<group>"; };
+		32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeViewController.swift; sourceTree = "<group>"; };
 		32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCGuidePageViewController.swift; sourceTree = "<group>"; };
 		82088A0283672079CF405AB9 /* Pods-MySwiftProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CB50E74750A1E063ED273BA6 /* Pods-MySwiftProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.release.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +156,14 @@
 			path = BootPageView;
 			sourceTree = "<group>";
 		};
+		3294EC612416333C005CCFE4 /* MeModular */ = {
+			isa = PBXGroup;
+			children = (
+				3294EC62241635B7005CCFE4 /* JCMeViewController.swift */,
+			);
+			path = MeModular;
+			sourceTree = "<group>";
+		};
 		329F6B9A240D352F008E0721 = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				329F6BE1240D354D008E0721 /* AppDelegate.swift */,
+				32A2C71D2415F40200A49CB6 /* Define */,
 				322AE792240E4103007820B1 /* Scource */,
 				329F6BD7240D354D008E0721 /* Extension */,
 				329F6BE0240D354D008E0721 /* lib */,
@@ -289,7 +272,6 @@
 			isa = PBXGroup;
 			children = (
 				3202934A2413E1B900F45B27 /* ZCycleView */,
-				32B436A324129A2F00845682 /* LTScrollView */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -297,12 +279,11 @@
 		329F6BE2240D354D008E0721 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				32A1507524128F81005932CB /* Home */,
+				3294EC612416333C005CCFE4 /* MeModular */,
+				32A1507524128F81005932CB /* HomeModualr */,
 				32F18623240FF09C002E7BF5 /* GuidePageViewController */,
 				329F6BE3240D354D008E0721 /* JCSecondViewController */,
-				329F6BE5240D354D008E0721 /* JCFourViewController */,
 				329F6BE7240D354D008E0721 /* BaseController */,
-				329F6BE9240D354D008E0721 /* JCFirstViewController */,
 				329F6BED240D354D008E0721 /* JCThreeViewController */,
 			);
 			path = ViewController;
@@ -316,37 +297,12 @@
 			path = JCSecondViewController;
 			sourceTree = "<group>";
 		};
-		329F6BE5240D354D008E0721 /* JCFourViewController */ = {
-			isa = PBXGroup;
-			children = (
-				329F6BE6240D354D008E0721 /* JCMeViewController.swift */,
-			);
-			path = JCFourViewController;
-			sourceTree = "<group>";
-		};
 		329F6BE7240D354D008E0721 /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
 				329F6BE8240D354D008E0721 /* JCBaseController.swift */,
 			);
 			path = BaseController;
-			sourceTree = "<group>";
-		};
-		329F6BE9240D354D008E0721 /* JCFirstViewController */ = {
-			isa = PBXGroup;
-			children = (
-				329F6BEA240D354D008E0721 /* JCFirstViewController.swift */,
-				329F6BEB240D354D008E0721 /* SwiftUIViewController */,
-			);
-			path = JCFirstViewController;
-			sourceTree = "<group>";
-		};
-		329F6BEB240D354D008E0721 /* SwiftUIViewController */ = {
-			isa = PBXGroup;
-			children = (
-				329F6BEC240D354D008E0721 /* JCSwiftUIViewController.swift */,
-			);
-			path = SwiftUIViewController;
 			sourceTree = "<group>";
 		};
 		329F6BED240D354D008E0721 /* JCThreeViewController */ = {
@@ -392,31 +348,44 @@
 			path = swiftBaseGrammar;
 			sourceTree = "<group>";
 		};
-		32A1507524128F81005932CB /* Home */ = {
+		32A1507524128F81005932CB /* HomeModualr */ = {
 			isa = PBXGroup;
 			children = (
-				32A1507624128F9E005932CB /* JCHomeViewController.swift */,
-				32A15078241292D5005932CB /* JCHomeContentViewController.swift */,
+				32A2C7222416195C00A49CB6 /* Model */,
+				32A2C7212416195500A49CB6 /* ViewController */,
+				32A2C7202416194D00A49CB6 /* View */,
 			);
-			path = Home;
+			path = HomeModualr;
 			sourceTree = "<group>";
 		};
-		32B436A324129A2F00845682 /* LTScrollView */ = {
+		32A2C71D2415F40200A49CB6 /* Define */ = {
 			isa = PBXGroup;
 			children = (
-				32B436A424129A3B00845682 /* LTAdvancedManager.swift */,
-				32B436A724129A3B00845682 /* LTCollectionFlowLayout.swift */,
-				32B436A524129A3B00845682 /* LTDispatchQueue.swift */,
-				32B436AA24129A3C00845682 /* LTLayout.swift */,
-				32B436A924129A3C00845682 /* LTPageTitleView.swift */,
-				32B436A624129A3B00845682 /* LTPageView.swift */,
-				32B436AB24129A3C00845682 /* LTScrollExtension.swift */,
-				32B436AE24129A3C00845682 /* LTSimpleManager.swift */,
-				32B436AC24129A3C00845682 /* LTTableView.swift */,
-				32B436A824129A3B00845682 /* LTTableViewProtocal.swift */,
-				32B436AD24129A3C00845682 /* LTVCExtension.swift */,
+				32A2C71E2415F43B00A49CB6 /* constFile.swift */,
 			);
-			path = LTScrollView;
+			path = Define;
+			sourceTree = "<group>";
+		};
+		32A2C7202416194D00A49CB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32A2C7212416195500A49CB6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		32A2C7222416195C00A49CB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		32CB1FB12410F0E2008B0F33 /* View */ = {
@@ -638,40 +607,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3294EC63241635B7005CCFE4 /* JCMeViewController.swift in Sources */,
+				32A2C71F2415F43B00A49CB6 /* constFile.swift in Sources */,
+				32A2C7242416197B00A49CB6 /* JCHomeViewController.swift in Sources */,
 				329F6BFC240D354D008E0721 /* JCSecondViewController.swift in Sources */,
-				329F6C00240D354D008E0721 /* JCSwiftUIViewController.swift in Sources */,
-				32B436B124129A3C00845682 /* LTPageView.swift in Sources */,
-				32B436B624129A3C00845682 /* LTScrollExtension.swift in Sources */,
 				329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */,
 				329F6C02240D354D008E0721 /* JCCustomNavgationController.swift in Sources */,
-				32B436B324129A3C00845682 /* LTTableViewProtocal.swift in Sources */,
-				32B436B724129A3C00845682 /* LTTableView.swift in Sources */,
 				329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */,
 				329F6BFE240D354D008E0721 /* JCBaseController.swift in Sources */,
-				32A15079241292D5005932CB /* JCHomeContentViewController.swift in Sources */,
-				32A1507724128F9E005932CB /* JCHomeViewController.swift in Sources */,
 				32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */,
-				32B436B224129A3C00845682 /* LTCollectionFlowLayout.swift in Sources */,
 				329F6BFA240D354D008E0721 /* JCFakeTestData.swift in Sources */,
 				329F6BF9240D354D008E0721 /* JCCommonHederFile.swift in Sources */,
 				320293512413E1B900F45B27 /* ZCycleLayout.swift in Sources */,
-				32B436B424129A3C00845682 /* LTPageTitleView.swift in Sources */,
-				32B436B024129A3C00845682 /* LTDispatchQueue.swift in Sources */,
 				323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */,
 				329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */,
 				320293522413E1B900F45B27 /* ZPageControl.swift in Sources */,
 				320293502413E1B900F45B27 /* ZCycleViewCell.swift in Sources */,
-				32B436AF24129A3C00845682 /* LTAdvancedManager.swift in Sources */,
-				32B436B524129A3C00845682 /* LTLayout.swift in Sources */,
 				3202934F2413E1B900F45B27 /* ZCycleView.swift in Sources */,
-				32B436B824129A3C00845682 /* LTVCExtension.swift in Sources */,
 				329F6BF8240D354D008E0721 /* JCBannerView.swift in Sources */,
-				329F6BFF240D354D008E0721 /* JCFirstViewController.swift in Sources */,
-				329F6BFD240D354D008E0721 /* JCMeViewController.swift in Sources */,
 				329F6BF6240D354D008E0721 /* UIButton+Extension.swift in Sources */,
 				329F6C01240D354D008E0721 /* JCThreeViewController.swift in Sources */,
 				329F6BF7240D354D008E0721 /* UIImage+Extension.swift in Sources */,
-				32B436B924129A3C00845682 /* LTSimpleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,6 +804,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M2TQ22753C;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -867,6 +824,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M2TQ22753C;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -574,39 +574,39 @@ class Control {
  */
 
 //协议
-protocol Vehicle{
-    var numberOfWheels:Int {get}
-    var color:UIColor {get set}
-    mutating func changeColor()
-}
+//protocol Vehicle{
+//    var numberOfWheels:Int {get}
+//    var color:UIColor {get set}
+//    mutating func changeColor()
+//}
+//
+//
+//struct MyCar: Vehicle {
+//
+//    let numberOfWheels = 4
+//    var color = UIColor.blue
+//    mutating func changeColor() {
+//        color = .red
+//    }
+//}
+//
+////闭包
+//func makeIncrementer(amout: Int)-> () -> Int {
+//    var total = 0
+//    func incrementer() -> Int {
+//     total += amout
+//      return total
+//    }
+//    return incrementer
+//}
 
-
-struct MyCar: Vehicle {
-   
-    let numberOfWheels = 4
-    var color = UIColor.blue
-    mutating func changeColor() {
-        color = .red
-    }
-}
-
-//闭包
-func makeIncrementer(amout: Int)-> () -> Int {
-    var total = 0
-    func incrementer() -> Int {
-     total += amout
-      return total
-    }
-    return incrementer
-}
-
-let incrementByTen = makeIncrementer(amout: 10)
+//let incrementByTen = makeIncrementer(amout: 10)
 //print(incrementByTen())
 //print(incrementByTen())
 //print(incrementByTen())
 
 //捕获
-let incrementBySeven = makeIncrementer(amout: 7)
+//let incrementBySeven = makeIncrementer(amout: 7)
 //print(incrementBySeven())
 
 /**
@@ -2049,12 +2049,32 @@ var titesArr:[String] = ["I","AM","IS","WITH","L", "O", "V", "E", "I", "O", "S"]
 //   print("index:\(index) <=> text:\(text)")
 //}
 
+//
+//for (index, text) in titesArr.enumerated().reversed() {
+//    print("<------------------>")
+//   print("index:\(index) <=> text:\(text)")
+//}
+//
 
-for (index, text) in titesArr.enumerated().reversed() {
-    print("<------------------>")
-   print("index:\(index) <=> text:\(text)")
+//var testeArr:[Int] = []
+//if testeArr.isEmpty {
+//    print("dadadaeda")
+//}
+
+
+
+protocol Vehicle {
+    var numberOfWheels: Int { get }
+    var color: UIColor { get set}
+  mutating func changeColor()
 }
 
-
+struct MyCar: Vehicle {
+    let numberOfWheels = 4
+    var color = UIColor.blue
+    mutating func changeColor() {
+        color = .red
+    }
+}
 
 
