@@ -1,24 +1,80 @@
 PODS:
+  - Alamofire (4.9.1)
+  - DNSPageView (1.2.1)
+  - ESTabBarController-swift (2.8.0)
+  - FSPagerView (0.8.3)
+  - HandyJSON (5.0.2-beta)
+  - JXMarqueeView (0.0.8)
   - Kingfisher (4.10.1)
+  - LTScrollView (0.2.1)
   - MJRefresh (3.1.14.1)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Result (4.1.0)
   - SnapKit (4.2.0)
+  - StreamingKit (0.1.30)
+  - SVProgressHUD (2.2.5)
+  - SwiftMessages (7.0.1):
+    - SwiftMessages/App (= 7.0.1)
+  - SwiftMessages/App (7.0.1)
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
+  - DNSPageView
+  - ESTabBarController-swift
+  - FSPagerView
+  - HandyJSON (~> 5.0.2-beta)
+  - JXMarqueeView
   - Kingfisher
+  - LTScrollView
   - MJRefresh (~> 3.1.14.1)
+  - Moya
   - SnapKit
+  - StreamingKit
+  - SVProgressHUD
+  - SwiftMessages
+  - SwiftyJSON
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DNSPageView
+    - ESTabBarController-swift
+    - FSPagerView
+    - HandyJSON
+    - JXMarqueeView
     - Kingfisher
+    - LTScrollView
     - MJRefresh
+    - Moya
+    - Result
     - SnapKit
+    - StreamingKit
+    - SVProgressHUD
+    - SwiftMessages
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  DNSPageView: 1a1972df33a08dbad8e43188da97b31997e1d109
+  ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  HandyJSON: e18b035d60cb4847c609a59bb831c5db8c549663
+  JXMarqueeView: dfb4eadb1bf7245c9b41706e907c889fbf53c2dc
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  LTScrollView: 93fff4aed9f9545f541a99b320b27808f5307c12
   MJRefresh: 238e6a37e2dba12160ee3b79f6d2a2b26abcab42
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  StreamingKit: 70ca8608c206864b4d54a577eacb3c8bf7c72209
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: c071e216a886e468b38b9c2c801f4b9ca6f50dfc
+PODFILE CHECKSUM: 65897b2748473c803ea988192677c3abd9c38dbb
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.5
