@@ -2060,21 +2060,37 @@ var titesArr:[String] = ["I","AM","IS","WITH","L", "O", "V", "E", "I", "O", "S"]
 //if testeArr.isEmpty {
 //    print("dadadaeda")
 //}
-
-
-
-protocol Vehicle {
-    var numberOfWheels: Int { get }
-    var color: UIColor { get set}
-  mutating func changeColor()
+func swapMel<T>(a: inout T,b: inout T) {
+    let temp = a
+        a = b
+       b = temp
 }
 
-struct MyCar: Vehicle {
-    let numberOfWheels = 4
-    var color = UIColor.blue
-    mutating func changeColor() {
-        color = .red
+func swapMe2<T>(a: inout T,b: inout T) {
+    (a,b) = (b,a)
+}
+
+
+
+
+ func logInputTrue(_ predicate: @autoclosure() -> Bool) { if predicate() {
+     print("True") }
+}
+ 
+logInputTrue({return 2 > 1}())
+logInputTrue({2 > 1}())
+ logInputTrue(2 > 1)
+
+func ??<T>(optional: T?,defaultValue: @autoclosure() -> T) -> T {
+    switch optional {
+    
+    case .some(let value):
+        return value
+    
+    case .none:
+        return defaultValue()
+
+    default:
+        print("default")
     }
 }
-
-
