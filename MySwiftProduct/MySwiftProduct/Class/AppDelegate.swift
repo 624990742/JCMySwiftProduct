@@ -52,9 +52,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        setupLaunchImage()
-        let defalutVC = UIViewController.init()
-        self.window!.rootViewController = defalutVC
+        
+        /*
+          要看启动引导页把这里放开
+         setupLaunchImage()
+         let defalutVC = UIViewController.init()
+          self.window!.rootViewController = defalutVC
+        */
+        
+        let tabbarVC = JCCustomTabbarVC()
+        self.window?.rootViewController = tabbarVC
         self.window?.makeKeyAndVisible()
         
         return true

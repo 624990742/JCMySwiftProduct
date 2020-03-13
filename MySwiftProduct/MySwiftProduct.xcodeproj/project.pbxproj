@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,9 +32,15 @@
 		329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */; };
 		329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */; };
 		329F6C06240D357C008E0721 /* imageResource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329F6C05240D357B008E0721 /* imageResource.xcassets */; };
+		32A29735241B37A60009A16C /* JCMeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A29734241B37A60009A16C /* JCMeHeaderView.swift */; };
+		32A29737241B536F0009A16C /* pay_banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32A29736241B536E0009A16C /* pay_banner.jpg */; };
+		32A2973A241B54260009A16C /* JCSpecialImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A29739241B54260009A16C /* JCSpecialImageView.swift */; };
 		32A2C71F2415F43B00A49CB6 /* constFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2C71E2415F43B00A49CB6 /* constFile.swift */; };
 		32A2C7242416197B00A49CB6 /* JCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */; };
 		32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */; };
+		32F29E3F241BCB38009325E1 /* JCCreativeCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F29E3D241BCB38009325E1 /* JCCreativeCenterCell.swift */; };
+		32F29E40241BCB38009325E1 /* JCCreativeCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F29E3E241BCB38009325E1 /* JCCreativeCenterCell.xib */; };
+		32F29E42241BD518009325E1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F29E41241BD518009325E1 /* UIColor+Extension.swift */; };
 		4E08EA10E6913170D0EF9D7E /* Pods_MySwiftProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,9 +93,15 @@
 		329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCCustomTabbarVC.swift; sourceTree = "<group>"; };
 		329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCSwiftBaseGrammarVC.swift; sourceTree = "<group>"; };
 		329F6C05240D357B008E0721 /* imageResource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = imageResource.xcassets; sourceTree = "<group>"; };
+		32A29734241B37A60009A16C /* JCMeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMeHeaderView.swift; sourceTree = "<group>"; };
+		32A29736241B536E0009A16C /* pay_banner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pay_banner.jpg; sourceTree = "<group>"; };
+		32A29739241B54260009A16C /* JCSpecialImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCSpecialImageView.swift; sourceTree = "<group>"; };
 		32A2C71E2415F43B00A49CB6 /* constFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constFile.swift; sourceTree = "<group>"; };
 		32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeViewController.swift; sourceTree = "<group>"; };
 		32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCGuidePageViewController.swift; sourceTree = "<group>"; };
+		32F29E3D241BCB38009325E1 /* JCCreativeCenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCCreativeCenterCell.swift; sourceTree = "<group>"; };
+		32F29E3E241BCB38009325E1 /* JCCreativeCenterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCCreativeCenterCell.xib; sourceTree = "<group>"; };
+		32F29E41241BD518009325E1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		82088A0283672079CF405AB9 /* Pods-MySwiftProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CB50E74750A1E063ED273BA6 /* Pods-MySwiftProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.release.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.release.xcconfig"; sourceTree = "<group>"; };
 		E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwiftProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +147,7 @@
 		322AE792240E4103007820B1 /* Scource */ = {
 			isa = PBXGroup;
 			children = (
+				32A29736241B536E0009A16C /* pay_banner.jpg */,
 				322AE793240E410E007820B1 /* appLaunchScreen */,
 			);
 			path = Scource;
@@ -159,7 +172,9 @@
 		3294EC612416333C005CCFE4 /* MeModular */ = {
 			isa = PBXGroup;
 			children = (
-				3294EC62241635B7005CCFE4 /* JCMeViewController.swift */,
+				32A29732241B37780009A16C /* Model */,
+				32A29731241B37610009A16C /* View */,
+				32A29730241B37540009A16C /* ViewController */,
 			);
 			path = MeModular;
 			sourceTree = "<group>";
@@ -246,6 +261,7 @@
 		329F6BDA240D354D008E0721 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				32A29738241B538D0009A16C /* SpecialImageView */,
 				329F6BDB240D354D008E0721 /* JCBannerView */,
 				329F6BDD240D354D008E0721 /* JCCommonHederFile.swift */,
 			);
@@ -358,10 +374,51 @@
 			path = HomeModualr;
 			sourceTree = "<group>";
 		};
+		32A29730241B37540009A16C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3294EC62241635B7005CCFE4 /* JCMeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		32A29731241B37610009A16C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32F29E3C241BCAC3009325E1 /* CreativeCenterCell */,
+				32A29733241B37840009A16C /* MeHeaderView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32A29732241B37780009A16C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32A29733241B37840009A16C /* MeHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				32A29734241B37A60009A16C /* JCMeHeaderView.swift */,
+			);
+			path = MeHeaderView;
+			sourceTree = "<group>";
+		};
+		32A29738241B538D0009A16C /* SpecialImageView */ = {
+			isa = PBXGroup;
+			children = (
+				32A29739241B54260009A16C /* JCSpecialImageView.swift */,
+			);
+			path = SpecialImageView;
+			sourceTree = "<group>";
+		};
 		32A2C71D2415F40200A49CB6 /* Define */ = {
 			isa = PBXGroup;
 			children = (
 				32A2C71E2415F43B00A49CB6 /* constFile.swift */,
+				32F29E41241BD518009325E1 /* UIColor+Extension.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -401,6 +458,15 @@
 				32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */,
 			);
 			path = GuidePageViewController;
+			sourceTree = "<group>";
+		};
+		32F29E3C241BCAC3009325E1 /* CreativeCenterCell */ = {
+			isa = PBXGroup;
+			children = (
+				32F29E3D241BCB38009325E1 /* JCCreativeCenterCell.swift */,
+				32F29E3E241BCB38009325E1 /* JCCreativeCenterCell.xib */,
+			);
+			path = CreativeCenterCell;
 			sourceTree = "<group>";
 		};
 		AA2746383241419C0BAE202A /* Frameworks */ = {
@@ -529,6 +595,8 @@
 			files = (
 				329F6BB3240D3531008E0721 /* TestLaunchScreen.storyboard in Resources */,
 				322AE795240E410E007820B1 /* appLaunchScreen.png in Resources */,
+				32A29737241B536F0009A16C /* pay_banner.jpg in Resources */,
+				32F29E40241BCB38009325E1 /* JCCreativeCenterCell.xib in Resources */,
 				329F6C06240D357C008E0721 /* imageResource.xcassets in Resources */,
 				329F6BB0240D3531008E0721 /* Assets.xcassets in Resources */,
 				329F6BAE240D352F008E0721 /* Main.storyboard in Resources */,
@@ -607,17 +675,21 @@
 				329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */,
 				329F6BFE240D354D008E0721 /* JCBaseController.swift in Sources */,
 				32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */,
+				32F29E42241BD518009325E1 /* UIColor+Extension.swift in Sources */,
 				329F6BFA240D354D008E0721 /* JCFakeTestData.swift in Sources */,
 				329F6BF9240D354D008E0721 /* JCCommonHederFile.swift in Sources */,
 				320293512413E1B900F45B27 /* ZCycleLayout.swift in Sources */,
+				32A29735241B37A60009A16C /* JCMeHeaderView.swift in Sources */,
 				323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */,
 				329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */,
 				320293522413E1B900F45B27 /* ZPageControl.swift in Sources */,
+				32A2973A241B54260009A16C /* JCSpecialImageView.swift in Sources */,
 				320293502413E1B900F45B27 /* ZCycleViewCell.swift in Sources */,
 				3202934F2413E1B900F45B27 /* ZCycleView.swift in Sources */,
 				329F6BF8240D354D008E0721 /* JCBannerView.swift in Sources */,
 				329F6BF6240D354D008E0721 /* UIButton+Extension.swift in Sources */,
 				329F6C01240D354D008E0721 /* JCThreeViewController.swift in Sources */,
+				32F29E3F241BCB38009325E1 /* JCCreativeCenterCell.swift in Sources */,
 				329F6BF7240D354D008E0721 /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
