@@ -2060,37 +2060,117 @@ var titesArr:[String] = ["I","AM","IS","WITH","L", "O", "V", "E", "I", "O", "S"]
 //if testeArr.isEmpty {
 //    print("dadadaeda")
 //}
-func swapMel<T>(a: inout T,b: inout T) {
-    let temp = a
-        a = b
-       b = temp
+//func swapMel<T>(a: inout T,b: inout T) {
+//    let temp = a
+//        a = b
+//       b = temp
+//}
+//
+//func swapMe2<T>(a: inout T,b: inout T) {
+//    (a,b) = (b,a)
+//}
+
+
+//
+//
+// func logInputTrue(_ predicate: @autoclosure() -> Bool) { if predicate() {
+//     print("True") }
+//}
+//
+//logInputTrue({return 2 > 1}())
+//logInputTrue({2 > 1}())
+// logInputTrue(2 > 1)
+//
+//func ??<T>(optional: T?,defaultValue: @autoclosure() -> T) -> T {
+//    switch optional {
+//
+//    case .some(let value):
+//        return value
+//
+//    case .none:
+//        return defaultValue()
+//
+//    default:
+//        print("default")
+//    }
+//}
+
+/*
+ 逃逸闭包  @escaping
+ */
+//func doWork(block: ()->()){
+//    block()
+//}
+//
+//doWork {
+//  print("work")
+//}
+//
+// func doWorkAsync(block: @escaping ()->()) {
+//    DispatchQueue.main.async {
+//     block()
+//    }
+//}
+// class S {
+//var foo = "foo"
+//    func method1() {
+//        doWork {
+//     print(foo)
+//        }
+//  foo = "bar"
+//    }
+//
+//    func method2() {
+//      doWorkAsync {
+//     print(self.foo)
+//        }
+//    foo = "bar"
+//    }
+//
+//
+//     func method3() {
+//        doWorkAsync {
+//            [weak self] in
+//       print(self?.foo ?? "nil")
+//        }
+//    foo = "bar"
+//    }
+//
+//}
+//S().method1() // foo
+//S().method2() // bar
+//S().method3() // nil
+//class Toy {
+//    let name: String
+//    init(name: String) {
+//        self.name = name
+//    }
+//}
+//
+//class Pet {
+//    var toy: Toy?
+//}
+//
+//class Child {
+//    var pet: Pet?
+//}
+//
+//let toyName =
+//
+
+
+let testStr: String = "waljdeadakdhalhdkadhla"
+
+for character in testStr {
+    print(character)
 }
-
-func swapMe2<T>(a: inout T,b: inout T) {
-    (a,b) = (b,a)
-}
-
+let str = "abc"
+let characters = str.characters // String.CharacterView
+characters[characters.startIndex] // Character "a"
 
 
 
- func logInputTrue(_ predicate: @autoclosure() -> Bool) { if predicate() {
-     print("True") }
-}
- 
-logInputTrue({return 2 > 1}())
-logInputTrue({2 > 1}())
- logInputTrue(2 > 1)
 
-func ??<T>(optional: T?,defaultValue: @autoclosure() -> T) -> T {
-    switch optional {
-    
-    case .some(let value):
-        return value
-    
-    case .none:
-        return defaultValue()
 
-    default:
-        print("default")
-    }
-}
+
+
