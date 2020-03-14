@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="150" id="KGk-i7-Jjw" customClass="JCCreativeCenterCell" customModule="MySwiftProduct" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="128" id="KGk-i7-Jjw" customClass="JCCreativeCenterCell" customModule="MySwiftProduct" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -18,104 +18,160 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syM-ka-Y7v">
-                        <rect key="frame" x="15" y="15" width="290" height="84"/>
+                        <rect key="frame" x="15" y="0.0" width="290" height="114"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcT-3B-sAf">
-                                <rect key="frame" x="0.0" y="0.0" width="290" height="80"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkC-lr-PmL">
-                                        <rect key="frame" x="13" y="8" width="60" height="57"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="AWG-Rd-aaM"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="EJ1-Ee-e8n"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                        <inset key="titleEdgeInsets" minX="-30" minY="33" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="14" minY="-9" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="我要录音" image="mine_sound Recording">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ak-ua-iX2">
-                                        <rect key="frame" x="86" y="8" width="60" height="57"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="A26-TI-Xau"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                        <inset key="titleEdgeInsets" minX="-30" minY="33" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="14" minY="-9" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="我要录音" image="mine_sound Recording">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eky-zm-P5e">
-                                        <rect key="frame" x="154" y="8" width="60" height="57"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="R7h-CT-VO1"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                        <inset key="titleEdgeInsets" minX="-30" minY="33" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="14" minY="-9" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="我要录音" image="mine_sound Recording">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUG-3u-h9x">
-                                        <rect key="frame" x="222" y="8" width="60" height="57"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="uCI-0F-PAd"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                        <inset key="titleEdgeInsets" minX="-30" minY="33" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="14" minY="-9" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="我要录音" image="mine_sound Recording">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_info_top" translatesAutoresizingMaskIntoConstraints="NO" id="RhW-II-IDE">
+                                <rect key="frame" x="0.0" y="0.0" width="290" height="85"/>
                                 <constraints>
-                                    <constraint firstItem="FUG-3u-h9x" firstAttribute="trailing" secondItem="hcT-3B-sAf" secondAttribute="trailingMargin" id="1m0-bw-EoO"/>
-                                    <constraint firstAttribute="bottom" secondItem="UkC-lr-PmL" secondAttribute="bottom" constant="15" id="3jJ-VD-UF5"/>
-                                    <constraint firstItem="8ak-ua-iX2" firstAttribute="width" secondItem="UkC-lr-PmL" secondAttribute="width" id="4c7-52-7MM"/>
-                                    <constraint firstItem="FUG-3u-h9x" firstAttribute="baseline" secondItem="8ak-ua-iX2" secondAttribute="baseline" id="57l-JI-jwX"/>
-                                    <constraint firstItem="8ak-ua-iX2" firstAttribute="height" secondItem="UkC-lr-PmL" secondAttribute="height" id="6gI-Ea-T1L"/>
-                                    <constraint firstItem="UkC-lr-PmL" firstAttribute="leading" secondItem="hcT-3B-sAf" secondAttribute="leading" constant="13" id="ENJ-Z8-YDA"/>
-                                    <constraint firstItem="8ak-ua-iX2" firstAttribute="top" secondItem="UkC-lr-PmL" secondAttribute="top" id="JHN-T9-lcF"/>
-                                    <constraint firstItem="FUG-3u-h9x" firstAttribute="bottom" secondItem="eky-zm-P5e" secondAttribute="bottom" id="JJP-Z4-rdS"/>
-                                    <constraint firstItem="FUG-3u-h9x" firstAttribute="height" secondItem="UkC-lr-PmL" secondAttribute="height" id="QPk-su-cS8"/>
-                                    <constraint firstItem="FUG-3u-h9x" firstAttribute="width" secondItem="UkC-lr-PmL" secondAttribute="width" id="RaB-cF-Ld9"/>
-                                    <constraint firstItem="FUG-3u-h9x" firstAttribute="leading" secondItem="eky-zm-P5e" secondAttribute="trailing" constant="8" id="VUu-zF-XiI"/>
-                                    <constraint firstItem="eky-zm-P5e" firstAttribute="width" secondItem="UkC-lr-PmL" secondAttribute="width" id="eKG-Iy-P6t"/>
-                                    <constraint firstItem="8ak-ua-iX2" firstAttribute="bottom" secondItem="UkC-lr-PmL" secondAttribute="bottom" id="f5i-bf-Nof"/>
-                                    <constraint firstItem="UkC-lr-PmL" firstAttribute="top" secondItem="hcT-3B-sAf" secondAttribute="top" constant="8" id="lsI-bd-uhn"/>
-                                    <constraint firstItem="eky-zm-P5e" firstAttribute="leading" secondItem="8ak-ua-iX2" secondAttribute="trailing" constant="8" id="nWy-hu-ijh"/>
-                                    <constraint firstItem="FUG-3u-h9x" firstAttribute="centerY" secondItem="eky-zm-P5e" secondAttribute="centerY" id="uPC-za-6Gj"/>
-                                    <constraint firstItem="eky-zm-P5e" firstAttribute="height" secondItem="UkC-lr-PmL" secondAttribute="height" id="yzP-Jc-eBH"/>
-                                    <constraint firstAttribute="height" constant="80" id="zfq-X8-DCh"/>
+                                    <constraint firstAttribute="height" constant="85" id="8p5-RU-2Bt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkC-lr-PmL">
+                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="Ued-1Z-OTd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="-33" minY="35" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="18" minY="-21" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="我要录音" image="mine_sound Recording">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="soundRecordAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7kH-wM-rxf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5q-ss-K5K">
+                                <rect key="frame" x="145" y="0.0" width="72.5" height="85"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="-35" minY="37" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="18" minY="-21" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="我的作品" image="mine_works">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="liveBroadcastBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="30W-U2-6V4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wR8-Hj-uBx">
+                                <rect key="frame" x="217.5" y="0.0" width="72.5" height="85"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="-35" minY="41" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="18" minY="-21" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="创作中心" image="mine_creativeCenter">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="worksBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kE7-vu-DFQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMl-BW-Q8j">
+                                <rect key="frame" x="72.5" y="0.0" width="72.5" height="85"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="-35" minY="37" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="18" minY="-21" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="我要直播" image="mine_LiveBroadcast">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="creationBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4me-pM-zii"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j20-DG-KtL">
+                                <rect key="frame" x="0.0" y="85" width="290" height="29"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_info_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="4d2-7Q-yaT">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="29"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创作活动" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKJ-KV-SEY">
+                                        <rect key="frame" x="15" y="7.5" width="52" height="14.5"/>
+                                        <fontDescription key="fontDescription" name=".PingFangSC-Regular" family=".AppleSimplifiedChineseFont" pointSize="13"/>
+                                        <color key="textColor" red="0.82745098039215681" green="0.59215686274509804" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.82745098039215681" green="0.59215686274509804" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_arrow_all" translatesAutoresizingMaskIntoConstraints="NO" id="7bp-lK-NaD">
+                                        <rect key="frame" x="268" y="7.5" width="7" height="14"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="分享神仙毫无，免费领取50元声播流量金" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3n-rP-Yo7">
+                                        <rect key="frame" x="70" y="7.5" width="190" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4d2-7Q-yaT" firstAttribute="leading" secondItem="j20-DG-KtL" secondAttribute="leading" id="0Cf-1c-T2T"/>
+                                    <constraint firstAttribute="trailing" secondItem="7bp-lK-NaD" secondAttribute="trailing" constant="15" id="1j4-FS-n6V"/>
+                                    <constraint firstAttribute="trailing" secondItem="4d2-7Q-yaT" secondAttribute="trailing" id="4Vb-R9-qZV"/>
+                                    <constraint firstItem="q3n-rP-Yo7" firstAttribute="leading" secondItem="j20-DG-KtL" secondAttribute="leading" constant="70" id="8b7-Yn-b1G"/>
+                                    <constraint firstItem="4d2-7Q-yaT" firstAttribute="top" secondItem="j20-DG-KtL" secondAttribute="top" id="986-zd-lUH"/>
+                                    <constraint firstItem="7bp-lK-NaD" firstAttribute="centerY" secondItem="j20-DG-KtL" secondAttribute="centerY" id="DqL-q2-Ccq"/>
+                                    <constraint firstItem="vKJ-KV-SEY" firstAttribute="leading" secondItem="j20-DG-KtL" secondAttribute="leading" constant="15" id="LXF-Hk-zQ8"/>
+                                    <constraint firstAttribute="trailing" secondItem="q3n-rP-Yo7" secondAttribute="trailing" constant="30" id="SLu-eN-CTM"/>
+                                    <constraint firstItem="q3n-rP-Yo7" firstAttribute="centerY" secondItem="j20-DG-KtL" secondAttribute="centerY" id="p9J-QA-07Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="4d2-7Q-yaT" secondAttribute="bottom" id="py2-tF-7E9"/>
+                                    <constraint firstItem="vKJ-KV-SEY" firstAttribute="centerY" secondItem="j20-DG-KtL" secondAttribute="centerY" id="sJA-w6-BM6"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hcT-3B-sAf" firstAttribute="top" secondItem="syM-ka-Y7v" secondAttribute="top" id="n6Z-cl-sg3"/>
-                            <constraint firstItem="hcT-3B-sAf" firstAttribute="leading" secondItem="syM-ka-Y7v" secondAttribute="leading" id="r3L-0u-ATt"/>
-                            <constraint firstAttribute="trailing" secondItem="hcT-3B-sAf" secondAttribute="trailing" id="tvg-9e-ZrL"/>
+                            <constraint firstItem="qMl-BW-Q8j" firstAttribute="height" secondItem="UkC-lr-PmL" secondAttribute="height" id="0XT-jh-C1u"/>
+                            <constraint firstItem="n5q-ss-K5K" firstAttribute="leading" secondItem="qMl-BW-Q8j" secondAttribute="trailing" id="0ZN-kq-tvj"/>
+                            <constraint firstItem="UkC-lr-PmL" firstAttribute="leading" secondItem="syM-ka-Y7v" secondAttribute="leading" id="2CQ-rq-ZO2"/>
+                            <constraint firstItem="RhW-II-IDE" firstAttribute="top" secondItem="syM-ka-Y7v" secondAttribute="top" id="3HO-Fc-1zr"/>
+                            <constraint firstItem="n5q-ss-K5K" firstAttribute="top" secondItem="syM-ka-Y7v" secondAttribute="top" id="3YC-Zs-Qts"/>
+                            <constraint firstItem="wR8-Hj-uBx" firstAttribute="width" secondItem="UkC-lr-PmL" secondAttribute="width" id="67s-oU-6N6"/>
+                            <constraint firstAttribute="bottom" secondItem="j20-DG-KtL" secondAttribute="bottom" id="7md-3t-dQr"/>
+                            <constraint firstItem="UkC-lr-PmL" firstAttribute="top" secondItem="syM-ka-Y7v" secondAttribute="top" id="Cwf-Z6-PcT"/>
+                            <constraint firstItem="qMl-BW-Q8j" firstAttribute="leading" secondItem="UkC-lr-PmL" secondAttribute="trailing" id="E9U-Ob-lsq"/>
+                            <constraint firstItem="wR8-Hj-uBx" firstAttribute="top" secondItem="syM-ka-Y7v" secondAttribute="top" id="Ebq-Vx-obG"/>
+                            <constraint firstItem="j20-DG-KtL" firstAttribute="top" secondItem="UkC-lr-PmL" secondAttribute="bottom" id="FsZ-TA-het"/>
+                            <constraint firstAttribute="trailing" secondItem="j20-DG-KtL" secondAttribute="trailing" id="IBh-6b-jR0"/>
+                            <constraint firstAttribute="trailing" secondItem="RhW-II-IDE" secondAttribute="trailing" id="NbD-tj-1dd"/>
+                            <constraint firstItem="wR8-Hj-uBx" firstAttribute="height" secondItem="UkC-lr-PmL" secondAttribute="height" id="X3p-5i-aW7"/>
+                            <constraint firstItem="n5q-ss-K5K" firstAttribute="width" secondItem="UkC-lr-PmL" secondAttribute="width" id="ZPA-Rt-PZ5"/>
+                            <constraint firstItem="n5q-ss-K5K" firstAttribute="height" secondItem="UkC-lr-PmL" secondAttribute="height" id="fJb-FY-J6A"/>
+                            <constraint firstItem="j20-DG-KtL" firstAttribute="leading" secondItem="syM-ka-Y7v" secondAttribute="leading" id="gjQ-Vl-rRe"/>
+                            <constraint firstItem="RhW-II-IDE" firstAttribute="leading" secondItem="syM-ka-Y7v" secondAttribute="leading" id="oIx-ae-bm4"/>
+                            <constraint firstItem="wR8-Hj-uBx" firstAttribute="leading" secondItem="n5q-ss-K5K" secondAttribute="trailing" id="pC6-Zx-kTo"/>
+                            <constraint firstItem="qMl-BW-Q8j" firstAttribute="width" secondItem="UkC-lr-PmL" secondAttribute="width" id="uOk-hF-7cu"/>
+                            <constraint firstItem="qMl-BW-Q8j" firstAttribute="top" secondItem="syM-ka-Y7v" secondAttribute="top" id="xGN-ny-EOf"/>
+                            <constraint firstAttribute="trailing" secondItem="wR8-Hj-uBx" secondAttribute="trailing" id="y3F-3N-eW4"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="syM-ka-Y7v" secondAttribute="bottom" constant="15" id="3dB-Cm-cpV"/>
                     <constraint firstAttribute="trailing" secondItem="syM-ka-Y7v" secondAttribute="trailing" constant="15" id="3ih-2e-yOC"/>
-                    <constraint firstItem="syM-ka-Y7v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="aIr-qr-t4N"/>
+                    <constraint firstAttribute="bottom" secondItem="syM-ka-Y7v" secondAttribute="bottom" id="Abt-9d-vva"/>
+                    <constraint firstItem="syM-ka-Y7v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aIr-qr-t4N"/>
                     <constraint firstItem="syM-ka-Y7v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="aln-0X-sk0"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="TqJ-y0-lFw"/>
-            <point key="canvasLocation" x="111.59420289855073" y="109.23913043478262"/>
+            <connections>
+                <outlet property="BackView" destination="syM-ka-Y7v" id="uua-ea-nkv"/>
+                <outlet property="bgView" destination="syM-ka-Y7v" id="cXI-7b-5ac"/>
+                <outlet property="bottomImageView" destination="4d2-7Q-yaT" id="Fif-wh-P1H"/>
+                <outlet property="creationBtn" destination="qMl-BW-Q8j" id="ORt-ac-uqt"/>
+                <outlet property="detailLabel" destination="q3n-rP-Yo7" id="gWm-Yv-Rzl"/>
+                <outlet property="liveBroadcastBtn" destination="n5q-ss-K5K" id="fhk-tb-bR2"/>
+                <outlet property="soundRecordBtn" destination="UkC-lr-PmL" id="NSP-zC-dXy"/>
+                <outlet property="topImageView" destination="RhW-II-IDE" id="UaR-50-mRr"/>
+                <outlet property="worksBtn" destination="wR8-Hj-uBx" id="flR-eg-GF6"/>
+            </connections>
+            <point key="canvasLocation" x="112.5" y="108.80281690140845"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="mine_LiveBroadcast" width="32" height="32"/>
+        <image name="mine_arrow_all" width="7" height="14"/>
+        <image name="mine_creativeCenter" width="32" height="32"/>
+        <image name="mine_info_bottom" width="302" height="55.5"/>
+        <image name="mine_info_top" width="302" height="66"/>
         <image name="mine_sound Recording" width="32" height="32"/>
+        <image name="mine_works" width="32" height="32"/>
     </resources>
 </document>

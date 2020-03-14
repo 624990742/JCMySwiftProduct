@@ -2140,30 +2140,33 @@ var titesArr:[String] = ["I","AM","IS","WITH","L", "O", "V", "E", "I", "O", "S"]
 //S().method1() // foo
 //S().method2() // bar
 //S().method3() // nil
-class Toy {
-    let name: String
-    init(name: String) {
-        self.name = name
-    }
+//class Toy {
+//    let name: String
+//    init(name: String) {
+//        self.name = name
+//    }
+//}
+//
+//class Pet {
+//    var toy: Toy?
+//}
+//
+//class Child {
+//    var pet: Pet?
+//}
+//
+//let toyName =
+//
+
+
+let testStr: String = "waljdeadakdhalhdkadhla"
+
+for character in testStr {
+    print(character)
 }
-
-class Pet {
-    var toy: Toy?
-}
-
-class Child {
-    var pet: Pet?
-}
-
-let toyName =
-
-
-
-
-
-
-
-
+let str = "abc"
+let characters = str.characters // String.CharacterView
+characters[characters.startIndex] // Character "a"
 
 
 

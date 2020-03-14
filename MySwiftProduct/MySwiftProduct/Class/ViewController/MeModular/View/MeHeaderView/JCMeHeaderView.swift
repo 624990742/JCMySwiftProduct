@@ -8,7 +8,7 @@
 
 import UIKit
 
-let iconHeiht = 80.0
+let iconHeiht = 70.0
 let leftMargin = 15.0
 
 class JCMeHeaderView: UIView {
@@ -29,6 +29,15 @@ class JCMeHeaderView: UIView {
     
 ///MARK: 配置界面
     func setupUI() {
+        self.addSubview(self.backView)
+        self.backView.snp.makeConstraints { (make) in
+            make.left.top.right.equalToSuperview()
+            make.bottom.equalToSuperview().offset(0)
+            
+        }
+        
+        
+        
         self.addSubview(self.userIcon)
         self.userIcon.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(leftMargin)
@@ -41,14 +50,11 @@ class JCMeHeaderView: UIView {
         
         
         self.addSubview(self.loginLabel)
-     
         self.loginLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self.userIcon.snp_right).offset(10)
             make.top.equalTo(self.userIcon.snp_top).offset(15)
             make.right.equalToSuperview().offset(-10)
             }
-        
-        
         
         self.addSubview(self.tipLabel)
         self.tipLabel.snp.makeConstraints { (make) in
@@ -57,15 +63,13 @@ class JCMeHeaderView: UIView {
             make.right.equalToSuperview().offset(-10)
             }
                
-        
-        
-        
-        self.addSubview(self.bottomView)
+       self.addSubview(self.bottomView)
        self.bottomView.snp.makeConstraints { (make) in
-                 make.top.equalTo(self.userIcon.snp_bottom).offset(20)
+                 make.top.equalTo(self.userIcon.snp_bottom).offset(15)
                  make.left.equalToSuperview().offset(leftMargin)
                  make.right.equalToSuperview().offset(-leftMargin)
-                 make.height.equalTo(45)
+                 make.bottom.equalToSuperview()
+//                 make.height.equalTo(44)
              }
         self.bottomView.layoutIfNeeded()
         self.bottomView.layer.cornerRadius = 10
@@ -77,6 +81,13 @@ class JCMeHeaderView: UIView {
     
     
     ///MARK: 懒加载
+    private var backView: UIView = {
+       let bView = UIView()
+        bView.backgroundColor = .white
+        return bView
+             }()
+    
+    
        private var userIcon: UIImageView = {
           let iconImageView = UIImageView()
            iconImageView.image = UIImage(named: "userIcon")

@@ -13,6 +13,7 @@
 		320293522413E1B900F45B27 /* ZPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934E2413E1B900F45B27 /* ZPageControl.swift */; };
 		322AE795240E410E007820B1 /* appLaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 322AE794240E410E007820B1 /* appLaunchScreen.png */; };
 		323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B24E9240F58C5006E24DC /* JCBootPageView.swift */; };
+		326CCC2E241C89E700C81552 /* String+Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CCC2D241C89E600C81552 /* String+Unit.swift */; };
 		3294EC63241635B7005CCFE4 /* JCMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294EC62241635B7005CCFE4 /* JCMeViewController.swift */; };
 		329F6BAE240D352F008E0721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BAC240D352F008E0721 /* Main.storyboard */; };
 		329F6BB0240D3531008E0721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BAF240D3531008E0721 /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		3202934E2413E1B900F45B27 /* ZPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPageControl.swift; sourceTree = "<group>"; };
 		322AE794240E410E007820B1 /* appLaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appLaunchScreen.png; sourceTree = "<group>"; };
 		323B24E9240F58C5006E24DC /* JCBootPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCBootPageView.swift; sourceTree = "<group>"; };
+		326CCC2D241C89E600C81552 /* String+Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Unit.swift"; sourceTree = "<group>"; };
 		3294EC62241635B7005CCFE4 /* JCMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMeViewController.swift; sourceTree = "<group>"; };
 		329F6BA3240D352F008E0721 /* MySwiftProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		329F6BAD240D352F008E0721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 			children = (
 				32A2C71E2415F43B00A49CB6 /* constFile.swift */,
 				32F29E41241BD518009325E1 /* UIColor+Extension.swift */,
+				326CCC2D241C89E600C81552 /* String+Unit.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -670,6 +673,7 @@
 				32A2C71F2415F43B00A49CB6 /* constFile.swift in Sources */,
 				32A2C7242416197B00A49CB6 /* JCHomeViewController.swift in Sources */,
 				329F6BFC240D354D008E0721 /* JCSecondViewController.swift in Sources */,
+				326CCC2E241C89E700C81552 /* String+Unit.swift in Sources */,
 				329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */,
 				329F6C02240D354D008E0721 /* JCCustomNavgationController.swift in Sources */,
 				329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */,
@@ -865,7 +869,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PT584PU8XQ;
+				DEVELOPMENT_TEAM = M2TQ22753C;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -885,7 +889,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PT584PU8XQ;
+				DEVELOPMENT_TEAM = M2TQ22753C;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
