@@ -12,3 +12,4 @@ import UIKit
 let JCScreenWidth = UIScreen.main.bounds.size.width
 let JCScreenHeight = UIScreen.main.bounds.size.height
 let glt_iphoneX = (JCScreenHeight >= 812.0)
+let JCNaviBarHeight : CGFloat = glt_iphoneX  ? 88 : 64
