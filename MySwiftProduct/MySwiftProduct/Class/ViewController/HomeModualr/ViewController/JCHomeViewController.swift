@@ -15,14 +15,34 @@ class JCHomeViewController: JCBaseController {
     
     // MARK: 声明周期
     override func viewDidLoad() {
-        
+        setupUI()
     }
     
     // MARK: 配置界面
     func setupUI() {
+//        let string: String? = "string"
+//        let anotherString: String?? = string
+//        let literalOptional: String?? = "string"
+//        JCDebugLog(message: "literalOptional:\(String(describing: literalOptional))")
+//        JCDebugLog(message: anotherString)
+        
+         let aNil: String? = nil
+         let anotherNil: String?? = aNil
+         let literalNil: String?? = nil
+    
+         if anotherNil != nil {
+            print("anotherNil")
+        }
+        if literalNil != nil {
+            print("literalNil")
+        }
+        
+        
+        
+        
+        
         
         
     }
-    
     
 }
