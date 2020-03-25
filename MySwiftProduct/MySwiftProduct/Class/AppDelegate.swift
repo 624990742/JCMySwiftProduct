@@ -63,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabbarVC = JCCustomTabbarVC()
         self.window?.rootViewController = tabbarVC
         self.window?.makeKeyAndVisible()
-        
+        JCDebugLog(message: JC_SCREEN_WIDTH)
         return true
     }
 

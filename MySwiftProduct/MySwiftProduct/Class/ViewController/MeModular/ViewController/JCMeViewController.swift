@@ -38,6 +38,7 @@ class JCMeViewController: JCBaseController {
         self.title = "我"
       super .viewDidLoad()
         self.setupUI()
+    
     }
     
     

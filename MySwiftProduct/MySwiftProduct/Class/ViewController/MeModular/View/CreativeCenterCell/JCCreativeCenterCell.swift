@@ -58,15 +58,16 @@ class JCCreativeCenterCell: UITableViewCell {
         // Initialization code
           self.topImageView.layer.cornerRadius = 10
           self.topImageView.layer.masksToBounds = true
-          
           self.bottomImageView.layer.cornerRadius = 10
           self.bottomImageView.layer.masksToBounds = true
+          self.BackView.layer.cornerRadius = 10
+          self.BackView.layer.masksToBounds = true
+         self.creationBtn.titleLabel?.textAlignment = .center
+         self.soundRecordBtn.titleLabel?.textAlignment = .center
+         self.liveBroadcastBtn.titleLabel?.textAlignment = .center
+         self.worksBtn.titleLabel?.textAlignment = .center
         
-           self.BackView.layer.cornerRadius = 10
-           self.BackView.layer.masksToBounds = true
-         
-          
-        
+            
         
     }
 
