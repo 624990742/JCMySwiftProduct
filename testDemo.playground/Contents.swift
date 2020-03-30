@@ -1,5 +1,38 @@
 import Foundation
 
+import UIKit
+import PlaygroundSupport
+
+//UIViewController
+class ViewController: UITableViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .cyan
+    }
+}
+
+extension ViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 30
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = String(indexPath.row)
+        return cell
+    }
+}
+
+extension ViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Select: \(indexPath.row)")
+    }
+}
+
+let vc = ViewController()
+//将显示的内容复制给PlaygroundPage.current.liveView
+PlaygroundPage.current.liveView = vc
+
 ////单例
 //class MyManager {
 //    class var share: MyManager {
@@ -98,20 +131,39 @@ import Foundation
   swift 中的 is 在功能上相当于原来的 isKindOfClass
  */
 
-class testClassA {}
-class testClassB: testClassA {}
-let obj: AnyObject = testClassB()
-if (obj is testClassA){
-    print("属于 testClassA")
-}
+////生成随机数
+//let diceFaceCont: UInt32 = 6
+//let randomRoll = Int(arc4random_uniform(diceFaceCont)) + 1
+//print(randomRoll)
+//
+//
+//
+//func random(in range: Range<Int>) -> Int {
+//    let count = UInt32(range.endIndex - range.startIndex)
+//    return Int(arc4random_uniform(count)) + range.startIndex
+//}
+//
+//for _ in 0...100 {
+//    let range = Range<Int>(1...6)
+//    print(random(in: range))
+//}
+//
+//
+//
+// struct Meeting {
+//    var date: NSDate
+//    var place: String
+//    var attendeeName: String
+//}
+//let meeting = Meeting(date: NSDate(timeIntervalSinceNow: 86400), place: "会议室B1",
+//attendeeName: "小明")
+//
+//
+// extension Meeting: CustomStringConvertible {
+//    var description: String {
+//   return "于 \(self.date) 在 \(self.place) 与 \(self.attendeeName) 进行会议" }
+//}
+// print(meeting)
+//
 
-if (obj is testClassB){
-    print("属于 testClassB")
-}
 
-
-
- let string = "String"
- if string is String {
-    // Do something
-}

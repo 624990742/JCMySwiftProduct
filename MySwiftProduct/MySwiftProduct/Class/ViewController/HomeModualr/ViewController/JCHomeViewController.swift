@@ -40,9 +40,6 @@ class JCHomeViewController: JCBaseController {
         
         
         
-        
-        
-        
     }
     
 }
