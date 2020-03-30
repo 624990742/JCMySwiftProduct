@@ -2060,37 +2060,154 @@ var titesArr:[String] = ["I","AM","IS","WITH","L", "O", "V", "E", "I", "O", "S"]
 //if testeArr.isEmpty {
 //    print("dadadaeda")
 //}
-func swapMel<T>(a: inout T,b: inout T) {
-    let temp = a
-        a = b
-       b = temp
-}
-
-func swapMe2<T>(a: inout T,b: inout T) {
-    (a,b) = (b,a)
-}
-
-
+//func swapMel<T>(a: inout T,b: inout T) {
+//    let temp = a
+//        a = b
+//       b = temp
+//}
+//
+//func swapMe2<T>(a: inout T,b: inout T) {
+//    (a,b) = (b,a)
+//}
 
 
- func logInputTrue(_ predicate: @autoclosure() -> Bool) { if predicate() {
-     print("True") }
-}
- 
-logInputTrue({return 2 > 1}())
-logInputTrue({2 > 1}())
- logInputTrue(2 > 1)
+//
+//
+// func logInputTrue(_ predicate: @autoclosure() -> Bool) { if predicate() {
+//     print("True") }
+//}
+//
+//logInputTrue({return 2 > 1}())
+//logInputTrue({2 > 1}())
+// logInputTrue(2 > 1)
+//
+//func ??<T>(optional: T?,defaultValue: @autoclosure() -> T) -> T {
+//    switch optional {
+//
+//    case .some(let value):
+//        return value
+//
+//    case .none:
+//        return defaultValue()
+//
+//    default:
+//        print("default")
+//    }
+//}
 
-func ??<T>(optional: T?,defaultValue: @autoclosure() -> T) -> T {
-    switch optional {
+/*
+ 逃逸闭包  @escaping
+ */
+//func doWork(block: ()->()){
+//    block()
+//}
+//
+//doWork {
+//  print("work")
+//}
+//
+// func doWorkAsync(block: @escaping ()->()) {
+//    DispatchQueue.main.async {
+//     block()
+//    }
+//}
+// class S {
+//var foo = "foo"
+//    func method1() {
+//        doWork {
+//     print(foo)
+//        }
+//  foo = "bar"
+//    }
+//
+//    func method2() {
+//      doWorkAsync {
+//     print(self.foo)
+//        }
+//    foo = "bar"
+//    }
+//
+//
+//     func method3() {
+//        doWorkAsync {
+//            [weak self] in
+//       print(self?.foo ?? "nil")
+//        }
+//    foo = "bar"
+//    }
+//
+//}
+//S().method1() // foo
+//S().method2() // bar
+//S().method3() // nil
+//class Toy {
+//    let name: String
+//    init(name: String) {
+//        self.name = name
+//    }
+//}
+//
+//class Pet {
+//    var toy: Toy?
+//}
+//
+//class Child {
+//    var pet: Pet?
+//}
+//
+//let toyName =
+//
+//
+//
+//let testStr: String = "waljdeadakdhalhdkadhla"
+//
+//for character in testStr {
+//    print(character)
+//}
+//let str = "abc"
+//let characters = str.characters // String.CharacterView
+//characters[characters.startIndex] // Character "a"
+
+/*
+ 可变参数函数
+func sum(input: Int...) -> Int {
     
-    case .some(let value):
-        return value
-    
-    case .none:
-        return defaultValue()
+    return input.reduce(0,+)
+}
+print(sum(input: 1,2,3,4,5))
 
-    default:
-        print("default")
+
+
+func myFunc(numbers: Int...,string: String) {
+    numbers.forEach {
+        for i in 0..<$0 {
+            print("\(i + 1): \(string)")
+        }
     }
 }
+myFunc(numbers: 1,2,3, string: "hello")
+*/
+
+
+let name = "Tome"
+let date = NSDate()
+let testString = NSString(format: "Hello %@. Date: %@", name,date)
+print(testString)
+
+//let testArr:[Any] = ["ceshi",1]
+//print(testArr)
+//let objectArray = [1 as NSObject, "two" as NSObject, 3 as NSObject]
+//print(objectArray)
+let mixed: [CustomStringConvertible] = [1, "two", 3]
+for obj in mixed {
+    print(obj.description)
+}
+
+let test = "helLo"
+let interval = "a"..."z"
+for c in test {
+if !interval.contains(String(c)) {
+    print("\(c) 不是小写字母")
+  }
+}
+
