@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A82B972242515A500231394 /* JCListenChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82B971242515A500231394 /* JCListenChannelViewController.swift */; };
+		0A82B9752425198D00231394 /* JCListenChannelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82B9742425198D00231394 /* JCListenChannelViewModel.swift */; };
+		0A82B97D2426588500231394 /* JCListenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82B97C2426588500231394 /* JCListenProvider.swift */; };
+		0A91309E2423BB0B00B8BBA7 /* JCListenFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A91309D2423BB0B00B8BBA7 /* JCListenFooterView.swift */; };
+		0A9130A02423C27200B8BBA7 /* JCListenListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A91309F2423C27200B8BBA7 /* JCListenListCell.swift */; };
+		0A9130A22423C90000B8BBA7 /* JCListenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9130A12423C90000B8BBA7 /* JCListenModel.swift */; };
+		0AD81B9D242A58F3006206A8 /* listenMoreChannel.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AD81B9A242A58F3006206A8 /* listenMoreChannel.json */; };
+		0AD81B9E242A58F3006206A8 /* listenSubscibe.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AD81B9B242A58F3006206A8 /* listenSubscibe.json */; };
+		0AD81B9F242A58F3006206A8 /* listenRecommend.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AD81B9C242A58F3006206A8 /* listenRecommend.json */; };
 		3202934F2413E1B900F45B27 /* ZCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934B2413E1B900F45B27 /* ZCycleView.swift */; };
 		320293502413E1B900F45B27 /* ZCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934C2413E1B900F45B27 /* ZCycleViewCell.swift */; };
 		320293512413E1B900F45B27 /* ZCycleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934D2413E1B900F45B27 /* ZCycleLayout.swift */; };
 		320293522413E1B900F45B27 /* ZPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934E2413E1B900F45B27 /* ZPageControl.swift */; };
 		322AE795240E410E007820B1 /* appLaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 322AE794240E410E007820B1 /* appLaunchScreen.png */; };
 		323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B24E9240F58C5006E24DC /* JCBootPageView.swift */; };
-		326CCC2E241C89E700C81552 /* String+Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CCC2D241C89E600C81552 /* String+Unit.swift */; };
 		3294EC63241635B7005CCFE4 /* JCMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294EC62241635B7005CCFE4 /* JCMeViewController.swift */; };
 		329F6BAE240D352F008E0721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BAC240D352F008E0721 /* Main.storyboard */; };
 		329F6BB0240D3531008E0721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329F6BAF240D3531008E0721 /* Assets.xcassets */; };
@@ -26,22 +34,16 @@
 		329F6BF9240D354D008E0721 /* JCCommonHederFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BDD240D354D008E0721 /* JCCommonHederFile.swift */; };
 		329F6BFA240D354D008E0721 /* JCFakeTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BDF240D354D008E0721 /* JCFakeTestData.swift */; };
 		329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE1240D354D008E0721 /* AppDelegate.swift */; };
-		329F6BFC240D354D008E0721 /* JCSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE4240D354D008E0721 /* JCSecondViewController.swift */; };
+		329F6BFC240D354D008E0721 /* JCListenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE4240D354D008E0721 /* JCListenController.swift */; };
 		329F6BFE240D354D008E0721 /* JCBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE8240D354D008E0721 /* JCBaseController.swift */; };
 		329F6C01240D354D008E0721 /* JCThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BEE240D354D008E0721 /* JCThreeViewController.swift */; };
 		329F6C02240D354D008E0721 /* JCCustomNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF1240D354D008E0721 /* JCCustomNavgationController.swift */; };
 		329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */; };
 		329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */; };
 		329F6C06240D357C008E0721 /* imageResource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329F6C05240D357B008E0721 /* imageResource.xcassets */; };
-		32A29735241B37A60009A16C /* JCMeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A29734241B37A60009A16C /* JCMeHeaderView.swift */; };
-		32A29737241B536F0009A16C /* pay_banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32A29736241B536E0009A16C /* pay_banner.jpg */; };
-		32A2973A241B54260009A16C /* JCSpecialImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A29739241B54260009A16C /* JCSpecialImageView.swift */; };
 		32A2C71F2415F43B00A49CB6 /* constFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2C71E2415F43B00A49CB6 /* constFile.swift */; };
 		32A2C7242416197B00A49CB6 /* JCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */; };
 		32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */; };
-		32F29E3F241BCB38009325E1 /* JCCreativeCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F29E3D241BCB38009325E1 /* JCCreativeCenterCell.swift */; };
-		32F29E40241BCB38009325E1 /* JCCreativeCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F29E3E241BCB38009325E1 /* JCCreativeCenterCell.xib */; };
-		32F29E42241BD518009325E1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F29E41241BD518009325E1 /* UIColor+Extension.swift */; };
 		4E08EA10E6913170D0EF9D7E /* Pods_MySwiftProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,13 +65,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A82B971242515A500231394 /* JCListenChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCListenChannelViewController.swift; sourceTree = "<group>"; };
+		0A82B9742425198D00231394 /* JCListenChannelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCListenChannelViewModel.swift; sourceTree = "<group>"; };
+		0A82B97C2426588500231394 /* JCListenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCListenProvider.swift; sourceTree = "<group>"; };
+		0A91309D2423BB0B00B8BBA7 /* JCListenFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCListenFooterView.swift; sourceTree = "<group>"; };
+		0A91309F2423C27200B8BBA7 /* JCListenListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCListenListCell.swift; sourceTree = "<group>"; };
+		0A9130A12423C90000B8BBA7 /* JCListenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCListenModel.swift; sourceTree = "<group>"; };
+		0AD81B9A242A58F3006206A8 /* listenMoreChannel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listenMoreChannel.json; sourceTree = "<group>"; };
+		0AD81B9B242A58F3006206A8 /* listenSubscibe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listenSubscibe.json; sourceTree = "<group>"; };
+		0AD81B9C242A58F3006206A8 /* listenRecommend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listenRecommend.json; sourceTree = "<group>"; };
 		3202934B2413E1B900F45B27 /* ZCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleView.swift; sourceTree = "<group>"; };
 		3202934C2413E1B900F45B27 /* ZCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleViewCell.swift; sourceTree = "<group>"; };
 		3202934D2413E1B900F45B27 /* ZCycleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleLayout.swift; sourceTree = "<group>"; };
 		3202934E2413E1B900F45B27 /* ZPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPageControl.swift; sourceTree = "<group>"; };
 		322AE794240E410E007820B1 /* appLaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appLaunchScreen.png; sourceTree = "<group>"; };
 		323B24E9240F58C5006E24DC /* JCBootPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCBootPageView.swift; sourceTree = "<group>"; };
-		326CCC2D241C89E600C81552 /* String+Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Unit.swift"; sourceTree = "<group>"; };
 		3294EC62241635B7005CCFE4 /* JCMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMeViewController.swift; sourceTree = "<group>"; };
 		329F6BA3240D352F008E0721 /* MySwiftProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		329F6BAD240D352F008E0721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,22 +98,16 @@
 		329F6BDD240D354D008E0721 /* JCCommonHederFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCCommonHederFile.swift; sourceTree = "<group>"; };
 		329F6BDF240D354D008E0721 /* JCFakeTestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCFakeTestData.swift; sourceTree = "<group>"; };
 		329F6BE1240D354D008E0721 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		329F6BE4240D354D008E0721 /* JCSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCSecondViewController.swift; sourceTree = "<group>"; };
+		329F6BE4240D354D008E0721 /* JCListenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCListenController.swift; sourceTree = "<group>"; };
 		329F6BE8240D354D008E0721 /* JCBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCBaseController.swift; sourceTree = "<group>"; };
 		329F6BEE240D354D008E0721 /* JCThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCThreeViewController.swift; sourceTree = "<group>"; };
 		329F6BF1240D354D008E0721 /* JCCustomNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCCustomNavgationController.swift; sourceTree = "<group>"; };
 		329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCCustomTabbarVC.swift; sourceTree = "<group>"; };
 		329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCSwiftBaseGrammarVC.swift; sourceTree = "<group>"; };
 		329F6C05240D357B008E0721 /* imageResource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = imageResource.xcassets; sourceTree = "<group>"; };
-		32A29734241B37A60009A16C /* JCMeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMeHeaderView.swift; sourceTree = "<group>"; };
-		32A29736241B536E0009A16C /* pay_banner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pay_banner.jpg; sourceTree = "<group>"; };
-		32A29739241B54260009A16C /* JCSpecialImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCSpecialImageView.swift; sourceTree = "<group>"; };
 		32A2C71E2415F43B00A49CB6 /* constFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constFile.swift; sourceTree = "<group>"; };
 		32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeViewController.swift; sourceTree = "<group>"; };
 		32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCGuidePageViewController.swift; sourceTree = "<group>"; };
-		32F29E3D241BCB38009325E1 /* JCCreativeCenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCCreativeCenterCell.swift; sourceTree = "<group>"; };
-		32F29E3E241BCB38009325E1 /* JCCreativeCenterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCCreativeCenterCell.xib; sourceTree = "<group>"; };
-		32F29E41241BD518009325E1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		82088A0283672079CF405AB9 /* Pods-MySwiftProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CB50E74750A1E063ED273BA6 /* Pods-MySwiftProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.release.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.release.xcconfig"; sourceTree = "<group>"; };
 		E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwiftProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +139,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A82B9732425197700231394 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0A82B9742425198D00231394 /* JCListenChannelViewModel.swift */,
+			);
+			name = ViewModel;
+			path = "MySwiftProduct/Class/ViewController/FMListen-我听/ViewModel";
+			sourceTree = SOURCE_ROOT;
+		};
+		0ACE16C7241BD1740037E56A /* JCListenSubscibe-订阅 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "JCListenSubscibe-订阅";
+			sourceTree = "<group>";
+		};
+		0ACE16C8241BD1740037E56A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A91309D2423BB0B00B8BBA7 /* JCListenFooterView.swift */,
+				0A91309F2423C27200B8BBA7 /* JCListenListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0ACE16C9241BD1740037E56A /* JCListenChannel-一键听 */ = {
+			isa = PBXGroup;
+			children = (
+				0A82B971242515A500231394 /* JCListenChannelViewController.swift */,
+			);
+			path = "JCListenChannel-一键听";
+			sourceTree = "<group>";
+		};
+		0ACE16CA241BD1740037E56A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0AD81B9A242A58F3006206A8 /* listenMoreChannel.json */,
+				0AD81B9C242A58F3006206A8 /* listenRecommend.json */,
+				0AD81B9B242A58F3006206A8 /* listenSubscibe.json */,
+				0A82B97C2426588500231394 /* JCListenProvider.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0ACE16CB241BD1740037E56A /* JCListenRecommend-推荐 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "JCListenRecommend-推荐";
+			sourceTree = "<group>";
+		};
+		0ACE16CC241BD1740037E56A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A9130A12423C90000B8BBA7 /* JCListenModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3202934A2413E1B900F45B27 /* ZCycleView */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +212,6 @@
 		322AE792240E4103007820B1 /* Scource */ = {
 			isa = PBXGroup;
 			children = (
-				32A29736241B536E0009A16C /* pay_banner.jpg */,
 				322AE793240E410E007820B1 /* appLaunchScreen */,
 			);
 			path = Scource;
@@ -174,9 +236,7 @@
 		3294EC612416333C005CCFE4 /* MeModular */ = {
 			isa = PBXGroup;
 			children = (
-				32A29732241B37780009A16C /* Model */,
-				32A29731241B37610009A16C /* View */,
-				32A29730241B37540009A16C /* ViewController */,
+				3294EC62241635B7005CCFE4 /* JCMeViewController.swift */,
 			);
 			path = MeModular;
 			sourceTree = "<group>";
@@ -263,7 +323,6 @@
 		329F6BDA240D354D008E0721 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				32A29738241B538D0009A16C /* SpecialImageView */,
 				329F6BDB240D354D008E0721 /* JCBannerView */,
 				329F6BDD240D354D008E0721 /* JCCommonHederFile.swift */,
 			);
@@ -300,19 +359,26 @@
 				3294EC612416333C005CCFE4 /* MeModular */,
 				32A1507524128F81005932CB /* HomeModualr */,
 				32F18623240FF09C002E7BF5 /* GuidePageViewController */,
-				329F6BE3240D354D008E0721 /* JCSecondViewController */,
+				329F6BE3240D354D008E0721 /* FMListen-我听 */,
 				329F6BE7240D354D008E0721 /* BaseController */,
 				329F6BED240D354D008E0721 /* JCThreeViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		329F6BE3240D354D008E0721 /* JCSecondViewController */ = {
+		329F6BE3240D354D008E0721 /* FMListen-我听 */ = {
 			isa = PBXGroup;
 			children = (
-				329F6BE4240D354D008E0721 /* JCSecondViewController.swift */,
+				329F6BE4240D354D008E0721 /* JCListenController.swift */,
+				0ACE16C7241BD1740037E56A /* JCListenSubscibe-订阅 */,
+				0ACE16C9241BD1740037E56A /* JCListenChannel-一键听 */,
+				0ACE16CB241BD1740037E56A /* JCListenRecommend-推荐 */,
+				0ACE16CA241BD1740037E56A /* API */,
+				0ACE16CC241BD1740037E56A /* Model */,
+				0A82B9732425197700231394 /* ViewModel */,
+				0ACE16C8241BD1740037E56A /* View */,
 			);
-			path = JCSecondViewController;
+			path = "FMListen-我听";
 			sourceTree = "<group>";
 		};
 		329F6BE7240D354D008E0721 /* BaseController */ = {
@@ -376,52 +442,10 @@
 			path = HomeModualr;
 			sourceTree = "<group>";
 		};
-		32A29730241B37540009A16C /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				3294EC62241635B7005CCFE4 /* JCMeViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		32A29731241B37610009A16C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				32F29E3C241BCAC3009325E1 /* CreativeCenterCell */,
-				32A29733241B37840009A16C /* MeHeaderView */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		32A29732241B37780009A16C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		32A29733241B37840009A16C /* MeHeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				32A29734241B37A60009A16C /* JCMeHeaderView.swift */,
-			);
-			path = MeHeaderView;
-			sourceTree = "<group>";
-		};
-		32A29738241B538D0009A16C /* SpecialImageView */ = {
-			isa = PBXGroup;
-			children = (
-				32A29739241B54260009A16C /* JCSpecialImageView.swift */,
-			);
-			path = SpecialImageView;
-			sourceTree = "<group>";
-		};
 		32A2C71D2415F40200A49CB6 /* Define */ = {
 			isa = PBXGroup;
 			children = (
 				32A2C71E2415F43B00A49CB6 /* constFile.swift */,
-				32F29E41241BD518009325E1 /* UIColor+Extension.swift */,
-				326CCC2D241C89E600C81552 /* String+Unit.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -461,15 +485,6 @@
 				32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */,
 			);
 			path = GuidePageViewController;
-			sourceTree = "<group>";
-		};
-		32F29E3C241BCAC3009325E1 /* CreativeCenterCell */ = {
-			isa = PBXGroup;
-			children = (
-				32F29E3D241BCB38009325E1 /* JCCreativeCenterCell.swift */,
-				32F29E3E241BCB38009325E1 /* JCCreativeCenterCell.xib */,
-			);
-			path = CreativeCenterCell;
 			sourceTree = "<group>";
 		};
 		AA2746383241419C0BAE202A /* Frameworks */ = {
@@ -597,11 +612,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				329F6BB3240D3531008E0721 /* TestLaunchScreen.storyboard in Resources */,
+				0AD81B9D242A58F3006206A8 /* listenMoreChannel.json in Resources */,
 				322AE795240E410E007820B1 /* appLaunchScreen.png in Resources */,
-				32A29737241B536F0009A16C /* pay_banner.jpg in Resources */,
-				32F29E40241BCB38009325E1 /* JCCreativeCenterCell.xib in Resources */,
 				329F6C06240D357C008E0721 /* imageResource.xcassets in Resources */,
 				329F6BB0240D3531008E0721 /* Assets.xcassets in Resources */,
+				0AD81B9F242A58F3006206A8 /* listenRecommend.json in Resources */,
+				0AD81B9E242A58F3006206A8 /* listenSubscibe.json in Resources */,
 				329F6BAE240D352F008E0721 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,28 +688,29 @@
 				3294EC63241635B7005CCFE4 /* JCMeViewController.swift in Sources */,
 				32A2C71F2415F43B00A49CB6 /* constFile.swift in Sources */,
 				32A2C7242416197B00A49CB6 /* JCHomeViewController.swift in Sources */,
-				329F6BFC240D354D008E0721 /* JCSecondViewController.swift in Sources */,
-				326CCC2E241C89E700C81552 /* String+Unit.swift in Sources */,
+				329F6BFC240D354D008E0721 /* JCListenController.swift in Sources */,
 				329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */,
 				329F6C02240D354D008E0721 /* JCCustomNavgationController.swift in Sources */,
 				329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */,
+				0A9130A02423C27200B8BBA7 /* JCListenListCell.swift in Sources */,
+				0A82B97D2426588500231394 /* JCListenProvider.swift in Sources */,
 				329F6BFE240D354D008E0721 /* JCBaseController.swift in Sources */,
 				32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */,
-				32F29E42241BD518009325E1 /* UIColor+Extension.swift in Sources */,
+				0A82B972242515A500231394 /* JCListenChannelViewController.swift in Sources */,
 				329F6BFA240D354D008E0721 /* JCFakeTestData.swift in Sources */,
 				329F6BF9240D354D008E0721 /* JCCommonHederFile.swift in Sources */,
 				320293512413E1B900F45B27 /* ZCycleLayout.swift in Sources */,
-				32A29735241B37A60009A16C /* JCMeHeaderView.swift in Sources */,
 				323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */,
 				329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */,
 				320293522413E1B900F45B27 /* ZPageControl.swift in Sources */,
-				32A2973A241B54260009A16C /* JCSpecialImageView.swift in Sources */,
+				0A91309E2423BB0B00B8BBA7 /* JCListenFooterView.swift in Sources */,
 				320293502413E1B900F45B27 /* ZCycleViewCell.swift in Sources */,
 				3202934F2413E1B900F45B27 /* ZCycleView.swift in Sources */,
+				0A9130A22423C90000B8BBA7 /* JCListenModel.swift in Sources */,
 				329F6BF8240D354D008E0721 /* JCBannerView.swift in Sources */,
+				0A82B9752425198D00231394 /* JCListenChannelViewModel.swift in Sources */,
 				329F6BF6240D354D008E0721 /* UIButton+Extension.swift in Sources */,
 				329F6C01240D354D008E0721 /* JCThreeViewController.swift in Sources */,
-				32F29E3F241BCB38009325E1 /* JCCreativeCenterCell.swift in Sources */,
 				329F6BF7240D354D008E0721 /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -803,8 +820,6 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -858,8 +873,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -873,14 +886,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M2TQ22753C;
+				DEVELOPMENT_TEAM = PT584PU8XQ;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.WWW.MySwiftProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -893,14 +906,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M2TQ22753C;
+				DEVELOPMENT_TEAM = PT584PU8XQ;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.WWW.MySwiftProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -14,7 +14,7 @@ class JCBaseController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.RGBA(251, g: 251, b: 251, a: 1)
+        self.view.backgroundColor = .white
     }
 
 }
