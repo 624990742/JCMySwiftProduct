@@ -15,11 +15,12 @@ class JCHomeViewController: JCBaseController {
     
     // MARK: 声明周期
     override func viewDidLoad() {
-        setupUI()
+        
     }
     
     // MARK: 配置界面
     func setupUI() {
+<<<<<<< HEAD
 //        let string: String? = "string"
 //        let anotherString: String?? = string
 //        let literalOptional: String?? = "string"
@@ -38,8 +39,11 @@ class JCHomeViewController: JCBaseController {
         }
         
         
+=======
+>>>>>>> develop
         
         
     }
+    
     
 }
