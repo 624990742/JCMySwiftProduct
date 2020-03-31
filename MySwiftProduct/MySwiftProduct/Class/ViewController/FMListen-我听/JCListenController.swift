@@ -52,7 +52,7 @@ class JCListenController: UIViewController,LTAdvancedScrollViewDelegate  {
     
     private lazy var advanceManager:LTAdvancedManager = {
         let statusBarH = UIApplication.shared.statusBarFrame.size.height
-        let advanceManager = LTAdvancedManager(frame: CGRect(x: 0, y: JCNaviBarHeight, width: JCScreenWidth, height: (JCScreenHeight-JCNaviBarHeight)), viewControllers: self.viewcontrollers, titles: self.titles, currentViewController: self, layout: self.layout) { [weak self] in
+        let advanceManager = LTAdvancedManager(frame: CGRect(x: 0, y: JC_NavBarHeight, width: JC_SCREEN_WIDTH, height: (JC_SCREEN_HEIGHT-JC_NavBarHeight)), viewControllers: self.viewcontrollers, titles: self.titles, currentViewController: self, layout: self.layout) { [weak self] in
             guard let strongSelf = self else {
                 
                 return UIView()

@@ -21,14 +21,14 @@ class JCListenChannelViewController: UIViewController,LTTableViewProtocal,UITabl
         // Do any additional setup after loading the view.
     }
     private lazy var footerView:JCListenFooterView = {
-        let view = JCListenFooterView.init(frame: CGRect(x: 0, y: 0, width: JCScreenWidth, height: 120))
+        let view = JCListenFooterView.init(frame: CGRect(x: 0, y: 0, width: JC_SCREEN_WIDTH, height: 120))
         view.delegate = self
         view.JSListenFooterTitle = "+ 添加频道"
         return view
     }()
     private var ListenchannelCellID = "ListenchannelCellID"
     private lazy var tableview : UITableView = {
-        let tableview = UITableView.init(frame: CGRect(x: 0, y: 5, width: JCScreenWidth, height: JCScreenHeight-64), style: UITableView.Style.plain)
+        let tableview = UITableView.init(frame: CGRect(x: 0, y: 5, width: JC_SCREEN_WIDTH, height: JC_SCREEN_HEIGHT-64), style: UITableView.Style.plain)
         tableview.delegate = self
         tableview.dataSource = self
         tableview.register(JCListenListCell.self, forCellReuseIdentifier: ListenchannelCellID)
