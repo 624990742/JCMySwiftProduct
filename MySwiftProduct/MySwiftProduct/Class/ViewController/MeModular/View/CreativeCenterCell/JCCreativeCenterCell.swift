@@ -45,16 +45,7 @@ class JCCreativeCenterCell: UITableViewCell {
     
     //创作中心
     @IBAction func creationBtnAction(_ sender: UIButton) {
-      
-        #if OLD_APP_VERSION //使用这个代码
         
-        print("旧版本")
-        
-        #else
-        
-        print("新版本")
-        
-        #endif
         
     }
     
