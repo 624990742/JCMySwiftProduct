@@ -930,14 +930,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
+				DEVELOPMENT_TEAM = M2TQ22753C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MySwiftProduct",
+				);
+=======
 				DEVELOPMENT_TEAM = PT584PU8XQ;
+>>>>>>> develop
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D OLD_APP_VERSION";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.www;
+=======
 				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.WWW.MySwiftProduct;
+>>>>>>> develop
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -950,14 +963,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
+				DEVELOPMENT_TEAM = M2TQ22753C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MySwiftProduct",
+				);
+=======
 				DEVELOPMENT_TEAM = PT584PU8XQ;
+>>>>>>> develop
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D OLD_APP_VERSION";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.www;
+=======
 				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.WWW.MySwiftProduct;
+>>>>>>> develop
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
