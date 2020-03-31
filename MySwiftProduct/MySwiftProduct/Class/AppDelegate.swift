@@ -52,18 +52,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        
-        /*
-          要看启动引导页把这里放开
-         setupLaunchImage()
-         let defalutVC = UIViewController.init()
-          self.window!.rootViewController = defalutVC
-        */
-        
-        let tabbarVC = JCCustomTabbarVC()
-        self.window?.rootViewController = tabbarVC
+        setupLaunchImage()
+        let defalutVC = UIViewController.init()
+        self.window!.rootViewController = defalutVC
         self.window?.makeKeyAndVisible()
-        JCDebugLog(message: JC_SCREEN_WIDTH)
+        
         return true
     }
 

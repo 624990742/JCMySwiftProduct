@@ -38,8 +38,14 @@ class JCMeViewController: JCBaseController {
         self.title = "我"
       super .viewDidLoad()
         self.setupUI()
-    
+
+
+        
     }
+    
+    
+    
+   
     
     
     /// Mark: 配置界面
@@ -47,17 +53,29 @@ class JCMeViewController: JCBaseController {
         //四周均不延伸
 //     self.edgesForExtendedLayout = []
       self.view.addSubview(tableViewUITableView)
+        
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 480))
+        view.backgroundColor = .white
+        
+        local {
+          
+        }
     }
+    
+    
     
 }
 
 
 
 
+/// Mark: 测试局部 scope的使用方法
 
-/// Mark:
 
-
+func local(_ closure: () ->()) {
+       closure()
+   }
+   
 
 
 /// Mark: UITableViewDelegate  UITableViewDataSource
