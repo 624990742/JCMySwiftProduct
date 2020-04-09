@@ -13,6 +13,7 @@ class JCListenController: UIViewController,LTAdvancedScrollViewDelegate  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "我听"
         view.backgroundColor = UIColor.white
         self.automaticallyAdjustsScrollViewInsets = false
         view.addSubview(advanceManager)
@@ -30,8 +31,8 @@ class JCListenController: UIViewController,LTAdvancedScrollViewDelegate  {
     }
     private lazy var viewcontrollers:[UIViewController] = {
         let onevc = JCListenChannelViewController()
-        let twovc = UIViewController()
-        let threevc = UIViewController()
+        let twovc = JCListenSubscibeViewController()
+        let threevc = JCRecommendViewController()
         return [onevc,twovc,threevc]
         
     }()
@@ -52,7 +53,7 @@ class JCListenController: UIViewController,LTAdvancedScrollViewDelegate  {
     
     private lazy var advanceManager:LTAdvancedManager = {
         let statusBarH = UIApplication.shared.statusBarFrame.size.height
-        let advanceManager = LTAdvancedManager(frame: CGRect(x: 0, y: JCNaviBarHeight, width: JCScreenWidth, height: (JCScreenHeight-JCNaviBarHeight)), viewControllers: self.viewcontrollers, titles: self.titles, currentViewController: self, layout: self.layout) { [weak self] in
+        let advanceManager = LTAdvancedManager(frame: CGRect(x: 0, y: JC_NavBarHeight, width: JC_SCREEN_WIDTH, height: (JC_SCREEN_HEIGHT-JC_NavBarHeight)), viewControllers: self.viewcontrollers, titles: self.titles, currentViewController: self, layout: self.layout) { [weak self] in
             guard let strongSelf = self else {
                 
                 return UIView()

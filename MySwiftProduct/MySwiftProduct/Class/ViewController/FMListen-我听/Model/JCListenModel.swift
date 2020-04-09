@@ -55,9 +55,24 @@ struct AlbumResultsModel:HandyJSON {
     var uid: NSInteger = 0
     var unreadNum: Int = 0
     
+
     
-    
-    
-    
-    
+}
+
+//-----推荐Model
+struct albumsModel:HandyJSON {
+    var albumId: NSInteger = 0
+    var coverMiddle: String?
+    var coverSmall: String?
+    var isDraft: Bool = false
+    var isFinished: Int = 0
+    var isPaid: Bool = false
+    var lastUpdateAt: NSInteger = 0
+    var playsCounts: NSInteger = 0
+    var recReason: String?
+    var recSrc: String?
+    var recTrack: String?
+    var refundSupportType: Int = 0
+    var title: String?
+    var tracks: Int = 0
 }

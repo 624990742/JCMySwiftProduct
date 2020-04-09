@@ -24,9 +24,9 @@ class JCSubscibeViewModel: NSObject {
 extension JCSubscibeViewModel {
     func refreshDataSource()  {
         //1.获取项目文件路径
-        let path = Bundle.main.path(forResource: "listenSubscibe", ofType: "json")
+        let path : String? = Bundle.main.path(forResource: "listenSubscibe", ofType: "json")
         //2.获取文件内容
-        let jsonData = NSData(contentsOfFile: path)
+        let jsonData = NSData(contentsOfFile: path!)
         //3.解析json内容
         let json = JSON(jsonData)
         //4. A as? B： A 强制转化为B的可选类型
@@ -42,6 +42,6 @@ extension JCSubscibeViewModel {
 //展示数据接口
 extension JCSubscibeViewModel {
     func numberOfRowsInSection(section:NSInteger) -> NSInteger {
-        return self.resultArr!.count ?? 0
+        return self.resultArr?.count ?? 0
     }
 }

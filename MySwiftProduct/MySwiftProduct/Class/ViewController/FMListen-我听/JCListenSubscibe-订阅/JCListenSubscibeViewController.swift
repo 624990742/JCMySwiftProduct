@@ -9,25 +9,42 @@
 import UIKit
 
 class JCListenSubscibeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    //tableviewdelegate
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return
-    }
     
+    //UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellD, for: indexPath) as! JCSubscibeCell
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
+        let model = self.viewmodel.resultArr![indexPath.row]
+        cell.albumResults = model
         
+        return cell
+        
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.viewmodel.numberOfRowsInSection(section: section)
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
     private  let cellD = "cellID"
     private lazy var tableview : UITableView = {
-        let tableview = UITableView.init(frame: CGRect(x: 0, y: 0, width: JCScreenWidth, height: JCScreenHeight-JCNaviBarHeight), style: UITableView.Style.plain)
+        let tableview = UITableView.init(frame: CGRect(x: 0, y: 0, width: JC_SCREEN_WIDTH, height: JC_SCREEN_HEIGHT-JC_NavBarHeight), style: UITableView.Style.plain)
         tableview.delegate = self
         tableview.dataSource = self
         tableview.register(JCSubscibeCell.self, forCellReuseIdentifier: cellD)
-        tableview.backgroundColor = UIColor.white
+        tableview.tableFooterView = self.footerView
+        tableview.backgroundColor = UIColor.init(r: 240, g: 241, b: 244)
         return tableview
         
     }()
+    private lazy var footerView:JCListenFooterView = {
+        let view = JCListenFooterView.init(frame: CGRect(x: 0, y: 0, width: JC_SCREEN_WIDTH, height: 120))
+        view.delegate = self
+        view.JSListenFooterTitle = "+ 添加频道"
+        return view
+    }()
+    //延迟存储属性
     private lazy var viewmodel : JCSubscibeViewModel = {
         return JCSubscibeViewModel()
     }()
@@ -36,7 +53,7 @@ class JCListenSubscibeViewController: UIViewController,UITableViewDelegate,UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(self.tableview)
-        glt_scrollView = tableview
+        glt_scrollView = self.tableview
         //#available 用于提交判断 系统版本号
         //@available 用于函数或者方法中判断系统版本号
         if #available(iOS 11.0, *) {
@@ -45,22 +62,25 @@ class JCListenSubscibeViewController: UIViewController,UITableViewDelegate,UITab
             automaticallyAdjustsScrollViewInsets = false
         }
         
+         print("我是订阅号页面的子view \(self.view.subviews)")
+        
         loadData()
     }
     
-    //方法
+    
     func loadData()  {
-        self.viewmodel.
+        //定义属性
+        viewmodel.updateBlock = {[unowned self] in
+            self.tableview.reloadData()
+        }
+        viewmodel.refreshDataSource()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+//点击+号 为底部添加单击事件
+extension JCListenSubscibeViewController : JCListenFooterViewDelegate {
+    func listenFooterAddBtnClick() {
+        let vc = JCListenChannelViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
-    */
-
 }
