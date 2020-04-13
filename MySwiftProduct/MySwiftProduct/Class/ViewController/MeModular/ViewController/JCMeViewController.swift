@@ -26,7 +26,8 @@ class JCMeViewController: JCBaseController {
         tempTableView.estimatedRowHeight = 0
         tempTableView.rowHeight = 0
         tempTableView.separatorStyle = .none
-        tempTableView.backgroundColor = UIColor(hexString: "#f1f1f1")
+        tempTableView.backgroundColor = UIColor.white//UIColor(hexString: "#f7f7f7")
+        tempTableView.separatorStyle = .none
         tempTableView.register(UINib.init(nibName: "JCCreativeCenterCell", bundle: nil), forCellReuseIdentifier: kJCCreativeCenterCellID)
         
         return tempTableView
@@ -46,6 +47,8 @@ class JCMeViewController: JCBaseController {
     func setupUI() {
         //四周均不延伸
 //     self.edgesForExtendedLayout = []
+        
+        
       self.view.addSubview(tableViewUITableView)
     }
     

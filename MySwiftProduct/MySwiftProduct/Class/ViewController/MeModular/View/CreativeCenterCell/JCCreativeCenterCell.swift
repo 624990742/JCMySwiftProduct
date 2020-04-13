@@ -56,20 +56,43 @@ class JCCreativeCenterCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+      
+      
+         self.setupShaowStyle()
           self.topImageView.layer.cornerRadius = 10
           self.topImageView.layer.masksToBounds = true
           self.bottomImageView.layer.cornerRadius = 10
           self.bottomImageView.layer.masksToBounds = true
-          self.BackView.layer.cornerRadius = 10
-          self.BackView.layer.masksToBounds = true
+//          self.BackView.layer.cornerRadius = 10
+//          self.BackView.layer.masksToBounds = true
          self.creationBtn.titleLabel?.textAlignment = .center
          self.soundRecordBtn.titleLabel?.textAlignment = .center
          self.liveBroadcastBtn.titleLabel?.textAlignment = .center
          self.worksBtn.titleLabel?.textAlignment = .center
         
-            
+    }
+    
+    
+    
+   public func setupShaowStyle() {
+    self.BackView.layoutIfNeeded()
+      
+       self.backgroundColor = UIColor.white
+        let  tempLayer  = self.BackView.layer
+        tempLayer.cornerRadius = 2.0
+        tempLayer.borderColor = UIColor.clear.cgColor
+        tempLayer.masksToBounds  = true
+        tempLayer.shadowColor = UIColor.RGBA(0, g: 0, b: 0, a: 1).cgColor
+        tempLayer.shadowOffset = CGSize.init(width: 0, height: 0)
+        tempLayer.shadowRadius = 10.0
+        tempLayer.shadowOpacity = 0.05
+        tempLayer.masksToBounds = false
+    tempLayer.shadowPath = UIBezierPath(roundedRect: self.BackView.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
         
     }
+    
+    
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
