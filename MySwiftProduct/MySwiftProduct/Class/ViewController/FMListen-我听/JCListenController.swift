@@ -13,6 +13,7 @@ class JCListenController: UIViewController,LTAdvancedScrollViewDelegate  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "我听"
         view.backgroundColor = UIColor.white
         self.automaticallyAdjustsScrollViewInsets = false
         view.addSubview(advanceManager)
@@ -30,8 +31,8 @@ class JCListenController: UIViewController,LTAdvancedScrollViewDelegate  {
     }
     private lazy var viewcontrollers:[UIViewController] = {
         let onevc = JCListenChannelViewController()
-        let twovc = UIViewController()
-        let threevc = UIViewController()
+        let twovc = JCListenSubscibeViewController()
+        let threevc = JCRecommendViewController()
         return [onevc,twovc,threevc]
         
     }()

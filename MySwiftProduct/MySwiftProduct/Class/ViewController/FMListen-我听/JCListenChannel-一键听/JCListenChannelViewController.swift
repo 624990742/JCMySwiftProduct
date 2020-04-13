@@ -34,6 +34,7 @@ class JCListenChannelViewController: UIViewController,LTTableViewProtocal,UITabl
         tableview.register(JCListenListCell.self, forCellReuseIdentifier: ListenchannelCellID)
 //        tableview.separatorStyle = UITableViewCellSeparatorStyle.none
         tableview.tableFooterView = self.footerView
+        tableview.backgroundColor = UIColor.init(r: 240, g: 241, b: 244)
         return tableview
         
     }()
