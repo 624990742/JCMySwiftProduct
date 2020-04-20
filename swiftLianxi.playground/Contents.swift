@@ -103,6 +103,27 @@ print("lastNameEndingInA:\(String(describing: lastNameEndingInA))")
 //ranks.map { rank in (suit, rank)
 //} }
 
-let slice = fibs[1...]
-slice // [1, 1, 2, 3, 5]
-type(of: slice) // ArraySlice<Int>
+//let slice = fibs[1...]
+//slice // [1, 1, 2, 3, 5]
+//type(of: slice) // ArraySlice<Int>
+
+enum Setting {
+    case text(String)
+    case int(Int)
+    case bool(Bool)
+}
+
+let defaultSettings:[String:Setting] = [
+    "Airplane Model":.bool(false),
+    "Name":.text("My iPhone"),
+]
+print(defaultSettings["Name"]!)
+
+
+
+
+
+
+
+
+

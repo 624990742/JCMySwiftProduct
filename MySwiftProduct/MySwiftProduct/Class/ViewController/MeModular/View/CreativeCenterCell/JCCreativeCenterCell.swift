@@ -51,13 +51,21 @@ class JCCreativeCenterCell: UITableViewCell {
     
     
     
-    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+//        for   in self.subviews{
+//            
+//        }
+        
+        
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
       
-      
+        self.selectionStyle = .none
          self.setupShaowStyle()
           self.topImageView.layer.cornerRadius = 10
           self.topImageView.layer.masksToBounds = true

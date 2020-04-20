@@ -28,6 +28,8 @@
 		320293522413E1B900F45B27 /* ZPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934E2413E1B900F45B27 /* ZPageControl.swift */; };
 		322AE795240E410E007820B1 /* appLaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 322AE794240E410E007820B1 /* appLaunchScreen.png */; };
 		323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B24E9240F58C5006E24DC /* JCBootPageView.swift */; };
+		326541D52445F17B00033426 /* JCmyServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326541D42445F17B00033426 /* JCmyServiceCell.swift */; };
+		326541D82445F31E00033426 /* myserviceData.json in Resources */ = {isa = PBXBuildFile; fileRef = 326541D72445F31E00033426 /* myserviceData.json */; };
 		329DD40224338751003E040F /* JCCreativeCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DD3FC24338751003E040F /* JCCreativeCenterCell.swift */; };
 		329DD40324338752003E040F /* JCCreativeCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DD3FD24338751003E040F /* JCCreativeCenterCell.xib */; };
 		329DD40424338752003E040F /* JCMeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DD3FF24338751003E040F /* JCMeHeaderView.swift */; };
@@ -99,6 +101,8 @@
 		3202934E2413E1B900F45B27 /* ZPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPageControl.swift; sourceTree = "<group>"; };
 		322AE794240E410E007820B1 /* appLaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appLaunchScreen.png; sourceTree = "<group>"; };
 		323B24E9240F58C5006E24DC /* JCBootPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCBootPageView.swift; sourceTree = "<group>"; };
+		326541D42445F17B00033426 /* JCmyServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCmyServiceCell.swift; sourceTree = "<group>"; };
+		326541D72445F31E00033426 /* myserviceData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = myserviceData.json; sourceTree = "<group>"; };
 		329DD3FC24338751003E040F /* JCCreativeCenterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCCreativeCenterCell.swift; sourceTree = "<group>"; };
 		329DD3FD24338751003E040F /* JCCreativeCenterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCCreativeCenterCell.xib; sourceTree = "<group>"; };
 		329DD3FF24338751003E040F /* JCMeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCMeHeaderView.swift; sourceTree = "<group>"; };
@@ -314,9 +318,26 @@
 			path = BootPageView;
 			sourceTree = "<group>";
 		};
+		326541D32445F13300033426 /* myServiceCell */ = {
+			isa = PBXGroup;
+			children = (
+				326541D42445F17B00033426 /* JCmyServiceCell.swift */,
+			);
+			path = myServiceCell;
+			sourceTree = "<group>";
+		};
+		326541D62445F2EB00033426 /* Scource */ = {
+			isa = PBXGroup;
+			children = (
+				326541D72445F31E00033426 /* myserviceData.json */,
+			);
+			path = Scource;
+			sourceTree = "<group>";
+		};
 		329DD3F824338751003E040F /* MeModular */ = {
 			isa = PBXGroup;
 			children = (
+				326541D62445F2EB00033426 /* Scource */,
 				329DD3F924338751003E040F /* Model */,
 				329DD3FA24338751003E040F /* View */,
 				329DD40024338751003E040F /* ViewController */,
@@ -334,6 +355,7 @@
 		329DD3FA24338751003E040F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				326541D32445F13300033426 /* myServiceCell */,
 				329DD3FB24338751003E040F /* CreativeCenterCell */,
 				329DD3FE24338751003E040F /* MeHeaderView */,
 			);
@@ -750,6 +772,7 @@
 				329DD40324338752003E040F /* JCCreativeCenterCell.xib in Resources */,
 				0AD81B9D242A58F3006206A8 /* listenMoreChannel.json in Resources */,
 				322AE795240E410E007820B1 /* appLaunchScreen.png in Resources */,
+				326541D82445F31E00033426 /* myserviceData.json in Resources */,
 				329F6C06240D357C008E0721 /* imageResource.xcassets in Resources */,
 				329F6BB0240D3531008E0721 /* Assets.xcassets in Resources */,
 				0AD81B9F242A58F3006206A8 /* listenRecommend.json in Resources */,
@@ -826,6 +849,7 @@
 				32A2C7242416197B00A49CB6 /* JCHomeViewController.swift in Sources */,
 				329F6BFC240D354D008E0721 /* JCListenController.swift in Sources */,
 				329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */,
+				326541D52445F17B00033426 /* JCmyServiceCell.swift in Sources */,
 				329F6C02240D354D008E0721 /* JCCustomNavgationController.swift in Sources */,
 				329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */,
 				0A82B97D2426588500231394 /* JCListenProvider.swift in Sources */,
