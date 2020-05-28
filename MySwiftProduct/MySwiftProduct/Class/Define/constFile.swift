@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+
+
 let JC_SCREEN_WIDTH = UIScreen.main.bounds.size.width
 let JC_SCREEN_HEIGHT = UIScreen.main.bounds.size.height
 let JC_IPHONEX = JC_SCREEN_HEIGHT == 812 ? true : false

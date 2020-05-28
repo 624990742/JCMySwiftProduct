@@ -57,7 +57,9 @@
 		329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */; };
 		329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */; };
 		329F6C06240D357C008E0721 /* imageResource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329F6C05240D357B008E0721 /* imageResource.xcassets */; };
+		32A2B6D62450715F0057B3FF /* JCMyserviceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2B6D52450715F0057B3FF /* JCMyserviceDataModel.swift */; };
 		32A2C7242416197B00A49CB6 /* JCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */; };
+		32A7AD16245FF6E0008FD3AB /* ConstrainArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7AD15245FF6E0008FD3AB /* ConstrainArrayDSL.swift */; };
 		32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */; };
 		4E08EA10E6913170D0EF9D7E /* Pods_MySwiftProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */; };
 /* End PBXBuildFile section */
@@ -136,7 +138,9 @@
 		329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCCustomTabbarVC.swift; sourceTree = "<group>"; };
 		329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCSwiftBaseGrammarVC.swift; sourceTree = "<group>"; };
 		329F6C05240D357B008E0721 /* imageResource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = imageResource.xcassets; sourceTree = "<group>"; };
+		32A2B6D52450715F0057B3FF /* JCMyserviceDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMyserviceDataModel.swift; sourceTree = "<group>"; };
 		32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeViewController.swift; sourceTree = "<group>"; };
+		32A7AD15245FF6E0008FD3AB /* ConstrainArrayDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrainArrayDSL.swift; sourceTree = "<group>"; };
 		32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCGuidePageViewController.swift; sourceTree = "<group>"; };
 		82088A0283672079CF405AB9 /* Pods-MySwiftProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CB50E74750A1E063ED273BA6 /* Pods-MySwiftProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.release.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.release.xcconfig"; sourceTree = "<group>"; };
@@ -348,6 +352,7 @@
 		329DD3F924338751003E040F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				32A2B6D52450715F0057B3FF /* JCMyserviceDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -480,6 +485,7 @@
 			children = (
 				329F6BD8240D354D008E0721 /* UIButton+Extension.swift */,
 				329F6BD9240D354D008E0721 /* UIImage+Extension.swift */,
+				32A7AD15245FF6E0008FD3AB /* ConstrainArrayDSL.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -868,6 +874,7 @@
 				329DD40F243387CD003E040F /* String+Unit.swift in Sources */,
 				329F6BF9240D354D008E0721 /* JCCommonHederFile.swift in Sources */,
 				320293512413E1B900F45B27 /* ZCycleLayout.swift in Sources */,
+				32A7AD16245FF6E0008FD3AB /* ConstrainArrayDSL.swift in Sources */,
 				323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */,
 				329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */,
 				329DD40224338751003E040F /* JCCreativeCenterCell.swift in Sources */,
@@ -878,6 +885,7 @@
 				3202934F2413E1B900F45B27 /* ZCycleView.swift in Sources */,
 				0A9130A22423C90000B8BBA7 /* JCListenModel.swift in Sources */,
 				0ADF1A29243F09510018A330 /* JCRecommendCell.swift in Sources */,
+				32A2B6D62450715F0057B3FF /* JCMyserviceDataModel.swift in Sources */,
 				329F6BF8240D354D008E0721 /* JCBannerView.swift in Sources */,
 				329F6BF6240D354D008E0721 /* UIButton+Extension.swift in Sources */,
 				0A72FBCE2432468300D87BB1 /* JCListenFooterView.swift in Sources */,

@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import HandyJSON
 
 let kJCCreativeCenterCellID = "JCCreativeCenterCellID"
-
+let kJCmyServiceCellID = "JCmyServiceCellID"
 
 class JCMeViewController: JCBaseController {
     private  var customTableView: UITableView!
-       
+    private  var serviceArr:[JCMyserviceDataModel]?
       /// Mark: 懒加载
     private lazy var tableViewUITableView = { () -> UITableView in
         let tempTableView = UITableView.init(frame: CGRect(x: 0.0, y: CGFloat(JC_NavBarHeight), width: CGFloat(JC_SCREEN_WIDTH), height: CGFloat(JC_SCREEN_HEIGHT) - CGFloat(JC_TABBARHEIGHT)), style: UITableView.Style.plain)
@@ -33,6 +34,7 @@ class JCMeViewController: JCBaseController {
 //        tempTableView.separatorColor = UIColor.clear
         tempTableView.backgroundColor = UIColor.white
         tempTableView.register(UINib.init(nibName: "JCCreativeCenterCell", bundle: nil), forCellReuseIdentifier: kJCCreativeCenterCellID)
+        tempTableView.register(JCmyServiceCell.self, forCellReuseIdentifier: kJCmyServiceCellID)
       
         return tempTableView
     }()
@@ -44,8 +46,9 @@ class JCMeViewController: JCBaseController {
     override func viewDidLoad() {
         self.title = "我"
       super .viewDidLoad()
-        self.loadData()
         self.setupUI()
+        self.loadData()
+        
     
     }
     
@@ -54,12 +57,25 @@ class JCMeViewController: JCBaseController {
     ///MARK:
     
     func loadData(){
-        let path : String? = Bundle.main.path(forResource: "myserviceData", ofType: "json")
+        let iconPath : String? = Bundle.main.path(forResource: "myserviceData", ofType: "json")
                //2.获取文件内容
-        let jsonData = NSData(contentsOfFile: path!)
+        let jsonString: String?  = try! String.init(contentsOfFile: iconPath!)
         
-        
-        
+        if let services = [JCMyserviceDataModel].deserialize(from: jsonString) {
+            services.forEach { (serverModel) in
+                debugPrint("serverModel?.title==>\(String(describing: serverModel?.title))")
+                
+                 self.tableViewUITableView.reloadData()
+                debugPrint("Thread.current==>\(Thread.current)")
+                
+//               let disQuue  = DispatchQueue(label: "com.cell.relo");
+//                disQuue.async {
+//
+//
+//                }
+            }
+        }
+
     }
     
     
@@ -90,7 +106,7 @@ extension JCMeViewController: UITableViewDelegate, UITableViewDataSource{
        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 5
+        return 2
     }
     
    
@@ -98,13 +114,26 @@ extension JCMeViewController: UITableViewDelegate, UITableViewDataSource{
     
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
-        var customCell = tableView.dequeueReusableCell(withIdentifier: kJCCreativeCenterCellID)
-                if customCell == nil {
-                customCell = JCCreativeCenterCell(style: .default, reuseIdentifier: kJCCreativeCenterCellID)
-                }
-                customCell?.backgroundColor = .clear
-            return customCell!
-    
+        if indexPath.row == 0 {
+            var customCell = tableView.dequeueReusableCell(withIdentifier: kJCCreativeCenterCellID)
+                        if customCell == nil {
+                        customCell = JCCreativeCenterCell(style: .default, reuseIdentifier: kJCCreativeCenterCellID)
+                        }
+                        customCell?.backgroundColor = .clear
+                    return customCell!
+            
+        }else{
+            
+         let cell:JCmyServiceCell = tableView.dequeueReusableCell(withIdentifier: kJCmyServiceCellID, for: indexPath) as! JCmyServiceCell
+             cell.selectionStyle = .none
+             cell.backgroundColor = .clear
+             cell.serverData = self.serviceArr
+             cell.model = self.serviceArr?[indexPath.row]
+            
+
+           return cell
+        }
+        
     }
     
  
