@@ -107,23 +107,29 @@ print("lastNameEndingInA:\(String(describing: lastNameEndingInA))")
 //slice // [1, 1, 2, 3, 5]
 //type(of: slice) // ArraySlice<Int>
 
-enum Setting {
-    case text(String)
-    case int(Int)
-    case bool(Bool)
+//enum Setting {
+//    case text(String)
+//    case int(Int)
+//    case bool(Bool)
+//}
+//
+//let defaultSettings:[String:Setting] = [
+//    "Airplane Model":.bool(false),
+//    "Name":.text("My iPhone"),
+//]
+//print(defaultSettings["Name"]!)
+
+
+
+func swapTwoValues<T>(_ a: inout T,_ b: inout T) {
+    let temporaryA = a
+    a = b
+    b = temporaryA
 }
 
-let defaultSettings:[String:Setting] = [
-    "Airplane Model":.bool(false),
-    "Name":.text("My iPhone"),
-]
-print(defaultSettings["Name"]!)
-
-
-
-
-
-
+var someInt = 3
+var anotherInt = 107
+swapTwoValues(&someInt, &anotherInt)
 
 
 

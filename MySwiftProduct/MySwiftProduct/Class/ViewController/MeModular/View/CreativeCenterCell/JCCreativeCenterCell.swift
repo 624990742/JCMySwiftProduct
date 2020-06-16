@@ -85,7 +85,7 @@ class JCCreativeCenterCell: UITableViewCell {
    public func setupShaowStyle() {
     self.BackView.layoutIfNeeded()
       
-       self.backgroundColor = UIColor.white
+       self.backgroundColor = UIColor.clear
         let  tempLayer  = self.BackView.layer
         tempLayer.cornerRadius = 2.0
         tempLayer.borderColor = UIColor.clear.cgColor

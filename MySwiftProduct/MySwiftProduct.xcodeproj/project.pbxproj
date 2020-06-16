@@ -60,6 +60,7 @@
 		32A2B6D62450715F0057B3FF /* JCMyserviceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2B6D52450715F0057B3FF /* JCMyserviceDataModel.swift */; };
 		32A2C7242416197B00A49CB6 /* JCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */; };
 		32A7AD16245FF6E0008FD3AB /* ConstrainArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7AD15245FF6E0008FD3AB /* ConstrainArrayDSL.swift */; };
+		32B48305248E388D00B04BAE /* JCMyServiceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B48304248E388D00B04BAE /* JCMyServiceCollectionCell.swift */; };
 		32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */; };
 		4E08EA10E6913170D0EF9D7E /* Pods_MySwiftProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */; };
 /* End PBXBuildFile section */
@@ -141,6 +142,7 @@
 		32A2B6D52450715F0057B3FF /* JCMyserviceDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMyserviceDataModel.swift; sourceTree = "<group>"; };
 		32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeViewController.swift; sourceTree = "<group>"; };
 		32A7AD15245FF6E0008FD3AB /* ConstrainArrayDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrainArrayDSL.swift; sourceTree = "<group>"; };
+		32B48304248E388D00B04BAE /* JCMyServiceCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMyServiceCollectionCell.swift; sourceTree = "<group>"; };
 		32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCGuidePageViewController.swift; sourceTree = "<group>"; };
 		82088A0283672079CF405AB9 /* Pods-MySwiftProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CB50E74750A1E063ED273BA6 /* Pods-MySwiftProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.release.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.release.xcconfig"; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 		329DD3FA24338751003E040F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				32B48303248E380600B04BAE /* MyServiceCollectionCell */,
 				326541D32445F13300033426 /* myServiceCell */,
 				329DD3FB24338751003E040F /* CreativeCenterCell */,
 				329DD3FE24338751003E040F /* MeHeaderView */,
@@ -635,6 +638,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		32B48303248E380600B04BAE /* MyServiceCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				32B48304248E388D00B04BAE /* JCMyServiceCollectionCell.swift */,
+			);
+			path = MyServiceCollectionCell;
+			sourceTree = "<group>";
+		};
 		32CB1FB12410F0E2008B0F33 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -857,6 +868,7 @@
 				329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */,
 				326541D52445F17B00033426 /* JCmyServiceCell.swift in Sources */,
 				329F6C02240D354D008E0721 /* JCCustomNavgationController.swift in Sources */,
+				32B48305248E388D00B04BAE /* JCMyServiceCollectionCell.swift in Sources */,
 				329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */,
 				0A82B97D2426588500231394 /* JCListenProvider.swift in Sources */,
 				0A72FBC22432444100D87BB1 /* JCListenChannelViewModel.swift in Sources */,
