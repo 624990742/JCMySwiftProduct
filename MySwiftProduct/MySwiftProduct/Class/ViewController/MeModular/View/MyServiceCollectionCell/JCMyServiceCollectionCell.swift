@@ -35,7 +35,7 @@ class JCMyServiceCollectionCell:UICollectionViewCell {
         self.addSubview(self.coverImageView)
         self.coverImageView.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.snp_centerX)
-            make.size.equalTo(CGSize.init(width: 45, height: 45))
+            make.size.equalTo(CGSize.init(width: 35, height: 35))
             make.top.equalToSuperview()
         }
         

@@ -87,15 +87,15 @@ class JCCreativeCenterCell: UITableViewCell {
       
        self.backgroundColor = UIColor.clear
         let  tempLayer  = self.BackView.layer
-        tempLayer.cornerRadius = 2.0
+        tempLayer.cornerRadius = 10.0
         tempLayer.borderColor = UIColor.clear.cgColor
         tempLayer.masksToBounds  = true
-        tempLayer.shadowColor = UIColor.RGBA(0, g: 0, b: 0, a: 1).cgColor
-        tempLayer.shadowOffset = CGSize.init(width: 0, height: 0)
-        tempLayer.shadowRadius = 10.0
-        tempLayer.shadowOpacity = 0.05
-        tempLayer.masksToBounds = false
-    tempLayer.shadowPath = UIBezierPath(roundedRect: self.BackView.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
+//        tempLayer.shadowColor = UIColor.RGBA(0, g: 0, b: 0, a: 1).cgColor
+//        tempLayer.shadowOffset = CGSize.init(width: 0, height: 0)
+//        tempLayer.shadowRadius = 10.0
+//        tempLayer.shadowOpacity = 0.05
+//        tempLayer.masksToBounds = false
+//    tempLayer.shadowPath = UIBezierPath(roundedRect: self.BackView.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
         
     }
     
