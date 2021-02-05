@@ -53,7 +53,7 @@ class JCCustomTabbarVC: UITabBarController {
         
         self.setUpOneChildViewController(viewController: JCListenController(), image: UIImage.init(named: "tabBar_new_icon")!, selectedImage: UIImage.init(named: "tabBar_new_click_icon")!, title: "我听")
         
-        self.setUpOneChildViewController(viewController: JCThreeViewController(), image: UIImage.init(named: "tabBar_friendTrends_icon")!, selectedImage: UIImage.init(named: "tabBar_friendTrends_click_icon")!, title: "发现")
+        self.setUpOneChildViewController(viewController: JCFindController(), image: UIImage.init(named: "tabBar_friendTrends_icon")!, selectedImage: UIImage.init(named: "tabBar_friendTrends_click_icon")!, title: "发现")
         
         self.setUpOneChildViewController(viewController: JCMeViewController(), image: UIImage.init(named: "tabBar_me_icon")!, selectedImage: UIImage.init(named: "tabBar_me_click_icon")!, title: "我的")
     }

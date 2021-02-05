@@ -1,5 +1,5 @@
 //
-//  JCThreeViewController.swift
+//  JCFindController.swift
 //  JCMySwitfDemo
 //
 //  Created by jiachen on 2019/8/14.
@@ -8,16 +8,14 @@
 
 import UIKit
 
-class JCThreeViewController: UIViewController {
+class JCFindController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
-        
-        
-        
+     var mutableFibs = [0, 1, 1, 2, 3, 5]
+        mutableFibs.append(10)
+    print(mutableFibs)
         
         // Do any additional setup after loading the view.
     }

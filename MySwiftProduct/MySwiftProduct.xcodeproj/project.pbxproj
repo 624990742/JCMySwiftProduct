@@ -52,7 +52,7 @@
 		329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE1240D354D008E0721 /* AppDelegate.swift */; };
 		329F6BFC240D354D008E0721 /* JCListenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE4240D354D008E0721 /* JCListenController.swift */; };
 		329F6BFE240D354D008E0721 /* JCBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BE8240D354D008E0721 /* JCBaseController.swift */; };
-		329F6C01240D354D008E0721 /* JCThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BEE240D354D008E0721 /* JCThreeViewController.swift */; };
+		329F6C01240D354D008E0721 /* JCFindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BEE240D354D008E0721 /* JCFindController.swift */; };
 		329F6C02240D354D008E0721 /* JCCustomNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF1240D354D008E0721 /* JCCustomNavgationController.swift */; };
 		329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */; };
 		329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */; };
@@ -134,7 +134,7 @@
 		329F6BE1240D354D008E0721 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		329F6BE4240D354D008E0721 /* JCListenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCListenController.swift; sourceTree = "<group>"; };
 		329F6BE8240D354D008E0721 /* JCBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCBaseController.swift; sourceTree = "<group>"; };
-		329F6BEE240D354D008E0721 /* JCThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCThreeViewController.swift; sourceTree = "<group>"; };
+		329F6BEE240D354D008E0721 /* JCFindController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCFindController.swift; sourceTree = "<group>"; };
 		329F6BF1240D354D008E0721 /* JCCustomNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCCustomNavgationController.swift; sourceTree = "<group>"; };
 		329F6BF3240D354D008E0721 /* JCCustomTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCCustomTabbarVC.swift; sourceTree = "<group>"; };
 		329F6BF5240D354D008E0721 /* JCSwiftBaseGrammarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCSwiftBaseGrammarVC.swift; sourceTree = "<group>"; };
@@ -530,12 +530,12 @@
 		329F6BE2240D354D008E0721 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				32AAEA06250B486B00435C00 /* FindModular */,
 				329DD3F824338751003E040F /* MeModular */,
 				32A1507524128F81005932CB /* HomeModualr */,
 				32F18623240FF09C002E7BF5 /* GuidePageViewController */,
 				329F6BE3240D354D008E0721 /* FMListen-我听 */,
 				329F6BE7240D354D008E0721 /* BaseController */,
-				329F6BED240D354D008E0721 /* JCThreeViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -561,14 +561,6 @@
 				329F6BE8240D354D008E0721 /* JCBaseController.swift */,
 			);
 			path = BaseController;
-			sourceTree = "<group>";
-		};
-		329F6BED240D354D008E0721 /* JCThreeViewController */ = {
-			isa = PBXGroup;
-			children = (
-				329F6BEE240D354D008E0721 /* JCThreeViewController.swift */,
-			);
-			path = JCThreeViewController;
 			sourceTree = "<group>";
 		};
 		329F6BEF240D354D008E0721 /* Base */ = {
@@ -636,6 +628,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		32AAEA06250B486B00435C00 /* FindModular */ = {
+			isa = PBXGroup;
+			children = (
+				329F6BEE240D354D008E0721 /* JCFindController.swift */,
+			);
+			path = FindModular;
 			sourceTree = "<group>";
 		};
 		32B48303248E380600B04BAE /* MyServiceCollectionCell */ = {
@@ -901,7 +901,7 @@
 				329F6BF8240D354D008E0721 /* JCBannerView.swift in Sources */,
 				329F6BF6240D354D008E0721 /* UIButton+Extension.swift in Sources */,
 				0A72FBCE2432468300D87BB1 /* JCListenFooterView.swift in Sources */,
-				329F6C01240D354D008E0721 /* JCThreeViewController.swift in Sources */,
+				329F6C01240D354D008E0721 /* JCFindController.swift in Sources */,
 				329F6BF7240D354D008E0721 /* UIImage+Extension.swift in Sources */,
 				0ADF1A2B243F09660018A330 /* JCRecommendViewModel.swift in Sources */,
 				0ADF1A27243F08F30018A330 /* JCRecommendViewController.swift in Sources */,
