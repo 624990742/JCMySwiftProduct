@@ -34,5 +34,7 @@ pod 'SnapKit'
     pod 'SVProgressHUD'
     #播放网络音频
     pod 'StreamingKit'
+    #顶部分段选择器
+    pod 'JXSegmentedView'
 
 end

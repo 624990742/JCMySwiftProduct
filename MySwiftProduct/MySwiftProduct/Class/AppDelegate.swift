@@ -52,9 +52,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        setupLaunchImage()
-        let defalutVC = UIViewController.init()
-        self.window!.rootViewController = defalutVC
+//        setupLaunchImage()
+//        let defalutVC = UIViewController.init()
+//        self.window!.rootViewController = defalutVC
+        
+    
+        let tabbarVC = JCCustomTabbarVC()
+        self.window?.rootViewController = tabbarVC
         self.window?.makeKeyAndVisible()
         
         return true
