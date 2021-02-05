@@ -510,23 +510,39 @@ print("result1:\(result1),result2:\(result2)")
 
 /**
  KVC 在swift中的使用
- 
-class SimpleClass {
-    var someValue: String = "123"
-}
+ */
+//class SimpleClass {
+//    var someValue: String = "123"
+//}
 //SimpleClass().setValue("456", forKey: "someValue") // 错误, 必须要继承自 NSObject
 
-class KVCClass :NSObject{
-//   @objc
-    var someValue: String = "123"
-}
-let kvc = KVCClass()
-kvc.someValue // 123
-kvc.setValue("456", forKey: "someValue")
-kvc.someValue // 456
-print("\(kvc.someValue)")
+//class KVCTestClass:NSObject{
+//   @objc  var someValue: String = "你好"
+//}
+//let kvc = KVCTestClass()
+//print("赋值前边:\(kvc.someValue)")
+//kvc.setValue("我很好", forKey: "someValue")
+////kvc.someValue = "456"// 456
+//print("赋值后:\(kvc.someValue)")
 
+
+/**
+KVC 中使用keyPath
+
+class JCPerson : NSObject {
+@objc var name:String = ""
+init(dict:[String:Any]){
+super.init()
+setValuesForKeys(dict)
+}
+}
+let person = JCPerson(dict: ["name":"码农晨仔"])
+let name = person.value(forKeyPath: #keyPath(JCPerson.name))
+print(name ?? "错误")
+person.setValue("屌丝夜魅", forKeyPath: #keyPath(JCPerson.name))
+print(person.name) 
 */
+
 
 /**
  KVO 的使用
