@@ -16,6 +16,7 @@ pod 'SnapKit'
   pod 'ESTabBarController-swift'
 #banner滚动图片
     pod 'FSPagerView'
+#网络请求
     pod 'Moya'
 #    pod 'HandyJSON', '~> 4.2.0'
    pod 'HandyJSON', '~> 5.0.2-beta'

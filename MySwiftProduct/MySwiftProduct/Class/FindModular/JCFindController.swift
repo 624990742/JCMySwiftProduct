@@ -7,20 +7,29 @@
 //
 
 import UIKit
-
+import Alamofire
 class JCFindController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-     var mutableFibs = [0, 1, 1, 2, 3, 5]
-        mutableFibs.append(10)
-    print(mutableFibs)
-        
-        // Do any additional setup after loading the view.
+        self.testDemo1()
     }
     
 
+///MARK - 网络请求测试
+//get
+    
+    func testDemo1()  {
+    
+        
+        
+    }
+    
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

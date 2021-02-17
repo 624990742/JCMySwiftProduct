@@ -3,7 +3,12 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/jiachen/Desktop/project/JCMySwiftProduct/swiftLianxi.playground#CharacterRangeLen=11829&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=0&amp;EndingLineNumber=577&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=634214026.273043"
+         documentLocation = "file:///Users/jiachen/Desktop/project/JCMySwiftProduct/swiftLianxi.playground#CharacterRangeLen=11827&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=0&amp;EndingLineNumber=574&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=634359656.94622"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/jiachen/Desktop/project/JCMySwiftProduct/swiftLianxi.playground#CharacterRangeLen=3&amp;CharacterRangeLoc=11447&amp;EndingColumnNumber=12&amp;EndingLineNumber=561&amp;StartingColumnNumber=9&amp;StartingLineNumber=561&amp;Timestamp=634359656.9469039"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>

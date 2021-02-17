@@ -60,8 +60,15 @@
 		32A2B6D62450715F0057B3FF /* JCMyserviceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2B6D52450715F0057B3FF /* JCMyserviceDataModel.swift */; };
 		32A2C7242416197B00A49CB6 /* JCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */; };
 		32A7AD16245FF6E0008FD3AB /* ConstrainArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7AD15245FF6E0008FD3AB /* ConstrainArrayDSL.swift */; };
+		32A8B6C925D81D63009B882A /* TestJosnFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A8B6C825D81D63009B882A /* TestJosnFile.txt */; };
+		32A8B6CE25D81E11009B882A /* JCTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8B6CD25D81E11009B882A /* JCTestFile.swift */; };
+		32A8B6D325D81E72009B882A /* JCTestFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8B6D225D81E72009B882A /* JCTestFileViewController.swift */; };
 		32B48305248E388D00B04BAE /* JCMyServiceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B48304248E388D00B04BAE /* JCMyServiceCollectionCell.swift */; };
 		32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */; };
+		32FF7BDC25D7727900E915F6 /* JCHomeBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF7BDB25D7727900E915F6 /* JCHomeBaseViewController.swift */; };
+		32FF7BEB25D7777D00E915F6 /* JCHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF7BEA25D7777D00E915F6 /* JCHomeHeaderView.swift */; };
+		32FF7BF325D7782300E915F6 /* JCHomeFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF7BF225D7782300E915F6 /* JCHomeFooterView.swift */; };
+		32FF7C0325D77B1600E915F6 /* JCHomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF7C0225D77B1600E915F6 /* JCHomeHeaderCell.swift */; };
 		4E08EA10E6913170D0EF9D7E /* Pods_MySwiftProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,8 +149,15 @@
 		32A2B6D52450715F0057B3FF /* JCMyserviceDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMyserviceDataModel.swift; sourceTree = "<group>"; };
 		32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeViewController.swift; sourceTree = "<group>"; };
 		32A7AD15245FF6E0008FD3AB /* ConstrainArrayDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrainArrayDSL.swift; sourceTree = "<group>"; };
+		32A8B6C825D81D63009B882A /* TestJosnFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestJosnFile.txt; sourceTree = "<group>"; };
+		32A8B6CD25D81E11009B882A /* JCTestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCTestFile.swift; sourceTree = "<group>"; };
+		32A8B6D225D81E72009B882A /* JCTestFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCTestFileViewController.swift; sourceTree = "<group>"; };
 		32B48304248E388D00B04BAE /* JCMyServiceCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMyServiceCollectionCell.swift; sourceTree = "<group>"; };
 		32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCGuidePageViewController.swift; sourceTree = "<group>"; };
+		32FF7BDB25D7727900E915F6 /* JCHomeBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeBaseViewController.swift; sourceTree = "<group>"; };
+		32FF7BEA25D7777D00E915F6 /* JCHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeHeaderView.swift; sourceTree = "<group>"; };
+		32FF7BF225D7782300E915F6 /* JCHomeFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeFooterView.swift; sourceTree = "<group>"; };
+		32FF7C0225D77B1600E915F6 /* JCHomeHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeHeaderCell.swift; sourceTree = "<group>"; };
 		82088A0283672079CF405AB9 /* Pods-MySwiftProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CB50E74750A1E063ED273BA6 /* Pods-MySwiftProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.release.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.release.xcconfig"; sourceTree = "<group>"; };
 		E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwiftProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -470,15 +484,18 @@
 			isa = PBXGroup;
 			children = (
 				329F6BE1240D354D008E0721 /* AppDelegate.swift */,
+				32A8B6C725D81D22009B882A /* TestFile */,
+				32FF7BFD25D77A0B00E915F6 /* Main */,
+				32A1507524128F81005932CB /* HomeModualr */,
+				32AAEA06250B486B00435C00 /* FindModular */,
+				329DD3F824338751003E040F /* MeModular */,
+				329F6BE3240D354D008E0721 /* FMListen-我听 */,
 				329DD409243387CD003E040F /* Define */,
 				322AE792240E4103007820B1 /* Scource */,
 				329F6BD7240D354D008E0721 /* Extension */,
 				329F6BE0240D354D008E0721 /* lib */,
 				329F6BDA240D354D008E0721 /* Common */,
 				329F6BDE240D354D008E0721 /* Model */,
-				32CB1FB12410F0E2008B0F33 /* View */,
-				329F6BE2240D354D008E0721 /* ViewController */,
-				329F6BEF240D354D008E0721 /* Base */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -525,19 +542,6 @@
 				3202934A2413E1B900F45B27 /* ZCycleView */,
 			);
 			path = lib;
-			sourceTree = "<group>";
-		};
-		329F6BE2240D354D008E0721 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				32AAEA06250B486B00435C00 /* FindModular */,
-				329DD3F824338751003E040F /* MeModular */,
-				32A1507524128F81005932CB /* HomeModualr */,
-				32F18623240FF09C002E7BF5 /* GuidePageViewController */,
-				329F6BE3240D354D008E0721 /* FMListen-我听 */,
-				329F6BE7240D354D008E0721 /* BaseController */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		329F6BE3240D354D008E0721 /* FMListen-我听 */ = {
@@ -601,6 +605,7 @@
 		32A1507524128F81005932CB /* HomeModualr */ = {
 			isa = PBXGroup;
 			children = (
+				32FF7BDB25D7727900E915F6 /* JCHomeBaseViewController.swift */,
 				32A2C7222416195C00A49CB6 /* Model */,
 				32A2C7212416195500A49CB6 /* ViewController */,
 				32A2C7202416194D00A49CB6 /* View */,
@@ -611,6 +616,9 @@
 		32A2C7202416194D00A49CB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				32FF7BEA25D7777D00E915F6 /* JCHomeHeaderView.swift */,
+				32FF7BF225D7782300E915F6 /* JCHomeFooterView.swift */,
+				32FF7C0225D77B1600E915F6 /* JCHomeHeaderCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -630,6 +638,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		32A8B6C725D81D22009B882A /* TestFile */ = {
+			isa = PBXGroup;
+			children = (
+				32A8B6C825D81D63009B882A /* TestJosnFile.txt */,
+				32A8B6CD25D81E11009B882A /* JCTestFile.swift */,
+				32A8B6D225D81E72009B882A /* JCTestFileViewController.swift */,
+			);
+			path = TestFile;
+			sourceTree = "<group>";
+		};
 		32AAEA06250B486B00435C00 /* FindModular */ = {
 			isa = PBXGroup;
 			children = (
@@ -646,19 +664,22 @@
 			path = MyServiceCollectionCell;
 			sourceTree = "<group>";
 		};
-		32CB1FB12410F0E2008B0F33 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		32F18623240FF09C002E7BF5 /* GuidePageViewController */ = {
 			isa = PBXGroup;
 			children = (
 				32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */,
 			);
 			path = GuidePageViewController;
+			sourceTree = "<group>";
+		};
+		32FF7BFD25D77A0B00E915F6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				329F6BEF240D354D008E0721 /* Base */,
+				32F18623240FF09C002E7BF5 /* GuidePageViewController */,
+				329F6BE7240D354D008E0721 /* BaseController */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		AA2746383241419C0BAE202A /* Frameworks */ = {
@@ -785,6 +806,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A8B6C925D81D63009B882A /* TestJosnFile.txt in Resources */,
 				329F6BB3240D3531008E0721 /* TestLaunchScreen.storyboard in Resources */,
 				329DD40324338752003E040F /* JCCreativeCenterCell.xib in Resources */,
 				0AD81B9D242A58F3006206A8 /* listenMoreChannel.json in Resources */,
@@ -863,6 +885,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A72FBC8243245AA00D87BB1 /* JCSubscibeCell.swift in Sources */,
+				32FF7BEB25D7777D00E915F6 /* JCHomeHeaderView.swift in Sources */,
 				32A2C7242416197B00A49CB6 /* JCHomeViewController.swift in Sources */,
 				329F6BFC240D354D008E0721 /* JCListenController.swift in Sources */,
 				329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */,
@@ -879,16 +902,20 @@
 				329DD4082433877E003E040F /* JCSpecialImageView.swift in Sources */,
 				329DD40D243387CD003E040F /* UIColor+Extension.swift in Sources */,
 				329F6BFE240D354D008E0721 /* JCBaseController.swift in Sources */,
+				32FF7C0325D77B1600E915F6 /* JCHomeHeaderCell.swift in Sources */,
 				32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */,
 				0A82B972242515A500231394 /* JCListenChannelViewController.swift in Sources */,
 				329F6BFA240D354D008E0721 /* JCFakeTestData.swift in Sources */,
 				0A72FBC02432444100D87BB1 /* JCListenListCell.swift in Sources */,
+				32FF7BDC25D7727900E915F6 /* JCHomeBaseViewController.swift in Sources */,
 				329DD40F243387CD003E040F /* String+Unit.swift in Sources */,
 				329F6BF9240D354D008E0721 /* JCCommonHederFile.swift in Sources */,
 				320293512413E1B900F45B27 /* ZCycleLayout.swift in Sources */,
 				32A7AD16245FF6E0008FD3AB /* ConstrainArrayDSL.swift in Sources */,
+				32A8B6D325D81E72009B882A /* JCTestFileViewController.swift in Sources */,
 				323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */,
 				329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */,
+				32FF7BF325D7782300E915F6 /* JCHomeFooterView.swift in Sources */,
 				329DD40224338751003E040F /* JCCreativeCenterCell.swift in Sources */,
 				320293522413E1B900F45B27 /* ZPageControl.swift in Sources */,
 				329DD40524338752003E040F /* JCMeViewController.swift in Sources */,
@@ -898,6 +925,7 @@
 				0A9130A22423C90000B8BBA7 /* JCListenModel.swift in Sources */,
 				0ADF1A29243F09510018A330 /* JCRecommendCell.swift in Sources */,
 				32A2B6D62450715F0057B3FF /* JCMyserviceDataModel.swift in Sources */,
+				32A8B6CE25D81E11009B882A /* JCTestFile.swift in Sources */,
 				329F6BF8240D354D008E0721 /* JCBannerView.swift in Sources */,
 				329F6BF6240D354D008E0721 /* UIButton+Extension.swift in Sources */,
 				0A72FBCE2432468300D87BB1 /* JCListenFooterView.swift in Sources */,
@@ -1079,7 +1107,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M2TQ22753C;
+				DEVELOPMENT_TEAM = E3DPJ4DW7A;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1099,7 +1127,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M2TQ22753C;
+				DEVELOPMENT_TEAM = E3DPJ4DW7A;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (

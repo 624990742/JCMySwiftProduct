@@ -546,6 +546,7 @@ print(person.name)
 
 /**
  KVO 的使用
+ **/
 class KVOClass:NSObject {
     dynamic var someValue: String = "123"
     var someOtherValue: String = "abc"
@@ -566,10 +567,6 @@ class ObserverClass: NSObject {
     }
 }
 ObserverClass().observer()
-**/
-
-
-
 
 
 

@@ -48,8 +48,11 @@ class JCCustomTabbarVC: UITabBarController {
     
  
     func setUpAllChildViewController() {
+        //JCHomeViewController()
+        self.setUpOneChildViewController(viewController: JCTestFileViewController(), image: UIImage.init(named: "tabBar_essence_icon")!, selectedImage: UIImage.init(named: "tabBar_essence_click_icon")!, title: "首页")
         
-        self.setUpOneChildViewController(viewController: JCHomeViewController(), image: UIImage.init(named: "tabBar_essence_icon")!, selectedImage: UIImage.init(named: "tabBar_essence_click_icon")!, title: "首页")
+        
+        
         
         self.setUpOneChildViewController(viewController: JCListenController(), image: UIImage.init(named: "tabBar_new_icon")!, selectedImage: UIImage.init(named: "tabBar_new_click_icon")!, title: "我听")
         
