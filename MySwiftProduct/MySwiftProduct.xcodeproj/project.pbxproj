@@ -30,6 +30,8 @@
 		323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B24E9240F58C5006E24DC /* JCBootPageView.swift */; };
 		326541D52445F17B00033426 /* JCmyServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326541D42445F17B00033426 /* JCmyServiceCell.swift */; };
 		326541D82445F31E00033426 /* myserviceData.json in Resources */ = {isa = PBXBuildFile; fileRef = 326541D72445F31E00033426 /* myserviceData.json */; };
+		3268F0982636A10900479CAA /* JCFlowLayoutMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268F0972636A10900479CAA /* JCFlowLayoutMenuViewController.swift */; };
+		3268F0A92636C0DC00479CAA /* HomeModuarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268F0A82636C0DC00479CAA /* HomeModuarModel.swift */; };
 		329DD40224338751003E040F /* JCCreativeCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DD3FC24338751003E040F /* JCCreativeCenterCell.swift */; };
 		329DD40324338752003E040F /* JCCreativeCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DD3FD24338751003E040F /* JCCreativeCenterCell.xib */; };
 		329DD40424338752003E040F /* JCMeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DD3FF24338751003E040F /* JCMeHeaderView.swift */; };
@@ -106,6 +108,8 @@
 		323B24E9240F58C5006E24DC /* JCBootPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCBootPageView.swift; sourceTree = "<group>"; };
 		326541D42445F17B00033426 /* JCmyServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCmyServiceCell.swift; sourceTree = "<group>"; };
 		326541D72445F31E00033426 /* myserviceData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = myserviceData.json; sourceTree = "<group>"; };
+		3268F0972636A10900479CAA /* JCFlowLayoutMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCFlowLayoutMenuViewController.swift; sourceTree = "<group>"; };
+		3268F0A82636C0DC00479CAA /* HomeModuarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuarModel.swift; sourceTree = "<group>"; };
 		329DD3FC24338751003E040F /* JCCreativeCenterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCCreativeCenterCell.swift; sourceTree = "<group>"; };
 		329DD3FD24338751003E040F /* JCCreativeCenterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCCreativeCenterCell.xib; sourceTree = "<group>"; };
 		329DD3FF24338751003E040F /* JCMeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCMeHeaderView.swift; sourceTree = "<group>"; };
@@ -338,6 +342,22 @@
 				326541D72445F31E00033426 /* myserviceData.json */,
 			);
 			path = Scource;
+			sourceTree = "<group>";
+		};
+		3268F0962636A0D100479CAA /* FlowLayoutMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3268F0972636A10900479CAA /* JCFlowLayoutMenuViewController.swift */,
+			);
+			path = FlowLayoutMenu;
+			sourceTree = "<group>";
+		};
+		3268F0A72636C0CC00479CAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3268F0A82636C0DC00479CAA /* HomeModuarModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		329DD3F824338751003E040F /* MeModular */ = {
@@ -601,7 +621,7 @@
 		32A1507524128F81005932CB /* HomeModualr */ = {
 			isa = PBXGroup;
 			children = (
-				32A2C7222416195C00A49CB6 /* Model */,
+				3268F0A72636C0CC00479CAA /* Model */,
 				32A2C7212416195500A49CB6 /* ViewController */,
 				32A2C7202416194D00A49CB6 /* View */,
 			);
@@ -618,16 +638,10 @@
 		32A2C7212416195500A49CB6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3268F0962636A0D100479CAA /* FlowLayoutMenu */,
 				32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		32A2C7222416195C00A49CB6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		32AAEA06250B486B00435C00 /* FindModular */ = {
@@ -863,6 +877,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A72FBC8243245AA00D87BB1 /* JCSubscibeCell.swift in Sources */,
+				3268F0A92636C0DC00479CAA /* HomeModuarModel.swift in Sources */,
 				32A2C7242416197B00A49CB6 /* JCHomeViewController.swift in Sources */,
 				329F6BFC240D354D008E0721 /* JCListenController.swift in Sources */,
 				329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */,
@@ -900,6 +915,7 @@
 				32A2B6D62450715F0057B3FF /* JCMyserviceDataModel.swift in Sources */,
 				329F6BF8240D354D008E0721 /* JCBannerView.swift in Sources */,
 				329F6BF6240D354D008E0721 /* UIButton+Extension.swift in Sources */,
+				3268F0982636A10900479CAA /* JCFlowLayoutMenuViewController.swift in Sources */,
 				0A72FBCE2432468300D87BB1 /* JCListenFooterView.swift in Sources */,
 				329F6C01240D354D008E0721 /* JCFindController.swift in Sources */,
 				329F6BF7240D354D008E0721 /* UIImage+Extension.swift in Sources */,
@@ -1079,15 +1095,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M2TQ22753C;
+				DEVELOPMENT_TEAM = 2FKWKBLY6F;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.WWW.MySwiftProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1099,13 +1117,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M2TQ22753C;
+				DEVELOPMENT_TEAM = 2FKWKBLY6F;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.WWW.MySwiftProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

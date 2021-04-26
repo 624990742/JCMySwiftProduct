@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+import HandyJSON
 
 
 let JC_SCREEN_WIDTH = UIScreen.main.bounds.size.width

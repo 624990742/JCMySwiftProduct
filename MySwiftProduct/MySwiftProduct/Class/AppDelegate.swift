@@ -61,6 +61,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = tabbarVC
         self.window?.makeKeyAndVisible()
         
+        
+        
+//        let aNil: String? = nil
+//        let anotherNil: String?? = aNil
+//        let literalNil: String?? = nil
+//        if anotherNil != nil {
+//            print("anotherNil")
+//        }
+//
+//        if literalNil != nil {
+//            print("literalNil")
+//        }
+        
+        #if  DEBUG
+        print("DEBUG")
+        #else
+        print("NO  DEBUG")
+        #endif
+        
         return true
     }
 
