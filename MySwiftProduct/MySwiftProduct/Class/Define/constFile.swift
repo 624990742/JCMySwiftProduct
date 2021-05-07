@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 import HandyJSON
-
+import SnapKit
 
 let JC_SCREEN_WIDTH = UIScreen.main.bounds.size.width
 let JC_SCREEN_HEIGHT = UIScreen.main.bounds.size.height

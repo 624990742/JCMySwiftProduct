@@ -6,7 +6,8 @@ target 'MySwiftProduct' do
   use_frameworks!
 
   # Pods for MySwiftProduct
-
+  source 'https://github.com/CocoaPods/Specs.git'
+  
   pod 'SnapKit'
   pod 'Kingfisher'
   pod 'MJRefresh', '~> 3.1.14.1'
@@ -36,5 +37,6 @@ pod 'SnapKit'
     pod 'StreamingKit'
     #顶部分段选择器
     pod 'JXSegmentedView'
-
+    #占位图第三方库
+    pod 'DZNEmptyDataSet'
 end

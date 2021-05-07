@@ -12,7 +12,7 @@ class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDat
   
     
          
-        var items:[String] = ["解析中过滤空字符串测试","条目2","条目3","条目4","条目5"]
+        var items:[String] = ["解析中过滤空字符串测试","菜单格子测试","条目3","条目4","条目5"]
          
         var tableView:UITableView?
          
@@ -60,8 +60,19 @@ class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
       
-        if indexPath.row == 0 {
+        
+        switch indexPath.row {
+        
+        case 0:
             self.navigationController?.pushViewController(JCFlowLayoutMenuViewController.init(), animated: true)
+            
+        case 1:
+          
+            
+         self.navigationController?.pushViewController(JCFlowLayoutMenuViewController.init(), animated: true)
+         
+        default:
+            print("测试数据")
         }
     }
     
