@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '9.0'
+ platform :ios, '11.0'
 
 target 'MySwiftProduct' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -39,4 +39,7 @@ pod 'SnapKit'
     pod 'JXSegmentedView'
     #占位图第三方库
     pod 'DZNEmptyDataSet'
+    
+#    pod 'ObjectBox'  这个库是库是对NOSQL操作的数据库但是还不成熟
+   pod 'RealmSwift'
 end

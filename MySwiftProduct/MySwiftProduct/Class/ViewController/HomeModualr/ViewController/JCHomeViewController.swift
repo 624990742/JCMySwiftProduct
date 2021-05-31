@@ -8,11 +8,16 @@
 
 import UIKit
 
+
+///MARK - 主程序生命周期
+
+
+
 class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate{
   
     
          
-        var items:[String] = ["解析中过滤空字符串测试","菜单格子测试","条目3","条目4","条目5"]
+        var items:[String] = ["解析中过滤空字符串测试","菜单格子测试","Realm数据库测试"]
          
         var tableView:UITableView?
          
@@ -32,8 +37,12 @@ class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDat
                                           forCellReuseIdentifier: "SwiftCell")
             self.view.addSubview(self.tableView!)
            
+            
         }
          
+    
+    
+   
    
         //在本例中，只有一个分区
         func numberOfSections(in tableView: UITableView) -> Int {
@@ -70,19 +79,19 @@ class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDat
           
             
          self.navigationController?.pushViewController(JCFlowLayoutMenuViewController.init(), animated: true)
-         
+        
+        case 2:
+            
+            self.navigationController?.pushViewController(JCRealmViewController.init(), animated: true)
         default:
             print("测试数据")
         }
+        
+        
+        
     }
-    
-    
-         
-       
-        override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-        }
-    }
+
+}
      
  
 

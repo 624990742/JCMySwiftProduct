@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RealmSwift
 /*
  fileprivate
  1.范围是同一源文件。
@@ -50,6 +50,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+     JCRealmTestTool.configRealm()
+
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
 //        setupLaunchImage()
@@ -60,26 +63,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = tabbarVC
         self.window?.makeKeyAndVisible()
     
-        
-        #if  DEBUG
-        print("DEBUG")
-        #else
-        print("NO  DEBUG")
-        #endif
-        
-        
-        
-        
-        
-        
-
+    
         
         return true
     }
 
-
-   
-    
+  
     
     
     func applicationWillResignActive(_ application: UIApplication) {

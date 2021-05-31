@@ -15,6 +15,11 @@ PODS:
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
+  - Realm (10.7.6):
+    - Realm/Headers (= 10.7.6)
+  - Realm/Headers (10.7.6)
+  - RealmSwift (10.7.6):
+    - Realm (= 10.7.6)
   - Result (4.1.0)
   - SnapKit (4.2.0)
   - StreamingKit (0.1.30)
@@ -36,6 +41,7 @@ DEPENDENCIES:
   - LTScrollView
   - MJRefresh (~> 3.1.14.1)
   - Moya
+  - RealmSwift
   - SnapKit
   - StreamingKit
   - SVProgressHUD
@@ -54,6 +60,8 @@ SPEC REPOS:
     - LTScrollView
     - MJRefresh
     - Moya
+    - Realm
+    - RealmSwift
     - Result
     - SnapKit
     - StreamingKit
@@ -77,6 +85,8 @@ SPEC CHECKSUMS:
   LTScrollView: 93fff4aed9f9545f541a99b320b27808f5307c12
   MJRefresh: 238e6a37e2dba12160ee3b79f6d2a2b26abcab42
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Realm: ed860452717c8db8f4bf832b6807f7f2ce708839
+  RealmSwift: e31c4ddbcc42ac879313d656b86f9ca539f6f4f4
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   StreamingKit: 70ca8608c206864b4d54a577eacb3c8bf7c72209
@@ -84,6 +94,6 @@ SPEC CHECKSUMS:
   SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 29be51cdf1abc7c98d941e61431aa27fec856d7e
+PODFILE CHECKSUM: 98b1233c22c938692250b8b0ed748122709b82d9
 
 COCOAPODS: 1.10.1

