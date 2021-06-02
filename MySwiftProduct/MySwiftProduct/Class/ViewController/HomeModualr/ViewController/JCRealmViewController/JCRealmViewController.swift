@@ -18,7 +18,10 @@ class JCRealmViewController: UIViewController {
 //        self.testInsertManyStudent()
 //        self.testInsertStudentWithPhotoBook()
 //        JCTXTTestTool.defalutTest()
-        JCTXTTestTool.addTxtData()
+//        JCTXTTestTool.addTxtData()
+        
+//        JCRealmSwiftTestTool.createJosnData()
+        JCRealmSwiftTestTool.getTxtData()
     }
     
     

@@ -17,7 +17,7 @@ class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDat
   
     
          
-        var items:[String] = ["解析中过滤空字符串测试","菜单格子测试","Realm数据库测试"]
+        var items:[String] = ["解析中过滤空字符串测试","菜单格子测试","Realm数据库测试","富文本加载html测试","web加载html测试"]
          
         var tableView:UITableView?
          
@@ -83,6 +83,23 @@ class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDat
         case 2:
             
             self.navigationController?.pushViewController(JCRealmViewController.init(), animated: true)
+            
+        case 3:
+//            self.navigationController?.pushViewController(JCTextViewTestController.init(), animated: true)
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            // Push
+            let viewController = storyboard.instantiateViewController(withIdentifier: "JCTextViewTestController")
+            self.navigationController?.pushViewController(viewController, animated: true)
+
+        case 4:
+            
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            // Push
+            let viewController = storyboard.instantiateViewController(withIdentifier: "JCTexWebViewTestController")
+            self.navigationController?.pushViewController(viewController, animated: true)
+
         default:
             print("测试数据")
         }

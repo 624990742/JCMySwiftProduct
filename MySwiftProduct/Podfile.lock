@@ -7,6 +7,7 @@ PODS:
   - HandyJSON (5.0.2-beta)
   - JXMarqueeView (0.0.8)
   - JXSegmentedView (1.2.7)
+  - Kanna (5.2.4)
   - Kingfisher (4.10.1)
   - LTScrollView (0.2.1)
   - MJRefresh (3.1.14.1)
@@ -37,6 +38,7 @@ DEPENDENCIES:
   - HandyJSON (~> 5.0.2-beta)
   - JXMarqueeView
   - JXSegmentedView
+  - Kanna
   - Kingfisher
   - LTScrollView
   - MJRefresh (~> 3.1.14.1)
@@ -56,6 +58,7 @@ SPEC REPOS:
     - FSPagerView
     - HandyJSON
     - JXMarqueeView
+    - Kanna
     - Kingfisher
     - LTScrollView
     - MJRefresh
@@ -81,6 +84,7 @@ SPEC CHECKSUMS:
   HandyJSON: e18b035d60cb4847c609a59bb831c5db8c549663
   JXMarqueeView: dfb4eadb1bf7245c9b41706e907c889fbf53c2dc
   JXSegmentedView: eb1cad21f57c2543c00c3e08b8fd3c7ca54f5acd
+  Kanna: b9d00d7c11428308c7f95e1f1f84b8205f567a8f
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   LTScrollView: 93fff4aed9f9545f541a99b320b27808f5307c12
   MJRefresh: 238e6a37e2dba12160ee3b79f6d2a2b26abcab42
@@ -94,6 +98,6 @@ SPEC CHECKSUMS:
   SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 98b1233c22c938692250b8b0ed748122709b82d9
+PODFILE CHECKSUM: 7003878e8a698adb32955b0043c67a6b1c332fcf
 
 COCOAPODS: 1.10.1

