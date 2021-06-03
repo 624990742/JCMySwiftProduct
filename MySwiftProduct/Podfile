@@ -44,5 +44,6 @@ pod 'SnapKit'
    pod 'RealmSwift'
 #   pod 'Markup'
 #   pod 'IGHTMLQuery'
-pod 'Kanna' 
+pod 'Kanna'
+pod 'hpple'
 end

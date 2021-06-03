@@ -8,6 +8,7 @@
 
 import Foundation
 import Kanna
+import CoreText
 class JCTextViewTestController: UIViewController, Searchable {
 
     @IBOutlet weak var textView: NewTextView!
@@ -30,72 +31,49 @@ class JCTextViewTestController: UIViewController, Searchable {
               <font size="2" color="black">me</font>
             </p>
             <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fyouimg1.c-ctrip.com%2Ftarget%2Ftg%2F035%2F063%2F726%2F3ea4031f045945e1843ae5156749d64c.jpg&refer=http%3A%2F%2Fyouimg1.c-ctrip.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1625041177&t=66a726674a7e4d610281002d6a44204f"   width="170" height="110"/>
-               <br> </br>
+               <br></br>
+               <p>😁</p>
                <click  type="2" value="1622514526424" picture="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fd.lanrentuku.com%2Fdown%2Fpng%2F0904%2FM-v-Player%2FM-v-Player_13.png&refer=http%3A%2F%2Fd.lanrentuku.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1625106762&t=ad3b4e68e88ec5e4d73775dcecfd82f2"><font size="10" color="red">老鼠爱大米</font> </click>
         </body>
         </html>
         """
 
+        
+        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.testHTML()
-    }
-    
-    
-    
-    func testHTML(){
         self.textView.isEditable = false
     
-        
-        guard let inputAsHTMLWithZeroWidthSpaceRemoved = Text.tableHTML.replaceAppropiateZeroWidthSpaces() else { return  }
-        
-        guard let htmlData = unescapeHTML(from: inputAsHTMLWithZeroWidthSpaceRemoved).data(using: .utf8) else { return  }
-        
-        let parsedAttributedString = self.getParsedHTMLAttributedString(fromData: htmlData)
-    
-        
-        
-        self.textView.attributedText = parsedAttributedString
-        
-        print("self.textView.textContainer:\(self.textView.textContainer)")
-        
-     
-        
+        self.testsHTML()
+        self.inputTextView()
     }
     
     
-    
-    
-    
+ 
     
     
     
     ///MARK - 测试解析
     func testsHTML(){
+
+        guard let inputAsHTMLWithZeroWidthSpaceRemoved = Text.tableHTML.replaceAppropiateZeroWidthSpaces() else { return  }
+        guard let htmlData = unescapeHTML(from: inputAsHTMLWithZeroWidthSpaceRemoved).data(using: .utf8) else { return }
         
-//        if let doc = try? HTML(html: Text.tableHTML, encoding: .utf8) {
-//
-//
-//            print("doc.innerHTML::\(doc.innerHTML)")
-//            print("===========================")
-//
-//            print("doc.tagName::\(doc.tagName)")
-//            print("===========================")
-//            print("doc.toHTML::\(doc.toHTML)")
-//            print("===========================")
-//            print("doc.toHTML::\(doc.className)")
-//            print("===========================")
-//
-//            // Search for nodes by XPath
-//            for link in doc.xpath("//a | //link") {
-//                print(link.text)
-//                print(link["href"])
-//            }
-//        }
-        
+        let doc = TFHpple.init(htmlData: htmlData)
+        let elements = doc?.search(withXPathQuery: "//click")
+        let tt = elements?.first as? TFHppleElement
+        print("raw==>\(String(describing: tt?.raw))")
+        print("===========================")
+        print("tagName==>\(String(describing: tt?.tagName))")
+        print("===========================")
+        print("children==>\(String(describing: tt?.children))")
+        print("=======去除自定义的标签内容=========")
+        let dict = (tt?.attributes!)! as NSDictionary
+        let swiftDic = dict as Dictionary
+        print("type:\(swiftDic["type" as NSObject]!),picture:\(swiftDic["picture" as NSObject]!),value:\(swiftDic["value" as NSObject]!)")
         
         
     }
@@ -105,6 +83,24 @@ class JCTextViewTestController: UIViewController, Searchable {
     
     ///MARK - 私有方法
     
+      
+      ///直接转成转成富文本但是不能添加点击事件
+      func inputTextView() {
+          
+          guard let inputAsHTMLWithZeroWidthSpaceRemoved = Text.tableHTML.replaceAppropiateZeroWidthSpaces() else { return  }
+          
+          guard let htmlData = unescapeHTML(from: inputAsHTMLWithZeroWidthSpaceRemoved).data(using: .utf8) else { return  }
+
+          let parsedAttributedString = self.getParsedHTMLAttributedString(fromData: htmlData)
+          
+        print("=======过滤之后富文本中的字符串====")
+        print(parsedAttributedString?.string)
+        
+          self.textView.attributedText = parsedAttributedString
+         
+      }
+      
+      
     
     enum ParserConstants {
         static let interactiveElementTagName = "interactive-element"
@@ -149,8 +145,28 @@ class JCTextViewTestController: UIViewController, Searchable {
     }
 }
 
-
-
+//
+//func testsHTML(){
+    
+//        if let doc = try? HTML(html: Text.tableHTML, encoding: .utf8) {
+//
+////            print("doc.innerHTML::\(doc.innerHTML)")
+//            print("===========================")
+//
+//            print("doc.tagName::\(doc.tagName)")
+//            print("===========================")
+////            print("doc.toHTML::\(doc.toHTML)")
+//            print("===========================")
+//            print("doc.toHTML::\(doc.className)")
+//            print("===========================")
+//
+//            // Search for nodes by XPath
+//            for link in doc.xpath("//a | //link") {
+//                print(link.text)
+//                print(link["href"])
+//            }
+//        }
+//        }
 
 
 

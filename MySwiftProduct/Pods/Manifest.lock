@@ -5,6 +5,7 @@ PODS:
   - ESTabBarController-swift (2.8.0)
   - FSPagerView (0.8.3)
   - HandyJSON (5.0.2-beta)
+  - hpple (0.2.0)
   - JXMarqueeView (0.0.8)
   - JXSegmentedView (1.2.7)
   - Kanna (5.2.4)
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - ESTabBarController-swift
   - FSPagerView
   - HandyJSON (~> 5.0.2-beta)
+  - hpple
   - JXMarqueeView
   - JXSegmentedView
   - Kanna
@@ -57,6 +59,7 @@ SPEC REPOS:
     - ESTabBarController-swift
     - FSPagerView
     - HandyJSON
+    - hpple
     - JXMarqueeView
     - Kanna
     - Kingfisher
@@ -82,6 +85,7 @@ SPEC CHECKSUMS:
   ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   HandyJSON: e18b035d60cb4847c609a59bb831c5db8c549663
+  hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
   JXMarqueeView: dfb4eadb1bf7245c9b41706e907c889fbf53c2dc
   JXSegmentedView: eb1cad21f57c2543c00c3e08b8fd3c7ca54f5acd
   Kanna: b9d00d7c11428308c7f95e1f1f84b8205f567a8f
@@ -98,6 +102,6 @@ SPEC CHECKSUMS:
   SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 7003878e8a698adb32955b0043c67a6b1c332fcf
+PODFILE CHECKSUM: ed7fec24a57f3ec7839e5735d945c2f966c6b9a6
 
 COCOAPODS: 1.10.1

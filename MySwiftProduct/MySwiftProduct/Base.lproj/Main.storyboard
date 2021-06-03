@@ -100,33 +100,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8h-UY-KqP">
-                                <rect key="frame" x="0.0" y="88" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="MeE-5u-Db8"/>
-                                </constraints>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5L-0e-Mts">
-                                <rect key="frame" x="0.0" y="288" width="414" height="200"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="cU4-qj-L47"/>
-                                </constraints>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ku4-P0-Sqa">
-                                <rect key="frame" x="0.0" y="488" width="414" height="200"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Pqj-5i-laO"/>
-                                </constraints>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -136,22 +111,15 @@
                         <viewLayoutGuide key="safeArea" id="Uzc-K8-fvi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="D5L-0e-Mts" firstAttribute="top" secondItem="b8h-UY-KqP" secondAttribute="bottom" id="8s6-rh-kQB"/>
-                            <constraint firstItem="Uzc-K8-fvi" firstAttribute="trailing" secondItem="ku4-P0-Sqa" secondAttribute="trailing" id="CHq-fb-8zH"/>
                             <constraint firstItem="b8h-UY-KqP" firstAttribute="trailing" secondItem="Uzc-K8-fvi" secondAttribute="trailing" id="F4j-eU-hjR"/>
+                            <constraint firstItem="Uzc-K8-fvi" firstAttribute="bottom" secondItem="b8h-UY-KqP" secondAttribute="bottom" id="GcH-n1-86q"/>
                             <constraint firstItem="b8h-UY-KqP" firstAttribute="leading" secondItem="Uzc-K8-fvi" secondAttribute="leading" id="GwN-Pd-3tW"/>
-                            <constraint firstItem="Uzc-K8-fvi" firstAttribute="trailing" secondItem="D5L-0e-Mts" secondAttribute="trailing" id="JfJ-FX-BIU"/>
-                            <constraint firstItem="ku4-P0-Sqa" firstAttribute="leading" secondItem="Uzc-K8-fvi" secondAttribute="leading" id="KmK-uk-NNc"/>
-                            <constraint firstItem="D5L-0e-Mts" firstAttribute="leading" secondItem="LM4-4c-oIS" secondAttribute="leading" id="ZjS-sO-REx"/>
-                            <constraint firstItem="ku4-P0-Sqa" firstAttribute="top" secondItem="D5L-0e-Mts" secondAttribute="bottom" id="pf1-2p-5Fm"/>
                             <constraint firstItem="b8h-UY-KqP" firstAttribute="top" secondItem="Uzc-K8-fvi" secondAttribute="top" id="ybx-P6-YUd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sy5-Nb-I1S"/>
                     <connections>
                         <outlet property="web1" destination="b8h-UY-KqP" id="HkE-FH-XNL"/>
-                        <outlet property="web2" destination="D5L-0e-Mts" id="Bth-du-ZZc"/>
-                        <outlet property="web3" destination="ku4-P0-Sqa" id="Rf4-NT-Kmp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGk-c5-9fh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
