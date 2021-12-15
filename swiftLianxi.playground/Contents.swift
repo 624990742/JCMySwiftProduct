@@ -487,6 +487,7 @@ let nonNeighbors = employees.subtracting(neighbors)
 //}
 //print([1,2,3,12,1,3,4,5,6,4,6].unique())
 import Foundation
+import Darwin
 /*
 //闭合范围
 let  singleDigitNumbers = 0..<10
@@ -552,11 +553,61 @@ class ObserverClass: NSObject {
 ObserverClass().observer()
 **/
 
+/**
+ 指定位置的字符串插入“特定的字符”
+ 
+ extension Collection {
+     func unfoldSubSequences(limitedTo maxLength: Int) -> UnfoldSequence<SubSequence,Index> {
+         sequence(state: startIndex) { start in
+             guard start < self.endIndex else { return nil }
+             let end = self.index(start, offsetBy: maxLength, limitedBy: self.endIndex) ?? self.endIndex
+             defer { start = end }
+             return self[start..<end]
+         }
+     }
+
+     func every(n: Int) -> UnfoldSequence<Element,Index> {
+         sequence(state: startIndex) { index in
+             guard index < endIndex else { return nil }
+             defer { index = self.index(index, offsetBy: n, limitedBy: endIndex) ?? endIndex }
+             return self[index]
+         }
+     }
+
+ }
+
+ extension StringProtocol where Self: RangeReplaceableCollection {
+     mutating func insert<S: StringProtocol>(separator: S, every n: Int) {
+         for index in indices.every(n: n).dropFirst().reversed() {
+             insert(contentsOf: separator, at: index)
+         }
+     }
+     func inserting<S: StringProtocol>(separator: S, every n: Int) -> Self {
+         .init(unfoldSubSequences(limitedTo: n).joined(separator: separator))
+     }
+ }
+
+ let str = "123456789"
+ let final0 = str.unfoldSubSequences(limitedTo: 4).joined(separator:" ")
+ print("final0-->\(final0)")
+
+ let final2 = "1880703".inserting(separator:" ", every: 4)
+ print("final2-->\(final2)")
+
+ var str2 = "123456789"
+ str2.insert(separator:":", every: 3)
+ print("str2-->\(str2)")
 
 
+ var str3 = "112312451"
+ str3.insert(separator:":", every: 3)
+ print("str3-->\(str3)")
 
-
-
+ var str4 = "18710173"
+ str4.insert(separator:" ", every: 4)
+ print("str4-->\(str4)")
+ 
+ */
 
 
 

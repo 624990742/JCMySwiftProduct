@@ -814,8 +814,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 329F6BCD240D3531008E0721 /* Build configuration list for PBXNativeTarget "MySwiftProduct" */;
 			buildPhases = (
-				7FD6D41AFDF658A31D6D902C /* Binary Libraries Compiler */,
 				077966221009078DFF4463C8 /* [CP] Check Pods Manifest.lock */,
+				7FD6D41AFDF658A31D6D902C /* Binary Libraries Compiler */,
 				329F6B9F240D352F008E0721 /* Sources */,
 				329F6BA0240D352F008E0721 /* Frameworks */,
 				329F6BA1240D352F008E0721 /* Resources */,

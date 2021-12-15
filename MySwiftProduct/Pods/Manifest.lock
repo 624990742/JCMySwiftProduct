@@ -56,11 +56,13 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - DNSPageView
+    - DZNEmptyDataSet
     - ESTabBarController-swift
     - FSPagerView
     - HandyJSON
     - hpple
     - JXMarqueeView
+    - JXSegmentedView
     - Kanna
     - Kingfisher
     - LTScrollView
@@ -74,9 +76,6 @@ SPEC REPOS:
     - SVProgressHUD
     - SwiftMessages
     - SwiftyJSON
-  trunk:
-    - DZNEmptyDataSet
-    - JXSegmentedView
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -104,4 +103,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ed7fec24a57f3ec7839e5735d945c2f966c6b9a6
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.1

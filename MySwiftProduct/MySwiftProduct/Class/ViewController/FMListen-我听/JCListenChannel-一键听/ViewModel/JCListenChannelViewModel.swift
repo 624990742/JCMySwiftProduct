@@ -27,6 +27,10 @@ extension JCListenChannelViewModel {
             if case let .success(response) = result {
                 //解析数据
                 let data = try?response.mapJSON()//可选链
+                if data == nil{
+                    JCDebugLog(message: "data为空")
+                    return
+                }
                 let json = JSON(data!)
                 if let mappedObject = JSONDeserializer<ChannelResultsModel>.deserializeModelArrayFrom(json: json["data"]["channelResults"].description) {//从字符串转化为对象实例
                     self.channelResults = mappedObject as? [ChannelResultsModel]
