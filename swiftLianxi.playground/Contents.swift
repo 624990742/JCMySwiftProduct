@@ -489,6 +489,7 @@ let nonNeighbors = employees.subtracting(neighbors)
 import Foundation
 import Darwin
 /*
+ 1.范围的使用
 //闭合范围
 let  singleDigitNumbers = 0..<10
 Array(singleDigitNumbers)
@@ -510,7 +511,7 @@ print("result1:\(result1),result2:\(result2)")
 */
 
 /**
- KVC 在swift中的使用
+ 2.KVC 在swift中的使用
  
 class SimpleClass {
     var someValue: String = "123"
@@ -530,7 +531,7 @@ print("\(kvc.someValue)")
 */
 
 /**
- KVO 的使用
+3. KVO 的使用
 class KVOClass:NSObject {
     dynamic var someValue: String = "123"
     var someOtherValue: String = "abc"
@@ -554,7 +555,7 @@ ObserverClass().observer()
 **/
 
 /**
- 指定位置的字符串插入“特定的字符”
+4. 指定位置的字符串插入“特定的字符”
  
  extension Collection {
      func unfoldSubSequences(limitedTo maxLength: Int) -> UnfoldSequence<SubSequence,Index> {
@@ -609,6 +610,75 @@ ObserverClass().observer()
  
  */
 
+/**
+ 5.数组使用
+ （1）、往数组中添加元素
+ var mutableFibs = [0,1,2]
+ mutableFibs.append(8)  // 0,1,2,8
+ mutableFibs.append(contentsOf: [9,10])//0,1,2,8,9,10
+ （2）、可变数组与不可变数组
+ var x = [1,2,3]
+ var y = x
+ y.append(4)
+ y // [1, 2, 3, 4]
+ x // [1, 2, 3]”
+ 
+ let a = NSMutableArray(array: [4,5,6])
+ //不想b改变
+ let b: NSArray = a
+ //但是事实上依然能够被啊改变
+ a.insert(8, at: 3)
+ b//这也变了
+ 
+ 正确的处理方式：
+ let c = NSMutableArray(array: [1,2,3])
+ let d = c.copy() as! NSArray
+ c.insert(4, at: 3)
+ d
+
+（3）、可变数组与不可变数组
+ 
+ 
+ */
+
+//let arrs = [1,2,3,4,5,6]
+//let result = arrs.ttMap { fib in fib + fib}
+//print(result)
+
+//@discardableResult
+//包含字幕a
+//let names = ["Paula", "Elena", "Zoe"]
+//var lastNameEndingInA: String?
+//for name in names.reversed() where name.hasSuffix("a") {
+//lastNameEndingInA = name
+//break
+//}
+//lastNameEndingInA // Optional("Elena")”
+
+//extension Sequence {
+//   func last(where predicate: (Element) -> Bool) -> Element? {
+//    for element in reversed() where predicate(element) {
+//     return element
+//    }
+// return nil
+//  }
+//}
+//
+//let names = ["Paula", "Elena", "Zoe"]
+//let match = names.last { $0.hasSuffix("a") }
+//print(match!) // Optional("Elena")
+//
 
 
-
+//let numebrs = [1,2,3,4,5]
+//let tt = numebrs.map({
+//    $0 + 1
+//})
+//print(tt)
+var numbers: [Int32] = [0, 0]
+var byteValues: [UInt8] = [0x01, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00]
+numbers.withUnsafeMutableBytes { destBytes in
+         byteValues.withUnsafeBytes { srcBytes in
+            destBytes.copyBytes(from: srcBytes)
+         }
+     }

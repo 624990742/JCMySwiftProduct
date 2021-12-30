@@ -48,12 +48,16 @@ extension String{
     }
     
     
-//    public func character(str: String) -> Int{
-//
-//          for char in str {
-//
-//          }
-//    }
+    func isIncludeChinese() -> Bool {
+           for ch in self.unicodeScalars {
+               // 中文字元範圍：0x4e00 ~ 0x9fff
+               if (0x4e00 < ch.value  && ch.value < 0x9fff) {
+                   return true
+               }
+           }
+           return false
+       }
+    
     
     
 }

@@ -81,6 +81,7 @@
 		32F9F58526648C080003787D /* JCRealmSwiftTestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9F58426648C080003787D /* JCRealmSwiftTestTool.swift */; };
 		32F9F5892664B6F80003787D /* ReamlSwiftTestJsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = 32F9F5882664B6F80003787D /* ReamlSwiftTestJsonData.json */; };
 		4E08EA10E6913170D0EF9D7E /* Pods_MySwiftProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC51DFB9CF514E65377DBD /* Pods_MySwiftProduct.framework */; };
+		5967A5AB277330E400C9B8AC /* JCLibaryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5967A5AA277330E400C9B8AC /* JCLibaryHeader.swift */; };
 		598488AD276330B600129883 /* JCString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598488AC276330B600129883 /* JCString+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -185,6 +186,7 @@
 		32F18624240FF0CA002E7BF5 /* JCGuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCGuidePageViewController.swift; sourceTree = "<group>"; };
 		32F9F58426648C080003787D /* JCRealmSwiftTestTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRealmSwiftTestTool.swift; sourceTree = "<group>"; };
 		32F9F5882664B6F80003787D /* ReamlSwiftTestJsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReamlSwiftTestJsonData.json; sourceTree = "<group>"; };
+		5967A5AA277330E400C9B8AC /* JCLibaryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCLibaryHeader.swift; sourceTree = "<group>"; };
 		598488AC276330B600129883 /* JCString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JCString+Extension.swift"; sourceTree = "<group>"; };
 		82088A0283672079CF405AB9 /* Pods-MySwiftProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CB50E74750A1E063ED273BA6 /* Pods-MySwiftProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.release.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.release.xcconfig"; sourceTree = "<group>"; };
@@ -511,6 +513,7 @@
 			children = (
 				329DD40B243387CD003E040F /* constFile.swift */,
 				324AB5F62637FEA00021CC0D /* MySwiftProduct-Bridging-Header.h */,
+				5967A5AA277330E400C9B8AC /* JCLibaryHeader.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -1066,6 +1069,7 @@
 				329F6BF8240D354D008E0721 /* JCBannerView.swift in Sources */,
 				321ECBE02660D7380005233E /* JCReamlModel.swift in Sources */,
 				329F6BF6240D354D008E0721 /* UIButton+Extension.swift in Sources */,
+				5967A5AB277330E400C9B8AC /* JCLibaryHeader.swift in Sources */,
 				3268F0982636A10900479CAA /* JCFlowLayoutMenuViewController.swift in Sources */,
 				0A72FBCE2432468300D87BB1 /* JCListenFooterView.swift in Sources */,
 				329F6C01240D354D008E0721 /* JCFindController.swift in Sources */,
