@@ -675,10 +675,125 @@ ObserverClass().observer()
 //    $0 + 1
 //})
 //print(tt)
-var numbers: [Int32] = [0, 0]
-var byteValues: [UInt8] = [0x01, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00]
-numbers.withUnsafeMutableBytes { destBytes in
-         byteValues.withUnsafeBytes { srcBytes in
-            destBytes.copyBytes(from: srcBytes)
-         }
+
+//let nums = [1,2,3,4,5,6,7,8,9,10]
+//let result1 = nums.filter { num in num % 2 == 0 } // [2, 4, 6, 8, 10]”
+//print(result1)
+//
+//let result2 = nums.filter{$0 % 2 == 0}
+//print(result2)
+//
+//(1..<10).map{ $0 * $0}.filter()
+
+//var arr1 = [[1,2,3],[4,5,6]]
+//let arr2 = [7,8,9]
+//var arr3 = [Any]()
+//arr1.forEach { arr in
+//    arr3.append(contentsOf: arr)
+//}
+//print(arr3)
+
+// MARK: - 数组去重
+//方法一：
+/**
+ extension Array where Element: Hashable {
+     var unique: [Element] {
+         var uniq = Set<Element>()
+         uniq.reserveCapacity(self.count)
+         return self.filter { uniq.insert($0).inserted }
      }
+ }
+
+ class DisplayMessage: Hashable {
+     static func == (lhs: DisplayMessage, rhs: DisplayMessage) -> Bool {
+         var lhsHasher = Hasher()
+         var rhsHasher = Hasher()
+         lhs.hash(into: &lhsHasher)
+         rhs.hash(into: &rhsHasher)
+         return lhsHasher.finalize() == rhsHasher.finalize()
+         
+     }
+     
+     static func != (lhs: DisplayMessage, rhs: DisplayMessage) -> Bool {
+         return lhs.id != rhs.id || lhs.partner_name != rhs.partner_name || lhs.last_message != rhs.last_message
+     }
+     
+     func hash(into hasher: inout Hasher) {
+         hasher.combine(id)
+         hasher.combine(partner_name)
+         hasher.combine(last_message)
+     }
+     
+     var id : String?
+     var partner_name : String?
+     var last_message : String?
+     
+     init(id:String?, partner_name:String?, last_message: String?) {
+         self.id = id
+         self.partner_name = partner_name
+         self.last_message = last_message
+     }
+ }
+
+ let me1: DisplayMessage = DisplayMessage(id: "111", partner_name: "partner_name", last_message: "last_message")
+ let me5: DisplayMessage = DisplayMessage(id: "111", partner_name: "partner_name", last_message: "last_message")
+ let me2: DisplayMessage = DisplayMessage(id: "211", partner_name: "partner_name", last_message: "last_message")
+ let me6: DisplayMessage = DisplayMessage(id: "211", partner_name: "partner_name", last_message: "last_message")
+ let me3: DisplayMessage = DisplayMessage(id: "311", partner_name: "partner_name", last_message: "last_message")
+ let me4: DisplayMessage = DisplayMessage(id: "111", partner_name: "partner_name", last_message: "last_message")
+
+ var arr = Array([me1, me5, me2, me6, me3, me4])
+ arr.unique.forEach { item in
+     print("item id = \(String(describing: item.id))")
+ }
+
+ 
+ */
+
+/**
+ 方法2：
+
+ extension Array {
+     
+     // 去重
+     func filterDuplicates<E: Equatable>(_ filter: (Element) -> E) -> [Element] {
+         var result = [Element]()
+         for value in self {
+             let key = filter(value)
+             if !result.map({filter($0)}).contains(key) {
+                 result.append(value)
+             }
+         }
+         return result
+     }
+ }
+
+ class DemoModel: CustomStringConvertible {
+     
+     let name: String
+
+     init(_ name: String) {
+         self.name = name
+     }
+     
+     var description: String {
+         return name
+     }
+ }
+
+ let arrays = ["1", "2", "2", "3", "4", "4"]
+ let filterArrays = arrays.filterDuplicates({$0})
+ print(filterArrays)
+
+ let modelArrays = [DemoModel("1"), DemoModel("1"), DemoModel("2"), DemoModel("3")]
+ let filterModels = modelArrays.filterDuplicates({$0.name})
+ print(filterModels)
+ 
+ */
+
+
+
+let tt = [1,1,2,3,3]
+var arr = Array(Set(tt))
+ arr.sort()
+print(arr)
