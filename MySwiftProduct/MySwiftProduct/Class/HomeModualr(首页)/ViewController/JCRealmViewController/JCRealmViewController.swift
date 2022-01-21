@@ -20,8 +20,8 @@ class JCRealmViewController: UIViewController {
 //        JCTXTTestTool.defalutTest()
 //        JCTXTTestTool.addTxtData()
         
-//        JCRealmSwiftTestTool.createJosnData()
-        JCRealmSwiftTestTool.getTxtData()
+        JCRealmSwiftTestTool.createJosnData()
+//        JCRealmSwiftTestTool.getTxtData()
     }
     
     

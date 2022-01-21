@@ -46,4 +46,5 @@ pod 'SnapKit'
 #   pod 'IGHTMLQuery'
 pod 'Kanna'
 pod 'hpple'
+pod "FluentDarkModeKit"
 end

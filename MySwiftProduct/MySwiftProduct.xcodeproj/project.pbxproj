@@ -445,7 +445,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		329DD3F824338751003E040F /* MeModular */ = {
+		329DD3F824338751003E040F /* MeModular(我的) */ = {
 			isa = PBXGroup;
 			children = (
 				326541D62445F2EB00033426 /* Scource */,
@@ -453,7 +453,7 @@
 				329DD3FA24338751003E040F /* View */,
 				329DD40024338751003E040F /* ViewController */,
 			);
-			path = MeModular;
+			path = "MeModular(我的)";
 			sourceTree = "<group>";
 		};
 		329DD3F924338751003E040F /* Model */ = {
@@ -511,8 +511,8 @@
 		329DD409243387CD003E040F /* Define */ = {
 			isa = PBXGroup;
 			children = (
-				329DD40B243387CD003E040F /* constFile.swift */,
 				324AB5F62637FEA00021CC0D /* MySwiftProduct-Bridging-Header.h */,
+				329DD40B243387CD003E040F /* constFile.swift */,
 				5967A5AA277330E400C9B8AC /* JCLibaryHeader.swift */,
 			);
 			path = Define;
@@ -581,8 +581,11 @@
 				329F6BD7240D354D008E0721 /* Extension */,
 				329F6BE0240D354D008E0721 /* lib */,
 				329F6BDA240D354D008E0721 /* Common */,
-				329F6BDE240D354D008E0721 /* Model */,
-				329F6BE2240D354D008E0721 /* ViewController */,
+				32AAEA06250B486B00435C00 /* FindModular(发现) */,
+				329DD3F824338751003E040F /* MeModular(我的) */,
+				32A1507524128F81005932CB /* HomeModualr(首页) */,
+				32F18623240FF09C002E7BF5 /* GuidePageViewController */,
+				329F6BE3240D354D008E0721 /* FMListen(我听) */,
 				329F6BEF240D354D008E0721 /* Base */,
 			);
 			path = Class;
@@ -604,6 +607,7 @@
 		329F6BDA240D354D008E0721 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				329F6BDE240D354D008E0721 /* Model */,
 				329DD4062433877E003E040F /* SpecialImageView */,
 				329F6BDB240D354D008E0721 /* JCBannerView */,
 				329F6BDD240D354D008E0721 /* JCCommonHederFile.swift */,
@@ -636,20 +640,7 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
-		329F6BE2240D354D008E0721 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				32AAEA06250B486B00435C00 /* FindModular */,
-				329DD3F824338751003E040F /* MeModular */,
-				32A1507524128F81005932CB /* HomeModualr */,
-				32F18623240FF09C002E7BF5 /* GuidePageViewController */,
-				329F6BE3240D354D008E0721 /* FMListen-我听 */,
-				329F6BE7240D354D008E0721 /* BaseController */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		329F6BE3240D354D008E0721 /* FMListen-我听 */ = {
+		329F6BE3240D354D008E0721 /* FMListen(我听) */ = {
 			isa = PBXGroup;
 			children = (
 				329F6BE4240D354D008E0721 /* JCListenController.swift */,
@@ -661,7 +652,7 @@
 				0A82B9732425197700231394 /* ViewModel */,
 				0ACE16C8241BD1740037E56A /* View */,
 			);
-			path = "FMListen-我听";
+			path = "FMListen(我听)";
 			sourceTree = "<group>";
 		};
 		329F6BE7240D354D008E0721 /* BaseController */ = {
@@ -675,6 +666,7 @@
 		329F6BEF240D354D008E0721 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				329F6BE7240D354D008E0721 /* BaseController */,
 				323B24E8240F586E006E24DC /* BootPageView */,
 				329F6BF0240D354D008E0721 /* JCCustomNavgationController */,
 				329F6BF2240D354D008E0721 /* JCCustomTabbarVC */,
@@ -707,7 +699,7 @@
 			path = swiftBaseGrammar;
 			sourceTree = "<group>";
 		};
-		32A1507524128F81005932CB /* HomeModualr */ = {
+		32A1507524128F81005932CB /* HomeModualr(首页) */ = {
 			isa = PBXGroup;
 			children = (
 				321ECBE32660E01A0005233E /* Tool */,
@@ -715,7 +707,7 @@
 				324AB6002638015C0021CC0D /* View */,
 				32A2C7212416195500A49CB6 /* ViewController */,
 			);
-			path = HomeModualr;
+			path = "HomeModualr(首页)";
 			sourceTree = "<group>";
 		};
 		32A2C7212416195500A49CB6 /* ViewController */ = {
@@ -731,12 +723,12 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		32AAEA06250B486B00435C00 /* FindModular */ = {
+		32AAEA06250B486B00435C00 /* FindModular(发现) */ = {
 			isa = PBXGroup;
 			children = (
 				329F6BEE240D354D008E0721 /* JCFindController.swift */,
 			);
-			path = FindModular;
+			path = "FindModular(发现)";
 			sourceTree = "<group>";
 		};
 		32AD19512665FE1D00B3CC91 /* JCTextViewTestController */ = {

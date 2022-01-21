@@ -792,8 +792,15 @@ ObserverClass().observer()
  */
 
 
-
-let tt = [1,1,2,3,3]
-var arr = Array(Set(tt))
+/**
+ 数组去重的方法
+ 方法一：
+ let tt = [2,3,3,1,1,]
+ var arr = Array(Set(tt))
  arr.sort()
-print(arr)
+ print(arr)
+ */
+
+let tempStr = "12:45"
+let arr = tempStr.components(separatedBy: ":")
+print("\(arr)")

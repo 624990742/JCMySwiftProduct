@@ -8,14 +8,7 @@
 
 import UIKit
 
-
-///MARK - 主程序生命周期
-
-
-
 class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate{
-  
-    
          
         var items:[String] = ["解析中过滤空字符串测试","菜单格子测试","Realm数据库测试","富文本加载html测试","web加载html测试"]
          
@@ -27,23 +20,31 @@ class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDat
          
         override func viewDidLoad() {
             super.viewDidLoad()
-             
-            //创建表视图
-            self.tableView = UITableView(frame: self.view.frame, style:.plain)
-            self.tableView!.delegate = self
-            self.tableView!.dataSource = self
-            //创建一个重用的单元格
-            self.tableView!.register(UITableViewCell.self,
-                                          forCellReuseIdentifier: "SwiftCell")
-            self.view.addSubview(self.tableView!)
-           
-            
+             setupUI()
         }
          
     
+    //Mark: - UI
+    func setupUI(){
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "白/夜切换",
+            style: UIBarButtonItem.Style.plain,
+            target: self, action: #selector(refreshDarkStyle)
+        )
+        //创建表视图
+        self.tableView = UITableView(frame: self.view.frame, style:.plain)
+        self.tableView!.delegate = self
+        self.tableView!.dataSource = self
+        //创建一个重用的单元格
+        self.tableView!.register(UITableViewCell.self,                    forCellReuseIdentifier: "SwiftCell")
+        self.view.addSubview(self.tableView!)
+    }
+   
     
-   
-   
+ 
+
+    //Mark: -  UITableViewDelegate, UITableViewDataSource
         //在本例中，只有一个分区
         func numberOfSections(in tableView: UITableView) -> Int {
             return 1;

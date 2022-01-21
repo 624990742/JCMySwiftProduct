@@ -3,6 +3,7 @@ PODS:
   - DNSPageView (1.2.1)
   - DZNEmptyDataSet (1.8.1)
   - ESTabBarController-swift (2.8.0)
+  - FluentDarkModeKit (1.0.4)
   - FSPagerView (0.8.3)
   - HandyJSON (5.0.2-beta)
   - hpple (0.2.0)
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - DNSPageView
   - DZNEmptyDataSet
   - ESTabBarController-swift
+  - FluentDarkModeKit
   - FSPagerView
   - HandyJSON (~> 5.0.2-beta)
   - hpple
@@ -58,6 +60,7 @@ SPEC REPOS:
     - DNSPageView
     - DZNEmptyDataSet
     - ESTabBarController-swift
+    - FluentDarkModeKit
     - FSPagerView
     - HandyJSON
     - hpple
@@ -82,6 +85,7 @@ SPEC CHECKSUMS:
   DNSPageView: 1a1972df33a08dbad8e43188da97b31997e1d109
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  FluentDarkModeKit: b6317653a00329564582884772ec57c4eaad1a1f
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   HandyJSON: e18b035d60cb4847c609a59bb831c5db8c549663
   hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
@@ -101,6 +105,6 @@ SPEC CHECKSUMS:
   SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: ed7fec24a57f3ec7839e5735d945c2f966c6b9a6
+PODFILE CHECKSUM: bd773ae860cbebc827253b0cfb16afeb18798e7d
 
-COCOAPODS: 1.11.1
+COCOAPODS: 1.11.2

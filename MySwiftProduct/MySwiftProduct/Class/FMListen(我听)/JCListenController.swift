@@ -9,7 +9,7 @@
 import UIKit
 import LTScrollView
 
-class JCListenController: UIViewController,LTAdvancedScrollViewDelegate  {
+class JCListenController: JCBaseController,LTAdvancedScrollViewDelegate  {
 
     override func viewDidLoad() {
         super.viewDidLoad()

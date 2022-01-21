@@ -42,6 +42,44 @@ extension AppDelegate {
                self.window?.rootViewController = nav
            }
        }
+    
+    
+    
+    func darkConfiguration(_ application: UIApplication) {
+        let configuration = DMEnvironmentConfiguration()
+        configuration.themeChangeHandler = {
+          print("theme changed")
+        }
+        if #available(iOS 13.0, *) {
+          configuration.windowThemeChangeHandler = { window in
+            print("\(window) theme changed")
+          }
+        }
+        DarkModeManager.setup(with: configuration)
+        DarkModeManager.register(with: application)
+      }
+    
+    static func createNewWindow(with window: UIWindow) -> UIWindow {
+      guard #available(iOS 13.0, *), let scene = window.windowScene else {
+        return createNewWindow()
+      }
+      return createNewWindow(with: scene)
+    }
+
+    static func createNewWindow() -> UIWindow {
+      let window = UIWindow()
+      window.rootViewController = JCCustomTabbarVC()
+      return window
+    }
+
+    @available(iOS 13.0, *)
+    static func createNewWindow(with windowScene: UIWindowScene) -> UIWindow {
+      let window = UIWindow(windowScene: windowScene)
+      window.rootViewController = JCCustomTabbarVC()
+      return window
+    }
+    
+    
    }
 
 @UIApplicationMain
@@ -50,22 +88,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-     JCRealmTestTool.configRealm()
-
-        
+        JCRealmTestTool.configRealm()
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
 //        setupLaunchImage()
 //        let defalutVC = UIViewController.init()
 //        self.window!.rootViewController = defalutVC
-    
+        darkConfiguration(application)
         let tabbarVC = JCCustomTabbarVC()
         self.window?.rootViewController = tabbarVC
         self.window?.makeKeyAndVisible()
     
-    
-        
-        return true
+      return true
     }
 
   
