@@ -804,3 +804,4 @@ ObserverClass().observer()
 let tempStr = "12:45"
 let arr = tempStr.components(separatedBy: ":")
 print("\(arr)")
+
