@@ -47,4 +47,6 @@ pod 'SnapKit'
 pod 'Kanna'
 pod 'hpple'
 pod "FluentDarkModeKit"
+pod 'ReactiveSwift', '~> 6.1'
+pod 'ReactiveCocoa'
 end

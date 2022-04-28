@@ -18,11 +18,14 @@ PODS:
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
-  - Realm (10.7.6):
-    - Realm/Headers (= 10.7.6)
-  - Realm/Headers (10.7.6)
-  - RealmSwift (10.7.6):
-    - Realm (= 10.7.6)
+  - ReactiveCocoa (11.2.2):
+    - ReactiveSwift (~> 6.6)
+  - ReactiveSwift (6.7.0)
+  - Realm (10.19.0):
+    - Realm/Headers (= 10.19.0)
+  - Realm/Headers (10.19.0)
+  - RealmSwift (10.19.0):
+    - Realm (= 10.19.0)
   - Result (4.1.0)
   - SnapKit (4.2.0)
   - StreamingKit (0.1.30)
@@ -47,6 +50,8 @@ DEPENDENCIES:
   - LTScrollView
   - MJRefresh (~> 3.1.14.1)
   - Moya
+  - ReactiveCocoa
+  - ReactiveSwift (~> 6.1)
   - RealmSwift
   - SnapKit
   - StreamingKit
@@ -71,6 +76,8 @@ SPEC REPOS:
     - LTScrollView
     - MJRefresh
     - Moya
+    - ReactiveCocoa
+    - ReactiveSwift
     - Realm
     - RealmSwift
     - Result
@@ -96,8 +103,10 @@ SPEC CHECKSUMS:
   LTScrollView: 93fff4aed9f9545f541a99b320b27808f5307c12
   MJRefresh: 238e6a37e2dba12160ee3b79f6d2a2b26abcab42
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  Realm: ed860452717c8db8f4bf832b6807f7f2ce708839
-  RealmSwift: e31c4ddbcc42ac879313d656b86f9ca539f6f4f4
+  ReactiveCocoa: e539cd41c523c8c80851b88e9723235c933b024b
+  ReactiveSwift: 208201d6ecc9734196d147aa76bc1f24b1b821fe
+  Realm: 869ab2a7e3bdfa6bf06d8723251539f504e6f602
+  RealmSwift: f1f51c4a02fe826e5cea623b5441992f06bdc942
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   StreamingKit: 70ca8608c206864b4d54a577eacb3c8bf7c72209
@@ -105,6 +114,6 @@ SPEC CHECKSUMS:
   SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: bd773ae860cbebc827253b0cfb16afeb18798e7d
+PODFILE CHECKSUM: 278939e0db9ce0542b04aaf95f16692919f343ad
 
 COCOAPODS: 1.11.2
