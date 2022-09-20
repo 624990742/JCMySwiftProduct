@@ -59,5 +59,17 @@ extension String{
        }
     
     
+    ///整数转成带小数点的数字
+    func intTransformationDouble(str: String) -> Double {
+        var t = ""
+        for (idx,char) in str.enumerated() {
+            if idx == 0 {
+                t = String(char) + "."
+            } else {
+                t = t + String(char)
+            }
+        }
+        return Double(t) ?? 0.0
+    }
     
 }

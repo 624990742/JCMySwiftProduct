@@ -10,7 +10,12 @@ import UIKit
 
 class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate{
          
-        var items:[String] = ["解析中过滤空字符串测试","菜单格子测试","Realm数据库测试","富文本加载html测试","web加载html测试"]
+        var items:[String] = ["解析中过滤空字符串测试",
+                              "菜单格子测试",
+                              "Realm数据库测试",
+                              "富文本加载html测试",
+                              "web加载html测试",
+                               "xib创建的collectionView"]
          
         var tableView:UITableView?
          
@@ -26,6 +31,9 @@ class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDat
     
     //Mark: - UI
     func setupUI(){
+        
+        let header = JCHomeHeaderView.loadFromNib()
+        
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "白/夜切换",
@@ -101,6 +109,10 @@ class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDat
             let viewController = storyboard.instantiateViewController(withIdentifier: "JCTexWebViewTestController")
             self.navigationController?.pushViewController(viewController, animated: true)
 
+        case 5:
+            
+            let testVC = JCTestViewController(nibName: "JCTestViewController", bundle: nil)
+            self.navigationController?.pushViewController(testVC, animated: true)
         default:
             print("测试数据")
         }
