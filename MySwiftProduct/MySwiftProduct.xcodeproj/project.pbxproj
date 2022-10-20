@@ -90,6 +90,7 @@
 		594207EB288A45AD001AAD47 /* JCHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 594207EA288A45AD001AAD47 /* JCHomeHeaderView.xib */; };
 		5967A5AB277330E400C9B8AC /* JCLibaryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5967A5AA277330E400C9B8AC /* JCLibaryHeader.swift */; };
 		598488AD276330B600129883 /* JCString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598488AC276330B600129883 /* JCString+Extension.swift */; };
+		59AF5B39290146D400E1BF5A /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF5B38290146D400E1BF5A /* Array+Extension.swift */; };
 		59B7646D2893ABD10000B2C1 /* Star2.png in Resources */ = {isa = PBXBuildFile; fileRef = 59B7646C2893ABD10000B2C1 /* Star2.png */; };
 /* End PBXBuildFile section */
 
@@ -218,6 +219,7 @@
 		5959846428D47003002EB59E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		5967A5AA277330E400C9B8AC /* JCLibaryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCLibaryHeader.swift; sourceTree = "<group>"; };
 		598488AC276330B600129883 /* JCString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JCString+Extension.swift"; sourceTree = "<group>"; };
+		59AF5B38290146D400E1BF5A /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		59B7646C2893ABD10000B2C1 /* Star2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star2.png; sourceTree = "<group>"; };
 		82088A0283672079CF405AB9 /* Pods-MySwiftProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CB50E74750A1E063ED273BA6 /* Pods-MySwiftProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftProduct.release.xcconfig"; path = "Target Support Files/Pods-MySwiftProduct/Pods-MySwiftProduct.release.xcconfig"; sourceTree = "<group>"; };
@@ -635,6 +637,7 @@
 				32A7AD15245FF6E0008FD3AB /* ConstrainArrayDSL.swift */,
 				324AB5F12637FE5F0021CC0D /* JCUView+Extension.swift */,
 				594207E6288A450E001AAD47 /* XIB+Extension.swift */,
+				59AF5B38290146D400E1BF5A /* Array+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1074,6 +1077,7 @@
 				32AD19A92666426400B3CC91 /* TFHppleElement.m in Sources */,
 				321ECBDE2660D5C10005233E /* JCRealmTestTool.swift in Sources */,
 				326541D52445F17B00033426 /* JCmyServiceCell.swift in Sources */,
+				59AF5B39290146D400E1BF5A /* Array+Extension.swift in Sources */,
 				329F6C02240D354D008E0721 /* JCCustomNavgationController.swift in Sources */,
 				32B48305248E388D00B04BAE /* JCMyServiceCollectionCell.swift in Sources */,
 				594207E9288A458A001AAD47 /* JCHomeHeaderView.swift in Sources */,

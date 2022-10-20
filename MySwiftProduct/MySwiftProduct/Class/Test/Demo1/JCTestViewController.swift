@@ -6,6 +6,21 @@
 //  Copyright © 2022 jiachen. All rights reserved.
 //
 
+class JCTestModel: Equatable {
+    static func == (lhs: JCTestModel, rhs: JCTestModel) -> Bool {
+        return lhs.name == rhs.name && lhs.age == rhs.age
+    }
+    var  name: String = ""
+    var  age: Int = 0
+    init(name: String,age: Int) {
+        self.name = name
+        self.age = age
+    }
+}
+
+
+
+
 import UIKit
 
 class JCTestViewController: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource {
@@ -37,8 +52,27 @@ class JCTestViewController: UIViewController , UICollectionViewDelegate , UIColl
 //        self.collectionFlowLayout.minimumInteritemSpacing = space
         self.collectionView.reloadData()
         
-      
+        testDemo1()
     }
+    // MARK: - 数组去重测试
+    func testDemo1(){
+        let t1 = JCTestModel.init(name: "1111",age: 10)
+        let t2 = JCTestModel.init(name: "1111",age: 10)
+        let r1 = JCTestModel.init(name: "2222",age: 20)
+        let r2 = JCTestModel.init(name: "2222",age: 20)
+        let testArr: [JCTestModel] = [t1,r2,t2,r1]
+        let arr = testArr.filterDuplicatesElement({$0})
+    
+        arr.forEach { model in
+            JCDebugLog(message: "测试数据--\(model.name)")
+        }
+        
+        
+    }
+    
+    
+    
+    
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
 

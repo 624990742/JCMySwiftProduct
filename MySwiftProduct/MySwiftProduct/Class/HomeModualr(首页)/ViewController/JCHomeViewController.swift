@@ -15,7 +15,8 @@ class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDat
                               "Realm数据库测试",
                               "富文本加载html测试",
                               "web加载html测试",
-                               "xib创建的collectionView"]
+                               "xib创建的collectionView",
+                               "数组的相关操作"]
          
         var tableView:UITableView?
          
@@ -109,7 +110,7 @@ class JCHomeViewController: JCBaseController,UITableViewDelegate, UITableViewDat
             let viewController = storyboard.instantiateViewController(withIdentifier: "JCTexWebViewTestController")
             self.navigationController?.pushViewController(viewController, animated: true)
 
-        case 5:
+        case 5,6:
             
             let testVC = JCTestViewController(nibName: "JCTestViewController", bundle: nil)
             self.navigationController?.pushViewController(testVC, animated: true)
