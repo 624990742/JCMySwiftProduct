@@ -30,7 +30,7 @@ pod 'SnapKit'
    
     #pod 'SkeletonView'
     #消息提示
-    pod 'SwiftMessages'
+#    pod 'SwiftMessages'
     #pod 'YYKit'
     pod 'SVProgressHUD'
     #播放网络音频

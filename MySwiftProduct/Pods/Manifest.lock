@@ -30,9 +30,6 @@ PODS:
   - SnapKit (4.2.0)
   - StreamingKit (0.1.30)
   - SVProgressHUD (2.2.5)
-  - SwiftMessages (7.0.1):
-    - SwiftMessages/App (= 7.0.1)
-  - SwiftMessages/App (7.0.1)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
@@ -56,7 +53,6 @@ DEPENDENCIES:
   - SnapKit
   - StreamingKit
   - SVProgressHUD
-  - SwiftMessages
   - SwiftyJSON
 
 SPEC REPOS:
@@ -84,7 +80,6 @@ SPEC REPOS:
     - SnapKit
     - StreamingKit
     - SVProgressHUD
-    - SwiftMessages
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -111,9 +106,8 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   StreamingKit: 70ca8608c206864b4d54a577eacb3c8bf7c72209
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 278939e0db9ce0542b04aaf95f16692919f343ad
+PODFILE CHECKSUM: 47a9fa1f917e0220fb5061f63cca351eea69a83c
 
 COCOAPODS: 1.11.2

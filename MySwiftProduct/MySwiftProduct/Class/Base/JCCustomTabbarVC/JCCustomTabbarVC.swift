@@ -14,24 +14,13 @@ class JCCustomTabbarVC: UITabBarController {
     var customTabBarBgImg:UIImageView?
     var customTabBarBgImgSelected:UIImageView?
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.setUpAllChildViewController()
         self.baseSetup()
-        
     }
     
-    
-
-    
-    
     func baseSetup() {
-       
-
     let  tabBarAppearance = UITabBar.appearance()
     tabBarAppearance.backgroundImage = UIImage.initImageWithColor(color: .white)
       tabBarAppearance.shadowImage = UIImage.initImageWithColor(color: UIColor(r: 247, g: 247, b: 247))
@@ -40,9 +29,9 @@ class JCCustomTabbarVC: UITabBarController {
     self.tabBar.layer.shadowColor = UIColor.black.cgColor;
     self.tabBar.layer.shadowOffset = CGSize(width: 0, height: -5);
     self.tabBar.layer.shadowOpacity = 0.05;
+    self.tabBar.backgroundColor = .white
     self.view.backgroundColor = .white
-    
-    
+   
     }
     
     
